@@ -21,7 +21,7 @@ public class Movements : MonoBehaviour
     void Update()
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
-        Grounded = Physics2D.Raycast(transform.position, Vector3.down, 1f);
+        Grounded = Physics2D.Raycast(transform.position, Vector3.down, 0.1f);
             
         if (Input.GetKeyDown(KeyCode.Space) && Grounded)
         {
