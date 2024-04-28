@@ -20,7 +20,7 @@ public class Player : hpSystem
     {
         rb = GetComponent<Rigidbody2D>();
         setstartingValue(getCurrentHP());
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
    void Update()
     {
@@ -45,7 +45,7 @@ public class Player : hpSystem
         }
         if(Input.GetButtonDown("Fire1") && TimeNextAttack <=0){
             Invoke("CharacterHit",AttackDuration);
-            //animator.SetTrigger("AttackTrigger");
+            animator.SetTrigger("AttackTrigger");
             TimeNextAttack=TimeBetweenAttack;
         }
     }
