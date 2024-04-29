@@ -19,7 +19,6 @@ public class Player : hpSystem
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        setstartingValue(getCurrentHP());
         animator = GetComponent<Animator>();
     }
    void Update()
