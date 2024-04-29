@@ -11,7 +11,7 @@ public class DataController : MonoBehaviour
     public ClassGameData gameData = new ClassGameData();
     private string keyWord = "Password";
     private void Awake(){
-        Archive = Application.dataPath+"/gameData.Json";
+        Archive = Application.dataPath+"/game_data.json";
         Player = GameObject.FindGameObjectWithTag("Player");
         DataLoad();
     }
@@ -29,10 +29,11 @@ public class DataController : MonoBehaviour
         if(File.Exists(Archive)){
             string RawData = File.ReadAllText(Archive);
             gameData = JsonUtility.FromJson<ClassGameData>(EncryptDecrypt(RawData));
-            Debug.Log("Position "+gameData.position);
+            Debug.Log("Position "+gameData.position+ "Max hp: "+gameData.MaxHP+ "Current hp: "+gameData.HP);
             Player.transform.position = gameData.position;
-            Player.GetComponent<HP>().setCurrentHP(gameData.HP);
-            Player.GetComponent<HP>().setMaxHP(gameData.MaxHP);
+            Player.GetComponent<Player>().setCurrentHP(gameData.HP);
+            Player.GetComponent<Player>().setMaxHP(gameData.MaxHP);
+            Player.GetComponent<Player>().setstartingValue(gameData.HP);
         }else{
             Debug.Log("El archivo no existe");
         }

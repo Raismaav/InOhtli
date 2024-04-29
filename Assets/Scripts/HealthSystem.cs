@@ -14,5 +14,5 @@ public class hpSystem : HP
     public void setstartingValue(float startingValue){
         HealthBar.SetStarterValue(getCurrentHP());
     }
-    
+
 }
