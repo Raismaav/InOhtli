@@ -33,7 +33,6 @@ public class DataController : MonoBehaviour
             Player.transform.position = gameData.position;
             Player.GetComponent<Player>().setCurrentHP(gameData.HP);
             Player.GetComponent<Player>().setMaxHP(gameData.MaxHP);
-            Player.GetComponent<Player>().setstartingValue(gameData.HP);
         }else{
             Debug.Log("El archivo no existe");
         }
