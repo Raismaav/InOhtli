@@ -30,14 +30,10 @@ public class HablityBarControllerSlider : MonoBehaviour
             }
         }
     }
-    void Update()
-    {
-        if (Input.GetButtonDown("Fire2"))
-        {
-            if(getCharges()>0){
-                setCharges(getCharges()-1);
-                HabChargesValue();
-            }
+    public void UseHabiliti(){
+        if(getCharges()>0){
+            setCharges(getCharges()-1);
+            HabChargesValue();
         }
     }
     private void HabChargesValue(){

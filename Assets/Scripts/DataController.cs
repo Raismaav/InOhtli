@@ -22,6 +22,7 @@ public class DataController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.G)){
             DataLoad();
+            
         }
     }
 

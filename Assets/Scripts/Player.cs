@@ -16,6 +16,9 @@ public class Player : hpSystem
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     private Animator animator;
+    [Header("Habilities settings")]
+    [SerializeField] private HablityBarControllerSlider HabBar;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,6 +50,10 @@ public class Player : hpSystem
             Invoke("CharacterHit",AttackDuration);
             animator.SetTrigger("AttackTrigger");
             TimeNextAttack=TimeBetweenAttack;
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            HabBar.UseHabiliti();
         }
     }
     private void CharacterHit(){
