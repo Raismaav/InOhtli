@@ -66,12 +66,13 @@ public class Player : hpSystem
                 TimeCharge += Time.deltaTime;
             }
         }
-        if(Input.GetButtonUp("Fire3") && canDash){
-            if(TimeCharge>=MaxCharge){
+        if(Input.GetButtonUp("Fire3")){
+            if(TimeCharge>=MaxCharge && canDash && HabBar.CanUse()){
                 StartCoroutine(Dash());
                 HabBar.UseHabiliti();
                 Debug.Log("Dasheo");
             }else{
+
                 Debug.Log("No Dasheo");
             }
             TimeCharge=0;
@@ -105,7 +106,7 @@ public class Player : hpSystem
 
         canMove=true;
         canDash=true;
-        rb.gravityScale=4;
+        rb.gravityScale=1;
     }
     private void Pause()
     {

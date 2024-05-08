@@ -36,6 +36,11 @@ public class HablityBarControllerSlider : MonoBehaviour
             HabChargesValue();
         }
     }
+    public bool CanUse(){
+        if(getCharges()>0){
+            return true;
+        }else return false;
+    }
     private void HabChargesValue(){
         chargeSlider.value=HabCharges;
     }
