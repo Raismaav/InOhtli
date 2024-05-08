@@ -55,6 +55,9 @@ public class basicEnemy : HP
             //Girar
             Girar();
         }
+        if(!Live){
+            Destroy(gameObject);
+        }
         
     }
 

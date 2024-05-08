@@ -31,6 +31,9 @@ public class Enemy1 : HP
             //animator.SetTrigger("AttackTrigger");
             TimeNextAttack=TimeBetweenAttack;
         }
+        if(!Live){
+            Destroy(gameObject);
+        }
     }
     private void CharacterHit(){
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);

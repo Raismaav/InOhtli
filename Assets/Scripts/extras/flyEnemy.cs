@@ -5,37 +5,30 @@ using Unity.VisualScripting;
 using UnityEngine;
 //using Cinemachine;
 
-public class flyEnemy : MonoBehaviour
+public class flyEnemy : HP
 {
     private CinemachineVirtualCamera cm;
     private SpriteRenderer sp;
-    private mov player;
-    private Rigidbody2D rb;
-    private bool forceAply;
-
-    public float movementSpeed = 3;
+    private Transform player;
+    [SerializeField] private Transform retreat;
     public float detectionRatio = 15;
-    public LayerMask playerLayer;
-
-    public Vector2 headPosition;
-
-    public bool inHead;
-
-    public int lifes = 3;
-    public string namee;
+    private float distancex;
+    private float distancey;
+    private float distanceRetreatx,distanceRetreaty;
+    
 
     public void Awake()
     {
-        cm = GameObject.FindGameObjectWithTag("VirtualCamera").GetComponent<CinemachineVirtualCamera>();
+        //cm = GameObject.FindGameObjectWithTag("VirtualCamera").GetComponent<CinemachineVirtualCamera>();
         sp = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<mov>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Start is called before the first frame update
     void Start()
-    {
-        gameObject.name = namee;
+    { 
+        rb = GetComponent<Rigidbody2D>();
+        canFly=true;
     }
 
     private void OnDrawGizmosSelected()
@@ -43,76 +36,28 @@ public class flyEnemy : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRatio);
         Gizmos.color = Color.green;
-        Gizmos.DrawCube((Vector2)transform.position + headPosition, new Vector2(1, 0.5f) * 0.7f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = player.transform.position - transform.position;
-        float distance = Vector2.Distance(headPosition, player.transform.position);
-
-        if (distance < detectionRatio)
-        {
-            rb.velocity = direction.normalized * movementSpeed;
-            ChangeView(direction.normalized.x);
-        } else
-        {
-            rb.velocity = Vector2.zero;
+        distancex = player.transform.position.x - transform.position.x;
+        distancey = player.transform.position.y - transform.position.y;
+        distanceRetreatx = retreat.transform.position.x - transform.position.x;
+        distanceRetreaty = retreat.transform.position.y - transform.position.y;
+        if(distancex < detectionRatio && distancex > -1*detectionRatio && distancey < detectionRatio && distancey > -1*detectionRatio){
+            route(distancex,distancey);
+        }else if(distanceRetreatx > 1 || distanceRetreatx < -1){
+            route(distanceRetreatx,distanceRetreaty);
         }
-
-        inHead = Physics2D.OverlapBox((Vector2)transform.position + headPosition, new Vector2(1, 0.5f) * 0.7f, 0, playerLayer);
-    }
-
-    private void ChangeView(float directionX)
-    {
-        if(directionX < 0 && transform.localScale.x > 0)
-        {
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        else {
+            VerticalMovement=0;
+            HorizontalMovement=0;
         }
-        else if (directionX > 0 && transform.localScale.x < 0)
-        {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            if(inHead)
-            {
-                player.GetComponent<Rigidbody2D>().velocity = Vector2.up * player.JumpForce;
-                StartCoroutine(CameraDamage(0.1f));
-                Destroy(gameObject, 0.2f);
-            }
-            else
-            {
-                //player.TakeDamage((transform.position - player.transform.position).normalized);
-            }
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (forceAply)
-        {
-            rb.AddForce((transform.position - player.transform.position).normalized * 100, ForceMode2D.Impulse);
-            forceAply = false;
-        }
-    }
-
-    private void TakeDamage()
-    {
-        if(lifes > 0)
-        {
-            StartCoroutine(DamageEffect());
-            StartCoroutine(CameraDamage(0.1f));
-            forceAply = true;
-            lifes--;
-        } else
-        {
-            Destroy(gameObject, 0.2f);
+        //HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
+        //VerticalMovement = Input.GetAxisRaw("Vertical") * MoveSpeed;
+        if(!Live){
+            Destroy(gameObject);
         }
     }
 
@@ -129,5 +74,17 @@ public class flyEnemy : MonoBehaviour
         sp.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         sp.color = Color.white;
+    }
+    private void route(float distancex2,float distancey2){
+        if(distancex2>0){
+            HorizontalMovement = MoveSpeed;
+        }else if(distancex2<0 ){
+            HorizontalMovement = -1*MoveSpeed;
+        }else HorizontalMovement=0;
+        if(distancey2>0 ){
+        VerticalMovement = MoveSpeed;
+        }else if(distancey2<0 ){
+            VerticalMovement = -1*MoveSpeed;
+        }else VerticalMovement=0;
     }
 }
