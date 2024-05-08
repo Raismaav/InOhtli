@@ -15,9 +15,16 @@ public class Player : hpSystem
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
-    private Animator animator;
     [Header("Habilities settings")]
     [SerializeField] private HablityBarControllerSlider HabBar;
+
+    [Header("Dash Settings")]
+    [SerializeField] private float MaxCharge;
+    [SerializeField] private float TimeCharge;
+    
+    private bool canDash=true;
+    [SerializeField]private float DashTime;
+    [SerializeField]private float DashSpeed;
 
     void Start()
     {
@@ -28,10 +35,18 @@ public class Player : hpSystem
    void Update()
     {
         
-        HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
+        if(canMove){
+            HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+            }
+            
+            if(Input.GetButtonDown("Fire1") && TimeNextAttack <=0){
+                Invoke("CharacterHit",AttackDuration);
+                animator.SetTrigger("AttackTrigger");
+                TimeNextAttack=TimeBetweenAttack;
+            }
         }
         if (Input.GetButtonDown("Cancel"))
         {
@@ -46,14 +61,23 @@ public class Player : hpSystem
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
         }
-        if(Input.GetButtonDown("Fire1") && TimeNextAttack <=0){
-            Invoke("CharacterHit",AttackDuration);
-            animator.SetTrigger("AttackTrigger");
-            TimeNextAttack=TimeBetweenAttack;
+        if(Input.GetButton("Fire3")){
+            if(TimeCharge<=MaxCharge){
+                TimeCharge += Time.deltaTime;
+            }
         }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            HabBar.UseHabiliti();
+        if(Input.GetButtonUp("Fire3") && canDash){
+            if(TimeCharge>=MaxCharge){
+                StartCoroutine(Dash());
+                HabBar.UseHabiliti();
+                Debug.Log("Dasheo");
+            }else{
+                Debug.Log("No Dasheo");
+            }
+            TimeCharge=0;
+        }
+        if(!Live){
+            Destroy(gameObject);
         }
     }
     private void CharacterHit(){
@@ -63,6 +87,25 @@ public class Player : hpSystem
                 colition.transform.GetComponent<HP>().Damage(AttackDamage);
             }
         }
+    }
+    private IEnumerator Dash(){
+        canMove=false;
+        canDash=false;
+        float FixedSpeed;
+        if(LD){
+            FixedSpeed= DashSpeed*1;
+        }else{
+            FixedSpeed= DashSpeed*-1;
+        }
+        rb.gravityScale=0;
+        rb.velocity=new Vector2(FixedSpeed,0);
+        //anim
+
+        yield return new WaitForSeconds(DashTime);
+
+        canMove=true;
+        canDash=true;
+        rb.gravityScale=4;
     }
     private void Pause()
     {

@@ -8,6 +8,7 @@ public class HP : mov
     [Header("Health Settings")]
     [SerializeField] private float CurrentHealth;
     [SerializeField] private float MaxHealth;
+    protected bool Live=true;
 
     public void Damage(float DamageValue)
     {
@@ -15,7 +16,7 @@ public class HP : mov
         Debug.Log(CurrentHealth);
         if (CurrentHealth <= 0 )
         {
-            Destroy(gameObject);
+            Live=false;
         }
     }
 

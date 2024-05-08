@@ -6,30 +6,39 @@ using UnityEngine.SceneManagement;
 public class mov : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public Rigidbody2D rb;
-    private Animator animator;
-    public float HorizontalMovement = 0f;
-    [SerializeField] public float MoveSpeed;
+    protected Rigidbody2D rb;
+    protected Animator animator;
+    [SerializeField]protected float HorizontalMovement;
+    protected float VerticalMovement = 0f;
+    [SerializeField] protected float MoveSpeed;
     [SerializeField] private float Smooth;
     private Vector3 velocidad = Vector3.zero;
-    private bool LD = true;
+    protected bool LD = true;
+    [SerializeField] protected bool canFly=false;
 
 
-    [SerializeField] public float JumpForce;
+    [SerializeField] protected float JumpForce;
     [SerializeField] private LayerMask Floor;
-    [SerializeField] public Transform OperadorSuelo;
-    [SerializeField] public Vector3 dimensionesCaja;
+    [SerializeField] protected Transform OperadorSuelo;
+    [SerializeField] protected Vector3 dimensionesCaja;
     [SerializeField] private bool inFloor;
-    public bool jump=false;
+    protected bool jump=false;
+    
+    protected bool canMove=true;
 
     
 
     
     private void FixedUpdate()
-    {
-        inFloor = Physics2D.OverlapBox(OperadorSuelo.position, dimensionesCaja, 0f, Floor);
-        Move(HorizontalMovement*Time.deltaTime,jump);
-        jump = false;
+    {   
+        if(canMove){
+            inFloor = Physics2D.OverlapBox(OperadorSuelo.position, dimensionesCaja, 0f, Floor);
+            Move(HorizontalMovement*Time.deltaTime,jump);
+            if(canFly){
+                MoveVerticaly(VerticalMovement*Time.deltaTime);
+            }
+            jump = false;
+        }
     }
 
     public void Move(float move,bool jump)
@@ -49,6 +58,11 @@ public class mov : MonoBehaviour
         {
             Jump();
         }
+    }
+    public void MoveVerticaly(float moveV)
+    {
+        Vector3 velocidadObjetivo = new Vector2(rb.velocity.x,moveV);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo,ref velocidad,Smooth);
     }
     public void TurnRigth()
     {
@@ -71,3 +85,4 @@ public class mov : MonoBehaviour
         rb.velocity += Vector2.up * JumpForce;
     }
 }
+
