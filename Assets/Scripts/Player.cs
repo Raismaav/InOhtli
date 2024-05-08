@@ -23,7 +23,6 @@ public class Player : hpSystem
     }
    void Update()
     {
-        
         HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         if (Input.GetButtonDown("Jump"))
         {
