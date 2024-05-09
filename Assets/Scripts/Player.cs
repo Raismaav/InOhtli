@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : hpSystem
 {
@@ -24,7 +25,8 @@ public class Player : hpSystem
     
     private bool canDash=true;
     [SerializeField]private float DashTime;
-    [SerializeField]private float DashSpeed;
+    [SerializeField]private float DashSpeed,DashVerticalSpeed;
+    [SerializeField]private Slider BarritaParaVerLaCarga;
 
     void Start()
     {
@@ -64,11 +66,15 @@ public class Player : hpSystem
         if(Input.GetButton("Fire3")){
             if(TimeCharge<=MaxCharge){
                 TimeCharge += Time.deltaTime;
+                BarritaParaVerLaCarga.value= TimeCharge;
             }
         }
         if(Input.GetButtonUp("Fire3")){
             if(TimeCharge>=MaxCharge && canDash && HabBar.CanUse()){
-                StartCoroutine(Dash());
+                if(Input.GetButton("Vertical")){
+                    StartCoroutine(Dash(DashVerticalSpeed,0.5f));
+                }else
+                StartCoroutine(Dash(0,1));
                 HabBar.UseHabiliti();
                 Debug.Log("Dasheo");
             }else{
@@ -76,6 +82,7 @@ public class Player : hpSystem
                 Debug.Log("No Dasheo");
             }
             TimeCharge=0;
+            BarritaParaVerLaCarga.value= TimeCharge;
         }
         if(!Live){
             Destroy(gameObject);
@@ -89,17 +96,17 @@ public class Player : hpSystem
             }
         }
     }
-    private IEnumerator Dash(){
+    private IEnumerator Dash(float Vertical, float HorizontalMod){
         canMove=false;
         canDash=false;
         float FixedSpeed;
         if(LD){
-            FixedSpeed= DashSpeed*1;
+            FixedSpeed= DashSpeed*1*HorizontalMod;
         }else{
-            FixedSpeed= DashSpeed*-1;
+            FixedSpeed= DashSpeed*-1*HorizontalMod;
         }
         rb.gravityScale=0;
-        rb.velocity=new Vector2(FixedSpeed,0);
+        rb.velocity=new Vector2(FixedSpeed,Vertical);
         //anim
 
         yield return new WaitForSeconds(DashTime);
