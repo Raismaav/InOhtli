@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tx: {fileID: 374349746}
-  fadeTime: 1.5
+  fadeTime: 1
   Alpha: 0
 --- !u!4 &1834953189
 Transform:

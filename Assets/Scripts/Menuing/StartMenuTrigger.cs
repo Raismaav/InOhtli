@@ -24,7 +24,7 @@ public class StartMenuTrigger : MonoBehaviour
             SceneManager.LoadScene("FileMenu");
         }
         if(!fadded){
-            if(fadeTime>-0.5){
+            if(fadeTime>-0.3){
                 Alpha-=fps*Time.deltaTime;
                 //if(Alpha<0){
                     tx.color=new Color(tx.color.r, tx.color.g,tx.color.b,Alpha);
@@ -32,7 +32,7 @@ public class StartMenuTrigger : MonoBehaviour
                 fadeTime-=Time.deltaTime;
             }else fadded = true;
         }else if(fadded){
-            if(fadeTime<2){
+            if(fadeTime<1){
                 Alpha+=fps*Time.deltaTime;
                 //if(Alpha>0.9){
                     tx.color=new Color(tx.color.r, tx.color.g,tx.color.b,Alpha);
