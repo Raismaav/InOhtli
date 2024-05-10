@@ -85,4 +85,3 @@ public class mov : MonoBehaviour
         rb.velocity += Vector2.up * JumpForce;
     }
 }
-

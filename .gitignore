@@ -25,6 +25,7 @@
 
 # Game save files
 **/game_data.json
+**/game_data.json.meta
 
 # Mac system files
 **/.DS_Store
