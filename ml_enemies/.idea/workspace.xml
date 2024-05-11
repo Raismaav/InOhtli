@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -436,10 +437,13 @@
   <component name="ProjectId" id="2gJMlbvJrxtdUEviLPJhi3GlrlT" />
 =======
 >>>>>>> 7edcdb4 (Training python environment created)
+=======
+>>>>>>> 7edcdb4 (Training python environment created)
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -481,6 +485,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+=======
+>>>>>>> 7edcdb4 (Training python environment created)
 =======
 >>>>>>> 7edcdb4 (Training python environment created)
 </project>
