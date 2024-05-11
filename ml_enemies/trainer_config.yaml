@@ -24,7 +24,11 @@ behaviors:
     time_horizon: 1000
     summary_freq: 12000
 <<<<<<< HEAD
+<<<<<<< HEAD
     threaded: true
+=======
+    threaded: true
+>>>>>>> 7edcdb4 (Training python environment created)
 =======
     threaded: true
 >>>>>>> 7edcdb4 (Training python environment created)
