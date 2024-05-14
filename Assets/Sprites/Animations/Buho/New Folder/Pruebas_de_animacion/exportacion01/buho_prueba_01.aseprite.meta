@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c69a3b72fb6e00644b5d4d1a7e45a112
+guid: 426af350e406bbf49bdfc34602da3cfd
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638512196140564315
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: rat_0003_idle_Frame_0
+  - name: buho_prueba_01_Frame_0
     originalName: 
-    pivot: {x: 0.89281595, y: 0.41132864}
+    pivot: {x: 0.48951048, y: -0.4177215}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 110
-      width: 120
-      height: 42
-    spriteID: 61975b476772566479b41c4c1c0fbe15
+      x: 156
+      y: 4
+      width: 143
+      height: 79
+    spriteID: a0f4390ae97bcdc419556e5c9b2d5fe5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -138,19 +138,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 110}
-  - name: rat_0003_idle_Frame_1
+    uvTransform: {x: 156, y: 4}
+  - name: buho_prueba_01_Frame_1
     originalName: 
-    pivot: {x: 0.9008663, y: 0.4497708}
+    pivot: {x: 0.48951048, y: -0.4050633}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 4
+      width: 143
+      height: 79
+    spriteID: 4c4b31897faafe444b9dfc3bbb2735fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 4}
+  - name: buho_prueba_01_Frame_2
+    originalName: 
+    pivot: {x: 0.49305558, y: -0.4177215}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 121
-      height: 46
-    spriteID: 36f3d032a00e8574492269b2ca56652e
+      width: 144
+      height: 79
+    spriteID: 4b9bb498ad88b2649ada305dede53af8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,18 +179,38 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: rat_0003_idle_Frame_2
+  - name: buho_prueba_01_Frame_3
     originalName: 
-    pivot: {x: 0.8945729, y: 0.38265455}
+    pivot: {x: 0.48936173, y: -0.4050633}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 91
+      width: 141
+      height: 79
+    spriteID: 1400fc382659d634581c305de0e5895e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 91}
+  - name: buho_prueba_01_Frame_4
+    originalName: 
+    pivot: {x: 0.48951048, y: -0.43037978}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 58
-      width: 122
-      height: 44
-    spriteID: 9c9ab5b544d9dcb4398fcc23dc5722f4
+      y: 91
+      width: 143
+      height: 79
+    spriteID: 5bd3f69d1519d82429b282b2c681880f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,19 +218,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 58}
-  - name: rat_0003_idle_Frame_3
+    uvTransform: {x: 4, y: 91}
+  - name: buho_prueba_01_Frame_5
     originalName: 
-    pivot: {x: 0.9016301, y: 0.373572}
+    pivot: {x: 0.62376237, y: -0.4050633}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 178
+      width: 101
+      height: 79
+    spriteID: c8c26863013a83a4ba0467316807a949
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 178}
+  - name: buho_prueba_01_Frame_6
+    originalName: 
+    pivot: {x: 0.5754717, y: -0.43037978}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 160
-      width: 121
-      height: 41
-    spriteID: 21c776d1bbf00ce488e97abae72899af
+      y: 178
+      width: 106
+      height: 79
+    spriteID: 761d00325bf850b428dbb81e8d221ba2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,20 +258,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 160}
-  spriteSheetImportData:
-  - name: rat_0003_idle_0
+    uvTransform: {x: 4, y: 178}
+  - name: buho_prueba_01_Frame_7
     originalName: 
-    pivot: {x: 0.89628625, y: 0.34115636}
+    pivot: {x: 0.48936173, y: -0.4050633}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 160
-      width: 121
-      height: 42
-    spriteID: fe55e2d089bf1c94fa8b9aa8221a5e32
+      x: 304
+      y: 91
+      width: 141
+      height: 79
+    spriteID: 5cfb200e61cbb864194609f1f38b4bc9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,143 +278,83 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: rat_0003_idle_1
-    originalName: 
-    pivot: {x: 0.8907158, y: 0.38930112}
-    alignment: 9
-    border: {x: 0, y: 1, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 110
-      width: 121
-      height: 42
-    spriteID: 070724c1def773e42824fdc759a8a17e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: rat_0003_idle_2
-    originalName: 
-    pivot: {x: 0.9, y: 0.4}
-    alignment: 9
-    border: {x: 0, y: 2, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 58
-      width: 122
-      height: 44
-    spriteID: 55c6fe6d910a7f64489e6b6c2a34d456
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: rat_0003_idle_3
-    originalName: 
-    pivot: {x: 0.89628625, y: 0.46349508}
-    alignment: 9
-    border: {x: 0, y: 5, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 121
-      height: 46
-    spriteID: 97aa7794b2af20642b6045d8d5a11c58
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 304, y: 91}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 200505718
-    name: rat_0003_idle
+    guid: 1615464692
+    name: buho_prueba_01
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: rat_0003_idle_Frame_0
+    - name: buho_prueba_01_Frame_0
       frameIndex: 0
       cellRect:
-        x: 5
-        y: 47
-        width: 120
-        height: 42
-      spriteId: 61975b476772566479b41c4c1c0fbe15
-    - name: rat_0003_idle_Frame_1
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: a0f4390ae97bcdc419556e5c9b2d5fe5
+    - name: buho_prueba_01_Frame_1
       frameIndex: 1
       cellRect:
-        x: 4
-        y: 44
-        width: 121
-        height: 46
-      spriteId: 36f3d032a00e8574492269b2ca56652e
-    - name: rat_0003_idle_Frame_2
+        x: 10
+        y: 32
+        width: 143
+        height: 79
+      spriteId: 4c4b31897faafe444b9dfc3bbb2735fa
+    - name: buho_prueba_01_Frame_2
       frameIndex: 2
       cellRect:
-        x: 3
-        y: 46
-        width: 122
-        height: 44
-      spriteId: 9c9ab5b544d9dcb4398fcc23dc5722f4
-    - name: rat_0003_idle_Frame_3
+        x: 9
+        y: 33
+        width: 144
+        height: 79
+      spriteId: 4b9bb498ad88b2649ada305dede53af8
+    - name: buho_prueba_01_Frame_3
       frameIndex: 3
       cellRect:
-        x: 4
-        y: 48
-        width: 121
-        height: 41
-      spriteId: 21c776d1bbf00ce488e97abae72899af
+        x: 11
+        y: 32
+        width: 141
+        height: 79
+      spriteId: 1400fc382659d634581c305de0e5895e
+    - name: buho_prueba_01_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 10
+        y: 34
+        width: 143
+        height: 79
+      spriteId: 5bd3f69d1519d82429b282b2c681880f
+    - name: buho_prueba_01_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 17
+        y: 32
+        width: 101
+        height: 79
+      spriteId: c8c26863013a83a4ba0467316807a949
+    - name: buho_prueba_01_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 19
+        y: 34
+        width: 106
+        height: 79
+      spriteId: 761d00325bf850b428dbb81e8d221ba2
+    - name: buho_prueba_01_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 11
+        y: 32
+        width: 141
+        height: 79
+      spriteId: 5cfb200e61cbb864194609f1f38b4bc9
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Windows Store Apps
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 160, y: 160}

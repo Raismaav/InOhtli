@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -83,7 +83,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638509638931382999
+  platformSettingsDirtyTick: 638512196088680294
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: rat_0002_atack_Frame_0
     originalName: 
-    pivot: {x: 1.3166667, y: -0.6818182}
+    pivot: {x: 0.9009524, y: 0.45194852}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 120, y: 59}
   - name: rat_0002_atack_Frame_1
     originalName: 
-    pivot: {x: 1.3166667, y: -0.7209302}
+    pivot: {x: 0.8929579, y: 0.46151236}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 120, y: 267}
   - name: rat_0002_atack_Frame_2
     originalName: 
-    pivot: {x: 1.3166667, y: -0.70454544}
+    pivot: {x: 0.88496333, y: 0.51643336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 120, y: 111}
   - name: rat_0002_atack_Frame_3
     originalName: 
-    pivot: {x: 1.3166667, y: -0.6818182}
+    pivot: {x: 0.9089469, y: 0.49555448}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 120, y: 163}
   - name: rat_0002_atack_Frame_4
     originalName: 
-    pivot: {x: 1.3166667, y: -0.70454544}
+    pivot: {x: 0.86897445, y: 0.4728265}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 120, y: 318}
   - name: rat_0002_atack_Frame_6
     originalName: 
-    pivot: {x: 1.38, y: -0.34313726}
+    pivot: {x: 0.85418046, y: 0.23642567}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 116}
   - name: rat_0002_atack_Frame_7
     originalName: 
-    pivot: {x: 1.8636364, y: -0.2601626}
+    pivot: {x: 0.6644606, y: 0.13761257}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 226}
   - name: rat_0002_atack_Frame_8
     originalName: 
-    pivot: {x: 0.6666666, y: -0.30769232}
+    pivot: {x: 0.16923082, y: 0.19042698}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: rat_0002_atack_Frame_9
     originalName: 
-    pivot: {x: 0.5714286, y: -0.59574467}
+    pivot: {x: 0.14505501, y: 0.48606443}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
