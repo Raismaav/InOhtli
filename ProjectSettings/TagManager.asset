@@ -16,7 +16,7 @@ TagManager:
   - Platforms
   - Wall
   - Enemies
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 280165463
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

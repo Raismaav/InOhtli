@@ -5,17 +5,23 @@ using UnityEngine;
 public class Hit : MonoBehaviour
 {
     [SerializeField] private float timeBetweenHits;
-    private float invincibleTime;
+    public float invincibleTime;
+    void Start(){
+        invincibleTime=timeBetweenHits;
+    }
     private void OnTriggerStay2D(Collider2D other) {
         if (other.CompareTag("Player"))
         {
             invincibleTime -= Time.deltaTime;
             if(invincibleTime <= 0)
             {
-                other.GetComponent<hpSystem>().Damage(1);
+                other.GetComponent<HP>().Damage(10);
                 invincibleTime = timeBetweenHits;
             }
             
         }
+    }
+    private void OnTriggerExit2D(Collider2D other){
+        invincibleTime=timeBetweenHits;
     }
 }
