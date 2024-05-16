@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buho_0003_atack_02_0: -2598211749718637216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
