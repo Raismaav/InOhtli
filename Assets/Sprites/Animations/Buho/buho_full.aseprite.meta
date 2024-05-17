@@ -1,0 +1,645 @@
+fileFormatVersion: 2
+guid: 2a7fed51e9cf3474b97ee4e9c661be90
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638515256077419711
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: buho_full_Frame_0
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 184
+      width: 143
+      height: 79
+    spriteID: 7a6074b430abec4429fc3ef093af8b03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 184}
+  - name: buho_full_Frame_1
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.60759497}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 271
+      width: 143
+      height: 79
+    spriteID: 85d51630746f1784fb364e3f7c75cc7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 271}
+  - name: buho_full_Frame_2
+    originalName: 
+    pivot: {x: 0.49305558, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 4
+      width: 144
+      height: 79
+    spriteID: 83bb31361df93a14dae3c0b679710447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 4}
+  - name: buho_full_Frame_3
+    originalName: 
+    pivot: {x: 0.48936173, y: 0.60759497}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 880
+      width: 141
+      height: 79
+    spriteID: ce44ef5c4c7090940a9743cd646127e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 880}
+  - name: buho_full_Frame_4
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.5822785}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 358
+      width: 143
+      height: 79
+    spriteID: cf50e38544765194f976290a7d1a1ee8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 358}
+  - name: buho_full_Frame_5
+    originalName: 
+    pivot: {x: 0.62376237, y: 0.60759497}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 350
+      width: 101
+      height: 79
+    spriteID: 8a9653a55bd968c4eb47db7d08c8cba9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 350}
+  - name: buho_full_Frame_6
+    originalName: 
+    pivot: {x: 0.5754717, y: 0.5822785}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 263
+      width: 106
+      height: 79
+    spriteID: 7c7943454fe6173408b7bff8cab3ffd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 263}
+  - name: buho_full_Frame_7
+    originalName: 
+    pivot: {x: 0.48936173, y: 0.60759497}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 91
+      width: 141
+      height: 79
+    spriteID: a93c13a5816067f40a14e4bd67757bc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 91}
+  - name: buho_full_Frame_8
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 445
+      width: 143
+      height: 79
+    spriteID: 6a6fdd3ffdaab8642bf56f23b43e4e0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 445}
+  - name: buho_full_Frame_9
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 532
+      width: 143
+      height: 79
+    spriteID: e23cba82f1b8c07428d90d05140b36de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 532}
+  - name: buho_full_Frame_10
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 619
+      width: 143
+      height: 79
+    spriteID: 4b7cc3b3d3a1c5141b306bdfe4f72584
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 619}
+  - name: buho_full_Frame_11
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 706
+      width: 143
+      height: 79
+    spriteID: cae89cf4203bc094aaf9036debfe5e34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 706}
+  - name: buho_full_Frame_12
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.5731707}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 143
+      height: 82
+    spriteID: da09906f14921cf44960c93e6da8fd38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: buho_full_Frame_13
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.5731707}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 94
+      width: 143
+      height: 82
+    spriteID: 4763e732346296f4cae0805d0d9044a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 94}
+  - name: buho_full_Frame_14
+    originalName: 
+    pivot: {x: 0.48951048, y: 0.59493667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 793
+      width: 143
+      height: 79
+    spriteID: db1f9759457e25a4bbf36fd2f1f58dd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 793}
+  - name: buho_full_Frame_15
+    originalName: 
+    pivot: {x: 0.45614034, y: 0.6103896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 178
+      width: 114
+      height: 77
+    spriteID: 72e2f4128a4e9ac468cedc06c1e083e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 178}
+  - name: buho_full_Frame_16
+    originalName: 
+    pivot: {x: 0.49056602, y: 0.5890411}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 437
+      width: 106
+      height: 73
+    spriteID: 3533c65cb6b81d1429eeb6ada11a22fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 437}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 357856202
+    name: buho_full
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: buho_full_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: 7a6074b430abec4429fc3ef093af8b03
+    - name: buho_full_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 10
+        y: 32
+        width: 143
+        height: 79
+      spriteId: 85d51630746f1784fb364e3f7c75cc7e
+    - name: buho_full_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 9
+        y: 33
+        width: 144
+        height: 79
+      spriteId: 83bb31361df93a14dae3c0b679710447
+    - name: buho_full_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 11
+        y: 32
+        width: 141
+        height: 79
+      spriteId: ce44ef5c4c7090940a9743cd646127e7
+    - name: buho_full_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 10
+        y: 34
+        width: 143
+        height: 79
+      spriteId: cf50e38544765194f976290a7d1a1ee8
+    - name: buho_full_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 17
+        y: 32
+        width: 101
+        height: 79
+      spriteId: 8a9653a55bd968c4eb47db7d08c8cba9
+    - name: buho_full_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 19
+        y: 34
+        width: 106
+        height: 79
+      spriteId: 7c7943454fe6173408b7bff8cab3ffd3
+    - name: buho_full_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 11
+        y: 32
+        width: 141
+        height: 79
+      spriteId: a93c13a5816067f40a14e4bd67757bc1
+    - name: buho_full_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: 6a6fdd3ffdaab8642bf56f23b43e4e0c
+    - name: buho_full_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: e23cba82f1b8c07428d90d05140b36de
+    - name: buho_full_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: 4b7cc3b3d3a1c5141b306bdfe4f72584
+    - name: buho_full_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: cae89cf4203bc094aaf9036debfe5e34
+    - name: buho_full_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 82
+      spriteId: da09906f14921cf44960c93e6da8fd38
+    - name: buho_full_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 82
+      spriteId: 4763e732346296f4cae0805d0d9044a4
+    - name: buho_full_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 10
+        y: 33
+        width: 143
+        height: 79
+      spriteId: db1f9759457e25a4bbf36fd2f1f58dd7
+    - name: buho_full_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 28
+        y: 33
+        width: 114
+        height: 77
+      spriteId: 72e2f4128a4e9ac468cedc06c1e083e0
+    - name: buho_full_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 28
+        y: 37
+        width: 106
+        height: 73
+      spriteId: 3533c65cb6b81d1429eeb6ada11a22fa
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 160, y: 160}
