@@ -12,6 +12,7 @@ public class BasicDevelopEnemy : MonoBehaviour
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
+
     void Start()
     {
         anim=GetComponent<Animator>();
@@ -20,14 +21,26 @@ public class BasicDevelopEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1")){
+        /*if(Input.GetButtonDown("Fire1")){
             anim.SetTrigger("AttackTrigger");
-        }
+        }*/
     }
-    private void RatAttack(){
-
+    public void RatAttack(){
+        anim.SetTrigger("AttackTrigger");
     }
-    private void OnDrawGizmos(){
+    public void RarRun(){
+        anim.SetTrigger("AttackTrigger");
+    }
+    public void RarWalk(){
+        if(anim.GetBool("Walk")){
+            anim.SetBool("Walk",false);
+        }else
+        anim.SetBool("Walk",true);
+    }
+    public void RatDead(){
+        anim.SetTrigger("DIE");
+    }
+    public void OnDrawGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);
     }
