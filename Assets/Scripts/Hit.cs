@@ -10,16 +10,12 @@ public class Hit : MonoBehaviour
         invincibleTime=timeBetweenHits;
     }
     private void OnTriggerStay2D(Collider2D other) {
-        if (other.CompareTag("Player"))
-        {
             invincibleTime -= Time.deltaTime;
             if(invincibleTime <= 0)
             {
                 other.GetComponent<HP>().Damage(10);
                 invincibleTime = timeBetweenHits;
             }
-            
-        }
     }
     private void OnTriggerExit2D(Collider2D other){
         invincibleTime=timeBetweenHits;

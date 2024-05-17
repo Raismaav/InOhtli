@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class TestButtonAttack : MonoBehaviour
 {
-   [SerializeField] BasicDevelopEnemy bde;
+   [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO;
     private OnMouseEnter Eveaf;
 
     void OnMouseDown()
     {
-        bde.RatAttack();
+        bdeRAT.RatAttack();
+        bdeBUHO.BuhoAttack();
     }
 }

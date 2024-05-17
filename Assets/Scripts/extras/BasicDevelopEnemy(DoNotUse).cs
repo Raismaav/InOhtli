@@ -5,6 +5,7 @@ using UnityEngine;
 public class BasicDevelopEnemy : MonoBehaviour
 {
     Animator anim;
+    [SerializeField] Animator PivotAnim;
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
     [SerializeField] private float AttackRadio;
@@ -25,8 +26,10 @@ public class BasicDevelopEnemy : MonoBehaviour
             anim.SetTrigger("AttackTrigger");
         }*/
     }
+    //RAT---------------------------------------
     public void RatAttack(){
         anim.SetTrigger("AttackTrigger");
+        PivotAnim.SetTrigger("Attack");
     }
     public void RarRun(){
         anim.SetTrigger("AttackTrigger");
@@ -40,6 +43,20 @@ public class BasicDevelopEnemy : MonoBehaviour
     public void RatDead(){
         anim.SetTrigger("DIE");
     }
+    //BUHO-------------------------------------
+    public void BuhoAttack(){
+        anim.SetTrigger("AttackTrigger");
+    }
+    public void BuhoFly(){
+        if(anim.GetBool("Fly")){
+            anim.SetBool("Fly",false);
+        }else
+        anim.SetBool("Fly",true);
+    }
+    public void BuhoDead(){
+        anim.SetTrigger("DIE");
+    }
+    //-----------------------------------
     public void OnDrawGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);

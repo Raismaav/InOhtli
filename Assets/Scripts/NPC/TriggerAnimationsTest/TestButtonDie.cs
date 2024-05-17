@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestButtonWalk : MonoBehaviour
+public class TestButtonDie : MonoBehaviour
 {
-    [SerializeField] BasicDevelopEnemy bde;
+   
+    [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO;
     void OnMouseDown()
     {
-        bde.RarWalk();
+        bdeRAT.RatDead();
+        bdeBUHO.RatDead();
     }
 }

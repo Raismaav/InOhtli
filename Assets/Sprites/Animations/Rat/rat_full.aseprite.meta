@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: rat_full_Frame_0
     originalName: 
-    pivot: {x: 0.90000004, y: 0.40909094}
+    pivot: {x: 0.90000004, y: 0.4318182}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -401,7 +401,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 137}
   - name: rat_full_Frame_14
     originalName: 
-    pivot: {x: 0.90000004, y: 0.39534885}
+    pivot: {x: 0.90000004, y: 0.41860464}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -441,7 +441,7 @@ ScriptedImporter:
     uvTransform: {x: 132, y: 362}
   - name: rat_full_Frame_16
     originalName: 
-    pivot: {x: 0.90000004, y: 0.39534885}
+    pivot: {x: 0.90000004, y: 0.41860464}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -481,7 +481,7 @@ ScriptedImporter:
     uvTransform: {x: 388, y: 362}
   - name: rat_full_Frame_18
     originalName: 
-    pivot: {x: 0.90000004, y: 0.39534885}
+    pivot: {x: 0.90000004, y: 0.41860464}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -501,7 +501,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 413}
   - name: rat_full_Frame_19
     originalName: 
-    pivot: {x: 0.90000004, y: 0.39534885}
+    pivot: {x: 0.90000004, y: 0.41860464}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -521,7 +521,7 @@ ScriptedImporter:
     uvTransform: {x: 132, y: 413}
   - name: rat_full_Frame_20
     originalName: 
-    pivot: {x: 0.90000004, y: 0.4047619}
+    pivot: {x: 0.90000004, y: 0.42857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -561,7 +561,7 @@ ScriptedImporter:
     uvTransform: {x: 143, y: 137}
   - name: rat_full_Frame_22
     originalName: 
-    pivot: {x: 0.9016393, y: 0.40909094}
+    pivot: {x: 0.9016393, y: 0.4318182}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -581,7 +581,7 @@ ScriptedImporter:
     uvTransform: {x: 272, y: 137}
   - name: rat_full_Frame_23
     originalName: 
-    pivot: {x: 0.9008264, y: 0.36585364}
+    pivot: {x: 0.9008264, y: 0.41463414}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
