@@ -10,16 +10,24 @@ public class HP : mov
     [SerializeField] private float CurrentHealth;
     [SerializeField] private float MaxHealth;
     protected bool Live=true;
+    public float invincibleTime;
+    
+    [SerializeField] protected float invincibleDuration;
+    
 
     public void Damage(float DamageValue,Transform tr,float HitForce)
     {
-        CurrentHealth -= DamageValue;
-        Vector2 KnockbackDirection=transform.position-tr.position;
-        rb.AddForce(KnockbackDirection*HitForce);
-        if (CurrentHealth <= 0 )
+        if(invincibleTime <= 0)
         {
-            Live=false;
+            CurrentHealth -= DamageValue;
+            Vector2 KnockbackDirection=transform.position-tr.position;
+            rb.AddForce(KnockbackDirection*HitForce);
+            invincibleTime=invincibleDuration;
         }
+        if (CurrentHealth <= 0 )
+            {
+                Live=false;
+            }
     }
 
     public void Cure(float CureValue)

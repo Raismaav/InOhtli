@@ -17,6 +17,7 @@ public class Player : hpSystem
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
+
     [Header("Habilities settings")]
     [SerializeField] private GameObject HabBarGO;
     private HablityBarControllerSlider HabBar;
@@ -29,6 +30,7 @@ public class Player : hpSystem
     [SerializeField]private float DashTime;
     [SerializeField]private float DashSpeed,DashVerticalSpeed;
     [SerializeField]private Slider BarritaParaVerLaCarga;
+    
 
     void Start()
     {
@@ -36,10 +38,13 @@ public class Player : hpSystem
         animator = GetComponent<Animator>();
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
         setstartingValue(getCurrentHP());
+        invincibleTime=invincibleDuration;
     }
    void Update()
     {
-        
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
             if (Input.GetButton("Jump"))
@@ -92,6 +97,8 @@ public class Player : hpSystem
             BarritaParaVerLaCarga.value= TimeCharge;
         }
         if(!Live){
+            rb.velocityX=0;
+            rb.velocityY=0;
             Destroy(gameObject);
         }
     }
