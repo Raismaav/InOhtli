@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class HP : mov
@@ -10,10 +11,11 @@ public class HP : mov
     [SerializeField] private float MaxHealth;
     protected bool Live=true;
 
-    public void Damage(float DamageValue)
+    public void Damage(float DamageValue,Transform tr,float HitForce)
     {
         CurrentHealth -= DamageValue;
-        Debug.Log(CurrentHealth);
+        Vector2 KnockbackDirection=transform.position-tr.position;
+        rb.AddForce(KnockbackDirection*HitForce);
         if (CurrentHealth <= 0 )
         {
             Live=false;

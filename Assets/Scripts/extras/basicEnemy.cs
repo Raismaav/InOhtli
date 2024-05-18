@@ -9,7 +9,6 @@ using UnityEngine.XR;
 public class basicEnemy : HP
 {
     [Header("Enemy Settings")]
-    public GameObject target;
     public LayerMask belowLayer;
     public LayerMask frontLayer;
     public float belowDistance;
@@ -28,6 +27,7 @@ public class basicEnemy : HP
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
+    [SerializeField] private float KBHitForece;
 
 
     
@@ -38,8 +38,7 @@ public class basicEnemy : HP
     }
     void Update()
     {
-        Move(HorizontalMovement,false);
-
+        //Move(HorizontalMovement,false);
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         if(TimeNextAttack>0){
@@ -71,7 +70,7 @@ public class basicEnemy : HP
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
-                colition.transform.GetComponent<HP>().Damage(AttackDamage);
+                colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
             }
         }

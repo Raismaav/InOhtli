@@ -13,7 +13,7 @@ public class Hit : MonoBehaviour
             invincibleTime -= Time.deltaTime;
             if(invincibleTime <= 0)
             {
-                other.GetComponent<HP>().Damage(10);
+                other.GetComponent<HP>().Damage(10,transform,0);
                 invincibleTime = timeBetweenHits;
             }
     }

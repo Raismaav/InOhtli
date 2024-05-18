@@ -16,14 +16,16 @@ public class Player : hpSystem
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
+    [SerializeField] private float KBHitForece;
     [Header("Habilities settings")]
-    [SerializeField] private HablityBarControllerSlider HabBar;
+    [SerializeField] private GameObject HabBarGO;
+    private HablityBarControllerSlider HabBar;
 
     [Header("Dash Settings")]
     [SerializeField] private float MaxCharge;
     [SerializeField] private float TimeCharge;
     
-    private bool canDash=true;
+    private bool canDash=false;
     [SerializeField]private float DashTime;
     [SerializeField]private float DashSpeed,DashVerticalSpeed;
     [SerializeField]private Slider BarritaParaVerLaCarga;
@@ -32,6 +34,7 @@ public class Player : hpSystem
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
         setstartingValue(getCurrentHP());
     }
    void Update()
@@ -39,9 +42,13 @@ public class Player : hpSystem
         
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButton("Jump"))
             {
                 jump = true;
+            }
+            if (Input.GetButtonUp("Jump"))
+            {
+                cancelljump();
             }
             
             if(Input.GetButtonDown("Fire1") && TimeNextAttack <=0){
@@ -92,7 +99,7 @@ public class Player : hpSystem
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Enemigo")){
-                colition.transform.GetComponent<HP>().Damage(AttackDamage);
+                colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
             }
         }
     }
@@ -128,6 +135,10 @@ public class Player : hpSystem
         PauseMenu.SetActive(false);
         InterfacePaused.SetActive(!InterfacePaused.activeSelf);
         InPause = false;
+    }
+    public void unlockdash(){
+        canDash=true;
+        HabBarGO.SetActive(true);
     }
     private void OnDrawGizmos(){
         Gizmos.color = Color.blue;

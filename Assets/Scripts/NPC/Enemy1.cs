@@ -11,6 +11,7 @@ public class Enemy1 : HP
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
+    [SerializeField] private float KBHitForece;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,7 +40,7 @@ public class Enemy1 : HP
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
-                colition.transform.GetComponent<HP>().Damage(AttackDamage);
+                colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
             }
         }
