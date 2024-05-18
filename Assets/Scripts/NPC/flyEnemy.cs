@@ -41,18 +41,20 @@ public class flyEnemy : HP
     // Update is called once per frame
     void Update()
     {
-        distancex = player.transform.position.x - transform.position.x;
-        distancey = player.transform.position.y - transform.position.y;
-        distanceRetreatx = retreat.transform.position.x - transform.position.x;
-        distanceRetreaty = retreat.transform.position.y - transform.position.y;
-        if(distancex < detectionRatio && distancex > -1*detectionRatio && distancey < detectionRatio && distancey > -1*detectionRatio){
-            route(distancex,distancey);
-        }else if(distanceRetreatx > 1 || distanceRetreatx < -1){
-            route(distanceRetreatx,distanceRetreaty);
-        }
-        else {
-            VerticalMovement=0;
-            HorizontalMovement=0;
+        if(!player.IsDestroyed()){
+            distancex = player.transform.position.x - transform.position.x;
+            distancey = player.transform.position.y - transform.position.y;
+            distanceRetreatx = retreat.transform.position.x - transform.position.x;
+            distanceRetreaty = retreat.transform.position.y - transform.position.y;
+            if(distancex < detectionRatio && distancex > -1*detectionRatio && distancey < detectionRatio && distancey > -1*detectionRatio){
+                route(distancex,distancey);
+            }else if(distanceRetreatx > 1 || distanceRetreatx < -1){
+                route(distanceRetreatx,distanceRetreaty);
+            }
+            else {
+                VerticalMovement=0;
+                HorizontalMovement=0;
+            }
         }
         //HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         //VerticalMovement = Input.GetAxisRaw("Vertical") * MoveSpeed;

@@ -37,15 +37,17 @@ public class mov : MonoBehaviour
             if(canFly){
                 MoveVerticaly(VerticalMovement*Time.deltaTime);
             }
+
             jump = false;
         }
     }
 
     public void Move(float move,bool jump)
     {
-        Vector3 velocidadObjetivo = new Vector2(move,rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo,ref velocidad,Smooth);
-
+        if(canMove){
+            Vector3 velocidadObjetivo = new Vector2(move,rb.velocity.y);
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo,ref velocidad,Smooth);
+        }
         if (move>0 && !LD)
         {
             Turn();
@@ -83,5 +85,11 @@ public class mov : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += Vector2.up * JumpForce;
+    }
+    public void cancelljump(){
+        if(rb.velocityY>0){
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.velocity += Vector2.up * 0.5F;
+        }
     }
 }

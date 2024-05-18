@@ -23,7 +23,9 @@ public class Boss : hpSystem
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
+    [SerializeField] private float KBHitForece;
     private bool ActiveIA=false;
+    [SerializeField] private Player p;
 
     void Start()
     {
@@ -33,7 +35,7 @@ public class Boss : hpSystem
     void Update()
     {
         if(ActiveIA){
-            Move(HorizontalMovement,false);
+            //Move(HorizontalMovement,false);
             frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
             belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
             if(TimeNextAttack>0){
@@ -66,7 +68,7 @@ public class Boss : hpSystem
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
-                colition.transform.GetComponent<HP>().Damage(AttackDamage);
+                colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
             }
         }
@@ -81,6 +83,10 @@ public class Boss : hpSystem
     }
     private void trigger(){
         DoorsTiles.OpenDoor();
-        Debug.Log("Door");
+        p.unlockdash();
+    }
+    public void activate(){
+        ActiveIA=true;
+        canMove=true;
     }
 }
