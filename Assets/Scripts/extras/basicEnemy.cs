@@ -19,6 +19,7 @@ public class basicEnemy : HP
     public bool belowInfo;
     public bool frontInfo;
     public bool attackinfo;
+    private float runspeed;
 
     private bool LookToRight = false;
 
@@ -39,6 +40,7 @@ public class basicEnemy : HP
     {
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
+        runspeed=HorizontalMovement;
     }
     void Update()
     {
@@ -58,6 +60,18 @@ public class basicEnemy : HP
                 Invoke("CharacterHit",AttackDuration);
             }
             TimeNextAttack=TimeBetweenAttack;
+        }
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("run")){
+            canMove=false;
+            float FixedSpeed;
+            if(LD){
+                FixedSpeed= runspeed*1*.1f;
+            }else{
+                FixedSpeed= runspeed*-1*.1f;
+            }
+            rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
+        }else{
+            canMove=true;
         }
         if(frontInfo || !belowInfo)
         {

@@ -30,6 +30,8 @@ public class Player : hpSystem
     [SerializeField]private float DashTime;
     [SerializeField]private float DashSpeed,DashVerticalSpeed;
     [SerializeField]private Slider BarritaParaVerLaCarga;
+    [SerializeField]private ParticleSystem inchargeParticles;
+    [SerializeField]private ParticleSystem chargedParticles;
     
 
     void Start()
@@ -76,9 +78,12 @@ public class Player : hpSystem
             TimeNextAttack -= Time.deltaTime;
         }
         if(Input.GetButton("Fire3")){
-            if(TimeCharge<=MaxCharge){
+            if(TimeCharge<=MaxCharge&&canDash){
                 TimeCharge += Time.deltaTime;
                 BarritaParaVerLaCarga.value= TimeCharge;
+                inchargeParticles.Play();
+            }else if(canDash){
+                chargedParticles.Play();
             }
         }
         if(Input.GetButtonUp("Fire3")){
@@ -97,6 +102,7 @@ public class Player : hpSystem
             BarritaParaVerLaCarga.value= TimeCharge;
         }
         if(!Live){
+            canMove=false;
             rb.velocityX=0;
             rb.velocityY=0;
             Destroy(gameObject);
