@@ -12,6 +12,7 @@ public class DoorController : MonoBehaviour
     private bool closed=true;
     private bool closed2=true;
     public Tile t;
+    public Tile t2;
     void Awake(){
         doorTile=GetComponent<Tilemap>();
     }
@@ -115,18 +116,18 @@ public class DoorController : MonoBehaviour
         if(closed2){
             pos.x=255;
             pos.y=101;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
             pos.y=pos.y+1;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
             pos.y=pos.y+1;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
             pos.x=209;
             pos.y=101;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
             pos.y=pos.y+1;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
             pos.y=pos.y+1;
-            doorTile.SetTile(doorTile.WorldToCell(pos), t);
+            doorTile.SetTile(doorTile.WorldToCell(pos), t2);
         }
     }
 }

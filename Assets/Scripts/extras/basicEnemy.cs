@@ -11,12 +11,15 @@ public class basicEnemy : HP
     [Header("Enemy Settings")]
     public LayerMask belowLayer;
     public LayerMask frontLayer;
+    public LayerMask attackLayer;
     public float belowDistance;
     public float frontDistance;
     public Transform belowController;
     public Transform frontController;
     public bool belowInfo;
     public bool frontInfo;
+    public bool attackinfo;
+    private float runspeed;
 
     private bool LookToRight = false;
 
@@ -28,6 +31,7 @@ public class basicEnemy : HP
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
+    [SerializeField] Animator PivotAnim;
 
 
     
@@ -35,19 +39,40 @@ public class basicEnemy : HP
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator=GetComponent<Animator>();
+        runspeed=HorizontalMovement;
     }
     void Update()
     {
         //Move(HorizontalMovement,false);
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
         belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        animator.SetInteger("Walk",(int)HorizontalMovement);
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
         }
-        if(frontInfo && TimeNextAttack <=0){
-            Invoke("CharacterHit",AttackDuration);
-            //animator.SetTrigger("AttackTrigger");
+        if(attackinfo && TimeNextAttack <=0){
+            if(PivotAnim!=null){
+                animator.SetTrigger("AttackTrigger");
+                PivotAnim.SetTrigger("Attack");
+            }
+            else{
+                Invoke("CharacterHit",AttackDuration);
+            }
             TimeNextAttack=TimeBetweenAttack;
+        }
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("run")){
+            canMove=false;
+            float FixedSpeed;
+            if(LD){
+                FixedSpeed= runspeed*1*.1f;
+            }else{
+                FixedSpeed= runspeed*-1*.1f;
+            }
+            rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
+        }else{
+            canMove=true;
         }
         if(frontInfo || !belowInfo)
         {

@@ -12,4 +12,7 @@ public class IGController : MonoBehaviour
     public void exitGame(){
         Application.Quit();
     }
+    public void DeathContinue(){
+        SceneManager.LoadScene("Mictlan");
+    }
 }

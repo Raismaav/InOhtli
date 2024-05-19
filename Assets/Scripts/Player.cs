@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class Player : hpSystem
     [SerializeField] private bool InPause;
     [SerializeField] private GameObject PauseMenu;
     [SerializeField] private GameObject InterfacePaused;
+    [SerializeField] private GameObject DeathMenu;
+    [SerializeField] private GameObject cam;
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
     [SerializeField] private float AttackRadio;
@@ -17,6 +20,7 @@ public class Player : hpSystem
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
+
     [Header("Habilities settings")]
     [SerializeField] private GameObject HabBarGO;
     private HablityBarControllerSlider HabBar;
@@ -29,6 +33,9 @@ public class Player : hpSystem
     [SerializeField]private float DashTime;
     [SerializeField]private float DashSpeed,DashVerticalSpeed;
     [SerializeField]private Slider BarritaParaVerLaCarga;
+    [SerializeField]private ParticleSystem inchargeParticles;
+    [SerializeField]private ParticleSystem chargedParticles;
+    
 
     void Start()
     {
@@ -39,7 +46,9 @@ public class Player : hpSystem
     }
    void Update()
     {
-        
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
             if (Input.GetButton("Jump"))
@@ -71,12 +80,26 @@ public class Player : hpSystem
             TimeNextAttack -= Time.deltaTime;
         }
         if(Input.GetButton("Fire3")){
-            if(TimeCharge<=MaxCharge){
+            if(TimeCharge>=MaxCharge){
+                if(inchargeParticles.isPlaying==true){
+                    inchargeParticles.Stop();
+                    chargedParticles.Play();
+                }                
+            }else if(TimeCharge<=MaxCharge&&canDash){
+                if(TimeCharge<=0.01 && TimeCharge>=0){
+                    inchargeParticles.Play();
+                }
                 TimeCharge += Time.deltaTime;
                 BarritaParaVerLaCarga.value= TimeCharge;
             }
         }
         if(Input.GetButtonUp("Fire3")){
+            if(chargedParticles.isPlaying==true){
+                chargedParticles.Stop();
+            }
+            if(inchargeParticles.isPlaying==true){
+                inchargeParticles.Stop();
+            }
             if(TimeCharge>=MaxCharge && canDash && HabBar.CanUse()){
                 if(Input.GetButton("Vertical")){
                     StartCoroutine(Dash(DashVerticalSpeed,0.5f));
@@ -92,6 +115,9 @@ public class Player : hpSystem
             BarritaParaVerLaCarga.value= TimeCharge;
         }
         if(!Live){
+            canMove=false;
+            cam.transform.position = new Vector3(0,0,-10);
+            deathMenu();
             Destroy(gameObject);
         }
     }
@@ -122,6 +148,10 @@ public class Player : hpSystem
         canDash=true;
         rb.gravityScale=1;
     }
+    private void PlayParticles(){
+
+        chargedParticles.Play();
+    }
     private void Pause()
     {
         Time.timeScale = 0f;
@@ -139,6 +169,11 @@ public class Player : hpSystem
     public void unlockdash(){
         canDash=true;
         HabBarGO.SetActive(true);
+    }
+    public void deathMenu(){
+        DeathMenu.SetActive(true);
+        InterfacePaused.SetActive(false);
+        InPause =true;
     }
     private void OnDrawGizmos(){
         Gizmos.color = Color.blue;
