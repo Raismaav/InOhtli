@@ -40,7 +40,6 @@ public class Player : hpSystem
         animator = GetComponent<Animator>();
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
         setstartingValue(getCurrentHP());
-        invincibleTime=invincibleDuration;
     }
    void Update()
     {

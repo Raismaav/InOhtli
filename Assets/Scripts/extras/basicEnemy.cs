@@ -48,6 +48,7 @@ public class basicEnemy : HP
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
         belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        animator.SetInteger("Walk",(int)HorizontalMovement);
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
         }
