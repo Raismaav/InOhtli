@@ -36,10 +36,10 @@ namespace UnityEngine.UI
         }
         
         void Update(){
-            if((GetIsHighlighted()||select)==true){
+            if((GetIsHighlighted()/*||select*/)==true){
                 selectImage.SetActive(true);
             }
-            else if((GetIsHighlighted()&&select)==false && selectImage.activeSelf==true){
+            else if((GetIsHighlighted()/*&&select*/)==false && selectImage.activeSelf==true){
                 selectImage.SetActive(false);
             }
         }

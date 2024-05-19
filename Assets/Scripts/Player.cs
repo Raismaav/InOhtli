@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class Player : hpSystem
     [SerializeField] private bool InPause;
     [SerializeField] private GameObject PauseMenu;
     [SerializeField] private GameObject InterfacePaused;
+    [SerializeField] private GameObject DeathMenu;
+    [SerializeField] private GameObject cam;
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
     [SerializeField] private float AttackRadio;
@@ -113,8 +116,8 @@ public class Player : hpSystem
         }
         if(!Live){
             canMove=false;
-            rb.velocityX=0;
-            rb.velocityY=0;
+            cam.transform.position = new Vector3(0,0,-10);
+            deathMenu();
             Destroy(gameObject);
         }
     }
@@ -166,6 +169,11 @@ public class Player : hpSystem
     public void unlockdash(){
         canDash=true;
         HabBarGO.SetActive(true);
+    }
+    public void deathMenu(){
+        DeathMenu.SetActive(true);
+        InterfacePaused.SetActive(false);
+        InPause =true;
     }
     private void OnDrawGizmos(){
         Gizmos.color = Color.blue;
