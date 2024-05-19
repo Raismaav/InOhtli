@@ -1,0 +1,1431 @@
+fileFormatVersion: 2
+guid: 4b286112e28d53541ba52492703872ae
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: DED
+    second: {fileID: 7400000, guid: 1061df3425bd4a842882fffa5009c5be, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: attack
+    second: {fileID: 7400000, guid: b397624dcfbfb4c4390056fc4ce65eec, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: fall
+    second: {fileID: 7400000, guid: cd2519091f557b743969f4356541d30a, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: idle
+    second: {fileID: 7400000, guid: 41bb878f68806504cb1de01914875329, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: jump
+    second: {fileID: 7400000, guid: f541483f230293c4e8347b1b1ff7611c, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk
+    second: {fileID: 7400000, guid: 9e43db0998c9f294894c507df32ee579, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638517252058534804
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: jaguar_0002_Frame_0
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 567
+      width: 88
+      height: 62
+    spriteID: be71cfefc82872a4fa81f6dd3115d8fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 567}
+  - name: jaguar_0002_Frame_1
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.4918033}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 163
+      width: 88
+      height: 61
+    spriteID: f2ccb3c207ecd0449bea752f10daca47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 163}
+  - name: jaguar_0002_Frame_2
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 637
+      width: 88
+      height: 62
+    spriteID: 4b9aec1671dd5cd4589ccb906bc56a56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 637}
+  - name: jaguar_0002_Frame_3
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.4918033}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 232
+      width: 88
+      height: 61
+    spriteID: 74e2e6b323251dd4dbba84337afafded
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 232}
+  - name: jaguar_0002_Frame_4
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 707
+      width: 88
+      height: 62
+    spriteID: e1aca6c5b8afd23498ae47ffd4d80f4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 707}
+  - name: jaguar_0002_Frame_5
+    originalName: 
+    pivot: {x: 0.57978725, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 217
+      width: 94
+      height: 62
+    spriteID: f9f453c9db1af344ab3fc24e98fff2b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 217}
+  - name: jaguar_0002_Frame_6
+    originalName: 
+    pivot: {x: 0.5842105, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 95
+      height: 62
+    spriteID: 6018e56e3d19f3c46b6114e691ceec2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: jaguar_0002_Frame_7
+    originalName: 
+    pivot: {x: 0.5706522, y: 0.60975605}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 92
+      height: 82
+    spriteID: 7aed510c7d290464b952ee3271677fd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: jaguar_0002_Frame_8
+    originalName: 
+    pivot: {x: 0.57978725, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 287
+      width: 94
+      height: 62
+    spriteID: 69ca33516ea9e1d4f80b62a70a3de8a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 287}
+  - name: jaguar_0002_Frame_9
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 777
+      width: 88
+      height: 62
+    spriteID: 30e1e4c7920dae846b8f6022a06bd054
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 777}
+  - name: jaguar_0002_Frame_10
+    originalName: 
+    pivot: {x: 0.57978725, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 357
+      width: 94
+      height: 62
+    spriteID: 0d23e27ab79c64d40ba4033a753646ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 357}
+  - name: jaguar_0002_Frame_11
+    originalName: 
+    pivot: {x: 0.5706522, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 497
+      width: 92
+      height: 62
+    spriteID: 57f5e4f6cdcf57b4f8870c6731b11d5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 497}
+  - name: jaguar_0002_Frame_12
+    originalName: 
+    pivot: {x: 0.5842105, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 74
+      width: 95
+      height: 62
+    spriteID: 7fa954a18c20d234bb2aa6c97a5eec19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 74}
+  - name: jaguar_0002_Frame_13
+    originalName: 
+    pivot: {x: 0.57978725, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 427
+      width: 94
+      height: 62
+    spriteID: 944b0722dcdbcb5418e2a19278c48090
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 427}
+  - name: jaguar_0002_Frame_14
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 847
+      width: 88
+      height: 62
+    spriteID: 0a1fcb62e8a7cdf49a68c573f88a747d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 847}
+  - name: jaguar_0002_Frame_15
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 917
+      width: 88
+      height: 62
+    spriteID: 828e411b04b331f4a9b832ea92fce8d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 917}
+  - name: jaguar_0002_Frame_16
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 136
+      width: 88
+      height: 62
+    spriteID: f982da2ddb2ac8247ba70196f627c73d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 136}
+  - name: jaguar_0002_Frame_17
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 206
+      width: 88
+      height: 62
+    spriteID: d4c0c2a132f177e42b44e368eba7c1a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 206}
+  - name: jaguar_0002_Frame_18
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 276
+      width: 88
+      height: 62
+    spriteID: f245e6daf2af3054ebfa0b0c803c9bfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 276}
+  - name: jaguar_0002_Frame_19
+    originalName: 
+    pivot: {x: 0.5738636, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 346
+      width: 88
+      height: 62
+    spriteID: a474269c97c81be45b3d8a4bca98b24f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 346}
+  - name: jaguar_0002_Frame_20
+    originalName: 
+    pivot: {x: 0.59659094, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 301
+      width: 88
+      height: 60
+    spriteID: 7dcbe6cb45614d04482b0d9f5858670b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 301}
+  - name: jaguar_0002_Frame_21
+    originalName: 
+    pivot: {x: 0.6510417, y: 0.5172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 4
+      width: 96
+      height: 58
+    spriteID: e1bfdb0b7777a1748b57b64fa31aac53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 4}
+  - name: jaguar_0002_Frame_22
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 369
+      width: 88
+      height: 60
+    spriteID: 089454bf728b8274c83ca6d0ca6ea025
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 369}
+  - name: jaguar_0002_Frame_23
+    originalName: 
+    pivot: {x: 0.5574713, y: 0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 709
+      width: 87
+      height: 60
+    spriteID: 9e4ed573427189646b67c8a0e3d08f2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 709}
+  - name: jaguar_0002_Frame_24
+    originalName: 
+    pivot: {x: 0.54494387, y: 0.4754098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 94
+      width: 89
+      height: 61
+    spriteID: de1325c56ac6100489c8b2bfdc8c7742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 94}
+  - name: jaguar_0002_Frame_25
+    originalName: 
+    pivot: {x: 0.5388889, y: 0.47692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 144
+      width: 90
+      height: 65
+    spriteID: f272870602dd4bd46b3d6281b0317303
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 144}
+  - name: jaguar_0002_Frame_26
+    originalName: 
+    pivot: {x: 0.5625, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 416
+      width: 88
+      height: 62
+    spriteID: 7babbfeb07f1a44428e3d7ee9335dee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 416}
+  - name: jaguar_0002_Frame_27
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 486
+      width: 88
+      height: 62
+    spriteID: dd1ae679fb1a27440a47083d8f55e7be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 486}
+  - name: jaguar_0002_Frame_28
+    originalName: 
+    pivot: {x: 0.5625, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 556
+      width: 88
+      height: 62
+    spriteID: 272962bb6dbe7984e851d439a8caea1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 556}
+  - name: jaguar_0002_Frame_29
+    originalName: 
+    pivot: {x: 0.53365386, y: 0.55102044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 4
+      width: 104
+      height: 49
+    spriteID: c3340f13fe982264e9b209023accb68e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 4}
+  - name: jaguar_0002_Frame_30
+    originalName: 
+    pivot: {x: 0.53365386, y: 0.7105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 112
+      width: 104
+      height: 38
+    spriteID: 587b101ac2f4beb4fbb7cbfae88507fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 112}
+  - name: jaguar_0002_Frame_31
+    originalName: 
+    pivot: {x: 0.53365386, y: 0.7906977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 61
+      width: 104
+      height: 43
+    spriteID: 9f7cd41712d068741be6cd02d7bad857
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 61}
+  - name: jaguar_0002_Frame_32
+    originalName: 
+    pivot: {x: 0.47435898, y: 1.2142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 158
+      width: 117
+      height: 28
+    spriteID: 1d4f15ea9a7f3e949ba5d25f300a3e1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 158}
+  - name: jaguar_0002_Frame_33
+    originalName: 
+    pivot: {x: 0.47844827, y: 2.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 194
+      width: 116
+      height: 12
+    spriteID: 1069eaeadd9b4b740a0ac961d8b10c79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 194}
+  - name: jaguar_0002_Frame_34
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 626
+      width: 88
+      height: 62
+    spriteID: 28cda0217731d6b40b47b279b359e08e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 626}
+  - name: jaguar_0002_Frame_35
+    originalName: 
+    pivot: {x: 0.5738636, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 696
+      width: 88
+      height: 62
+    spriteID: 18b0968fb410fe9488a1b1f0b3a6f4c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 696}
+  - name: jaguar_0002_Frame_36
+    originalName: 
+    pivot: {x: 0.59659094, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 437
+      width: 88
+      height: 60
+    spriteID: 0ae601c9c95161343a83e051af9c8e00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 437}
+  - name: jaguar_0002_Frame_37
+    originalName: 
+    pivot: {x: 0.6510417, y: 0.5172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 70
+      width: 96
+      height: 58
+    spriteID: bfc534f3007e95f40a4a898058235bd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 70}
+  - name: jaguar_0002_Frame_38
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 505
+      width: 88
+      height: 60
+    spriteID: 6f338d30abfa2cb4b99f32128294eb9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 505}
+  - name: jaguar_0002_Frame_39
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 573
+      width: 88
+      height: 60
+    spriteID: 18401eeea2e3cc34cb65a4d2c7a0f918
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 573}
+  - name: jaguar_0002_Frame_40
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 641
+      width: 88
+      height: 60
+    spriteID: 70384dc3456235341acff93e554fb568
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 641}
+  - name: jaguar_0002_Frame_41
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 766
+      width: 88
+      height: 62
+    spriteID: 6508365cc4cb497448f6e34501130e74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 766}
+  - name: jaguar_0002_Frame_42
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 836
+      width: 88
+      height: 62
+    spriteID: 3cf261e9779e95e4fb1d7a8abd61e257
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 836}
+  - name: jaguar_0002_Frame_43
+    originalName: 
+    pivot: {x: 0.5511364, y: 0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 207
+      y: 906
+      width: 88
+      height: 62
+    spriteID: 2f44b8dad9a333941ba71197c7016a04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 207, y: 906}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1774068217
+    name: jaguar_0002
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: jaguar_0002_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: be71cfefc82872a4fa81f6dd3115d8fc
+    - name: jaguar_0002_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 61
+      spriteId: f2ccb3c207ecd0449bea752f10daca47
+    - name: jaguar_0002_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 4b9aec1671dd5cd4589ccb906bc56a56
+    - name: jaguar_0002_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 61
+      spriteId: 74e2e6b323251dd4dbba84337afafded
+    - name: jaguar_0002_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: e1aca6c5b8afd23498ae47ffd4d80f4b
+    - name: jaguar_0002_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 8
+        y: 4
+        width: 94
+        height: 62
+      spriteId: f9f453c9db1af344ab3fc24e98fff2b4
+    - name: jaguar_0002_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 7
+        y: 4
+        width: 95
+        height: 62
+      spriteId: 6018e56e3d19f3c46b6114e691ceec2a
+    - name: jaguar_0002_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 10
+        y: -16
+        width: 92
+        height: 82
+      spriteId: 7aed510c7d290464b952ee3271677fd1
+    - name: jaguar_0002_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 4
+        width: 94
+        height: 62
+      spriteId: 69ca33516ea9e1d4f80b62a70a3de8a6
+    - name: jaguar_0002_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 30e1e4c7920dae846b8f6022a06bd054
+    - name: jaguar_0002_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 4
+        width: 94
+        height: 62
+      spriteId: 0d23e27ab79c64d40ba4033a753646ff
+    - name: jaguar_0002_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 10
+        y: 4
+        width: 92
+        height: 62
+      spriteId: 57f5e4f6cdcf57b4f8870c6731b11d5a
+    - name: jaguar_0002_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 4
+        width: 95
+        height: 62
+      spriteId: 7fa954a18c20d234bb2aa6c97a5eec19
+    - name: jaguar_0002_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 8
+        y: 4
+        width: 94
+        height: 62
+      spriteId: 944b0722dcdbcb5418e2a19278c48090
+    - name: jaguar_0002_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 0a1fcb62e8a7cdf49a68c573f88a747d
+    - name: jaguar_0002_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 828e411b04b331f4a9b832ea92fce8d9
+    - name: jaguar_0002_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: f982da2ddb2ac8247ba70196f627c73d
+    - name: jaguar_0002_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: d4c0c2a132f177e42b44e368eba7c1a8
+    - name: jaguar_0002_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: f245e6daf2af3054ebfa0b0c803c9bfe
+    - name: jaguar_0002_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 12
+        y: 4
+        width: 88
+        height: 62
+      spriteId: a474269c97c81be45b3d8a4bca98b24f
+    - name: jaguar_0002_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 10
+        y: 4
+        width: 88
+        height: 60
+      spriteId: 7dcbe6cb45614d04482b0d9f5858670b
+    - name: jaguar_0002_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 4
+        width: 96
+        height: 58
+      spriteId: e1bfdb0b7777a1748b57b64fa31aac53
+    - name: jaguar_0002_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 14
+        y: 6
+        width: 88
+        height: 60
+      spriteId: 089454bf728b8274c83ca6d0ca6ea025
+    - name: jaguar_0002_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 14
+        y: 6
+        width: 87
+        height: 60
+      spriteId: 9e4ed573427189646b67c8a0e3d08f2d
+    - name: jaguar_0002_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 14
+        y: 5
+        width: 89
+        height: 61
+      spriteId: de1325c56ac6100489c8b2bfdc8c7742
+    - name: jaguar_0002_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 14
+        y: 3
+        width: 90
+        height: 65
+      spriteId: f272870602dd4bd46b3d6281b0317303
+    - name: jaguar_0002_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 13
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 7babbfeb07f1a44428e3d7ee9335dee5
+    - name: jaguar_0002_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: dd1ae679fb1a27440a47083d8f55e7be
+    - name: jaguar_0002_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 13
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 272962bb6dbe7984e851d439a8caea1d
+    - name: jaguar_0002_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 7
+        y: 7
+        width: 104
+        height: 49
+      spriteId: c3340f13fe982264e9b209023accb68e
+    - name: jaguar_0002_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 7
+        y: 7
+        width: 104
+        height: 38
+      spriteId: 587b101ac2f4beb4fbb7cbfae88507fb
+    - name: jaguar_0002_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 7
+        y: 0
+        width: 104
+        height: 43
+      spriteId: 9f7cd41712d068741be6cd02d7bad857
+    - name: jaguar_0002_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 7
+        y: 0
+        width: 117
+        height: 28
+      spriteId: 1d4f15ea9a7f3e949ba5d25f300a3e1b
+    - name: jaguar_0002_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 7
+        y: 0
+        width: 116
+        height: 12
+      spriteId: 1069eaeadd9b4b740a0ac961d8b10c79
+    - name: jaguar_0002_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 28cda0217731d6b40b47b279b359e08e
+    - name: jaguar_0002_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 12
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 18b0968fb410fe9488a1b1f0b3a6f4c1
+    - name: jaguar_0002_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 10
+        y: 4
+        width: 88
+        height: 60
+      spriteId: 0ae601c9c95161343a83e051af9c8e00
+    - name: jaguar_0002_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 4
+        width: 96
+        height: 58
+      spriteId: bfc534f3007e95f40a4a898058235bd2
+    - name: jaguar_0002_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 14
+        y: 6
+        width: 88
+        height: 60
+      spriteId: 6f338d30abfa2cb4b99f32128294eb9d
+    - name: jaguar_0002_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 14
+        y: 6
+        width: 88
+        height: 60
+      spriteId: 18401eeea2e3cc34cb65a4d2c7a0f918
+    - name: jaguar_0002_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 14
+        y: 6
+        width: 88
+        height: 60
+      spriteId: 70384dc3456235341acff93e554fb568
+    - name: jaguar_0002_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 6508365cc4cb497448f6e34501130e74
+    - name: jaguar_0002_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 3cf261e9779e95e4fb1d7a8abd61e257
+    - name: jaguar_0002_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 14
+        y: 4
+        width: 88
+        height: 62
+      spriteId: 2f44b8dad9a333941ba71197c7016a04
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 125, y: 68}

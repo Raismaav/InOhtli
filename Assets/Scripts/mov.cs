@@ -21,7 +21,7 @@ public class mov : MonoBehaviour
     [SerializeField] private LayerMask Floor;
     [SerializeField] protected Transform OperadorSuelo;
     [SerializeField] protected Vector3 dimensionesCaja;
-    [SerializeField] private bool inFloor;
+    [SerializeField] protected bool inFloor;
     protected bool jump=false;
     
     protected bool canMove=true;
