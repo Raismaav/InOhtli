@@ -116,9 +116,8 @@ public class Player : hpSystem
         }
         if(!Live){
             canMove=false;
-            cam.transform.position = new Vector3(0,0,-10);
             deathMenu();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
     private void CharacterHit(){
