@@ -77,15 +77,26 @@ public class Player : hpSystem
             TimeNextAttack -= Time.deltaTime;
         }
         if(Input.GetButton("Fire3")){
-            if(TimeCharge<=MaxCharge&&canDash){
+            if(TimeCharge>=MaxCharge){
+                if(inchargeParticles.isPlaying==true){
+                    inchargeParticles.Stop();
+                    chargedParticles.Play();
+                }                
+            }else if(TimeCharge<=MaxCharge&&canDash){
+                if(TimeCharge<=0.01 && TimeCharge>=0){
+                    inchargeParticles.Play();
+                }
                 TimeCharge += Time.deltaTime;
                 BarritaParaVerLaCarga.value= TimeCharge;
-                inchargeParticles.Play();
-            }else if(canDash){
-                chargedParticles.Play();
             }
         }
         if(Input.GetButtonUp("Fire3")){
+            if(chargedParticles.isPlaying==true){
+                chargedParticles.Stop();
+            }
+            if(inchargeParticles.isPlaying==true){
+                inchargeParticles.Stop();
+            }
             if(TimeCharge>=MaxCharge && canDash && HabBar.CanUse()){
                 if(Input.GetButton("Vertical")){
                     StartCoroutine(Dash(DashVerticalSpeed,0.5f));
@@ -133,6 +144,10 @@ public class Player : hpSystem
         canMove=true;
         canDash=true;
         rb.gravityScale=1;
+    }
+    private void PlayParticles(){
+
+        chargedParticles.Play();
     }
     private void Pause()
     {
