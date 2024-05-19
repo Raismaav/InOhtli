@@ -87,9 +87,8 @@ public class mov : MonoBehaviour
         rb.velocity += Vector2.up * JumpForce;
     }
     public void cancelljump(){
-        if(rb.velocityY>0){
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.velocity += Vector2.up * 0.5F;
+        if(rb.velocityY>2){
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*.5f);
         }
     }
 }
