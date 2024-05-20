@@ -5,10 +5,11 @@ using UnityEngine;
 public class TestButtonDie : MonoBehaviour
 {
    
-    [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO;
+    [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO,bdeJ;
     void OnMouseDown()
     {
         bdeRAT.RatDead();
         bdeBUHO.RatDead();
+        bdeJ.JaguarDead();
     }
 }

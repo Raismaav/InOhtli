@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 44bd77f5fac80cf4ea24425812fa4110
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9130601478333110504
+    second: Humo_0
+  - first:
+      213: -1847898759726014755
+    second: Humo_1
+  - first:
+      213: -225889267755970480
+    second: Humo_2
+  - first:
+      213: -1402518684833654203
+    second: Humo_3
+  - first:
+      213: 1093560981066786614
+    second: Humo_4
+  - first:
+      213: -8388466054974083844
+    second: Humo_5
+  - first:
+      213: -4204760910941684412
+    second: Humo_6
+  - first:
+      213: -2613608170612591196
+    second: Humo_7
+  - first:
+      213: -2189571302511620412
+    second: Humo_8
+  - first:
+      213: 2219309862016277824
+    second: Humo_9
+  - first:
+      213: 3368078762836059701
+    second: Humo_10
+  - first:
+      213: 4714307961092897917
+    second: Humo_11
+  - first:
+      213: 3656443092529511253
+    second: Humo_12
+  - first:
+      213: 6998572455277330689
+    second: Humo_13
+  - first:
+      213: -1229097051334876702
+    second: Humo_14
+  - first:
+      213: 2104603429617369318
+    second: Humo_15
+  - first:
+      213: -1996474016298787560
+    second: Humo_16
+  - first:
+      213: -4861039257216127784
+    second: Humo_17
+  - first:
+      213: 9082638646386739225
+    second: Humo_18
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Humo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 423
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee6ae106e8ac44498545a9c24178210
+      internalID: 524545166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo_1
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 423
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cb5a4f1b7f0ca4ba4e1f7a27a63ecb
+      internalID: 1731832351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 423
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6605315ff57d8cb488f555f2ea59856f
+      internalID: -2098154977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b12774b8abdcdb46a9ffb5117cc48c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Humo_0: 524545166
+      Humo_1: 1731832351
+      Humo_2: -2098154977
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
