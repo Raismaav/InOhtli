@@ -13,8 +13,10 @@ public class DoorController : MonoBehaviour
     private bool closed2=true;
     public Tile t;
     public Tile t2;
+    private AudioSource audioSource;
     void Awake(){
         doorTile=GetComponent<Tilemap>();
+        audioSource=GetComponent<AudioSource>();
     }
     public void OpenDoor(){
         if(closed){

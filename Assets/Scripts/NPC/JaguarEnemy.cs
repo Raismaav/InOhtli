@@ -31,12 +31,15 @@ public class JaguarEnemy : HP
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
     private string str;
+    [Header("Sound Settings")]
+    [SerializeField] private AudioClip AttackAudioClip;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
         runspeed=HorizontalMovement;
+
     }
     void Update()
     {
@@ -112,6 +115,7 @@ public class JaguarEnemy : HP
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
+                SoundController.Instance.SoundHurtPlay();                
             }
         }
     }
