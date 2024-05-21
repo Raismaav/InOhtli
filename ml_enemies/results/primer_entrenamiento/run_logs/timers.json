@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1716263815",
+        "python_version": "3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:55:20) \n[Clang 16.0.6 ]",
+        "command_line_arguments": "/opt/homebrew/anaconda3/envs/ml_enemies/bin/mlagents-learn trainer_config.yaml --run-id=primer_entrenamiento",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.11.0",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1716263818"
+    },
+    "total": 2.7436982920000004,
+    "count": 1,
+    "self": 0.005900668000000664,
+    "children": {
+        "run_training.setup": {
+            "total": 0.014840583000000018,
+            "count": 1,
+            "self": 0.014840583000000018
+        },
+        "TrainerController.start_learning": {
+            "total": 2.722957041,
+            "count": 1,
+            "self": 0.0007448750000000892,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.722196417,
+                    "count": 1,
+                    "self": 2.722196417
+                },
+                "trainer_threads": {
+                    "total": 1.7909999998622084e-06,
+                    "count": 1,
+                    "self": 1.7909999998622084e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 1.3957999999814064e-05,
+                    "count": 1,
+                    "self": 1.3957999999814064e-05
+                }
+            }
+        }
+    }
+}
