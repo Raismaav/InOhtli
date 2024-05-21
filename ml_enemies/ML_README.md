@@ -10,6 +10,13 @@ conda activate ml_enemies
 pip install mlagents
 ```
 ## Comandos basicos
+Para activar el entorno de desarrollo se ejecuta el comando `conda activate ml_enemies` y 
+para desactivarlo se ejecuta `conda deactivate`.
+
+Para ejecutar el entrenamiento de los modelos es necesario ter un archivo de configuracion `.yaml` que se ejecuta con 
+el comando `mlagents-learn trainer_config.yaml --run-id=primer_entrenamiento`.
+
+Para lanzar la interfaz de analisis de los modelos se ejecuta el comando `tensorboard --logdir results` y se accede
 
 
 ## Errores
