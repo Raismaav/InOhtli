@@ -33,13 +33,14 @@ public class JaguarEnemy : HP
     private string str;
     [Header("Sound Settings")]
     [SerializeField] private AudioClip AttackAudioClip;
+    [SerializeField] private AudioSource audioSource;
+    private bool canSound;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
         runspeed=HorizontalMovement;
-
     }
     void Update()
     {
@@ -63,11 +64,15 @@ public class JaguarEnemy : HP
             animator.SetTrigger("AttackTrigger");
             Invoke("CharacterHit",AttackDuration);
             TimeNextAttack=TimeBetweenAttack;
+            canSound=true;
         }
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
             canMove=false;
             str="attack";
             StartCoroutine(animWait());
+            if(canSound){
+                StartCoroutine(soundWait());
+            }
             float FixedSpeed;
             if(LD){
                 FixedSpeed= runspeed*1*.035f;
@@ -122,6 +127,13 @@ public class JaguarEnemy : HP
     private IEnumerator animWait(){
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
         canMove=true;
+    }
+    private IEnumerator soundWait(){
+        yield return new WaitForSeconds(1);
+        if(!audioSource.isPlaying&&canSound){
+            canSound=false;
+            audioSource.PlayOneShot(AttackAudioClip);
+        }
     }
     private void OnDrawGizmos()
     {

@@ -58,7 +58,7 @@ public class Player : hpSystem
         }
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
-            if(HorizontalMovement!=0){
+            if(HorizontalMovement!=0 && inFloor){
                 audioSource.mute=false;
             }else{
                 audioSource.mute=true;
