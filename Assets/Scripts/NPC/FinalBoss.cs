@@ -34,6 +34,9 @@ public class FinalBoss : hpSystem
     void Update()
     {
         if(ActiveIA){
+            if(invincibleTime>0){
+                invincibleTime -= Time.deltaTime;
+            }
             //Move(HorizontalMovement,false);
             frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
             belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);

@@ -19,15 +19,22 @@ public class HP : mov
     {
         if(invincibleTime <= 0)
         {
+            int fixedXDirection;
             CurrentHealth -= DamageValue;
-            Vector2 KnockbackDirection=transform.position-tr.position;
-            rb.AddForce(KnockbackDirection*HitForce);
+            //Vector2 KnockbackDirection=transform.position-tr.position;
+            StartCoroutine(KBTime());
+            if(transform.position.x-tr.transform.position.x>0){
+                fixedXDirection=1;
+            }else{
+                fixedXDirection=-1;
+            }
+            rb.velocity=new Vector2(fixedXDirection*HitForce,rb.velocityY+0.5f);
             invincibleTime=invincibleDuration;
         }
         if (CurrentHealth <= 0 )
-            {
-                Live=false;
-            }
+        {
+            Live=false;
+        }
     }
 
     public void Cure(float CureValue)
@@ -53,6 +60,11 @@ public class HP : mov
     }
     public void setMaxHP(float newMaxHP){
         MaxHealth=newMaxHP;
+    }
+    private IEnumerator KBTime(){
+        canMove=false;
+        yield return new WaitForSeconds(1);
+        canMove=true;
     }
 
 }

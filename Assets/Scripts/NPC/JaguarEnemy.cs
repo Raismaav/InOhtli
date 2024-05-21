@@ -30,6 +30,7 @@ public class JaguarEnemy : HP
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
+    private string str;
 
     void Start()
     {
@@ -39,6 +40,9 @@ public class JaguarEnemy : HP
     }
     void Update()
     {
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         //Move(HorizontalMovement,false);
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         attackinfo = Physics2D.Raycast(AttackController.position, transform.right, frontAttackDistance, attackLayer);
@@ -59,6 +63,8 @@ public class JaguarEnemy : HP
         }
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
             canMove=false;
+            str="attack";
+            StartCoroutine(animWait());
             float FixedSpeed;
             if(LD){
                 FixedSpeed= runspeed*1*.035f;
@@ -66,8 +72,7 @@ public class JaguarEnemy : HP
                 FixedSpeed= runspeed*-1*.035f;
             }
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
-        }else{
-            canMove=true;
+            
         }
 
         if(frontInfo || !belowInfo)
@@ -109,6 +114,10 @@ public class JaguarEnemy : HP
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
             }
         }
+    }
+    private IEnumerator animWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
+        canMove=true;
     }
     private void OnDrawGizmos()
     {

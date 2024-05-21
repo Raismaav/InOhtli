@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Unity.Collections;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
@@ -32,6 +33,7 @@ public class basicEnemy : HP
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
     [SerializeField] Animator PivotAnim;
+    string str="";
 
 
     
@@ -44,6 +46,9 @@ public class basicEnemy : HP
     }
     void Update()
     {
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         //Move(HorizontalMovement,false);
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
@@ -65,14 +70,15 @@ public class basicEnemy : HP
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("run")){
             canMove=false;
             float FixedSpeed;
+            str="run";
+            StartCoroutine(animWait());
             if(LD){
                 FixedSpeed= runspeed*1*.1f;
             }else{
                 FixedSpeed= runspeed*-1*.1f;
             }
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
-        }else{
-            canMove=true;
+            
         }
         if(frontInfo || !belowInfo)
         {
@@ -99,6 +105,10 @@ public class basicEnemy : HP
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
             }
         }
+    }
+    private IEnumerator animWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
+        canMove=true;
     }
     private void OnDrawGizmos()
     {
