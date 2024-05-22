@@ -132,9 +132,9 @@ GameObject:
   - component: {fileID: 697889876}
   - component: {fileID: 697889875}
   - component: {fileID: 697889874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 1613379288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.35, y: -2.46, z: 0}
+  m_LocalPosition: {x: -15.38, y: -2.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -665,7 +665,7 @@ MonoBehaviour:
   AttackDamage: 1
   TimeBetweenAttack: 2
   TimeNextAttack: 0
-  AttackDuration: 1
+  AttackDuration: 0.8
   detectionRatio: 15
   AttackAudioClip: {fileID: 0}
   audioSource: {fileID: 0}
@@ -851,7 +851,7 @@ Transform:
   m_GameObject: {fileID: 2053887554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.253, y: -0.322, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -882,7 +882,7 @@ Transform:
   m_GameObject: {fileID: 2056100548}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.097, y: 0.093, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

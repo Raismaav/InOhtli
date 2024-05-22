@@ -17,7 +17,6 @@ public class ArcherEnemy : ParabolArrow
     public Transform frontController;
     public bool belowInfo;
     public bool frontInfo;
-    private Transform player;
 
     private bool LookToRight = false;
     
@@ -28,7 +27,7 @@ public class ArcherEnemy : ParabolArrow
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
-    private string str;    public float detectionRatio = 15;
+    private string str;    public float detectionRatio = 12;
     private float distancex;
     private float distancey;
     [Header("Sound Settings")]
@@ -55,9 +54,9 @@ public class ArcherEnemy : ParabolArrow
             jump = true;
             animator.SetBool("Jump",true);
         }
-        if(!player.IsDestroyed()){
-            distancex = player.transform.position.x - transform.position.x;
-            distancey = player.transform.position.y - transform.position.y;
+        if(!Objetive.IsDestroyed()){
+            distancex = Objetive.transform.position.x - transform.position.x;
+            distancey = Objetive.transform.position.y - transform.position.y;
             if(distancex < detectionRatio && distancex > -1*detectionRatio && distancey < detectionRatio && distancey > -1*detectionRatio){
                 if(TimeNextAttack <=0 && inFloor){
                     animator.SetTrigger("AttackTrigger");
@@ -115,5 +114,6 @@ public class ArcherEnemy : ParabolArrow
         Gizmos.DrawLine(belowController.transform.position, belowController.transform.position + transform.up * -1 *  belowDistance);
         Gizmos.DrawLine(frontController.transform.position, frontController.transform.position + transform.right * frontDistance);
         Gizmos.DrawWireCube(OperadorSuelo.position, dimensionesCaja);
+        Gizmos.DrawWireSphere(transform.position, detectionRatio);
     }
 }
