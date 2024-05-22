@@ -16,6 +16,10 @@ public class ArrowController : MonoBehaviour
         transform.rotation =Quaternion.AngleAxis(angle,Vector3.forward);
     }
     void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.CompareTag("Player")){
+            collision.transform.GetComponent<HP>().Damage(1,transform,0);
+            collision.transform.GetComponent<hpSystem>().hpBarChange();
+        }
         Destroy(gameObject);
     }
 }
