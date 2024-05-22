@@ -1,0 +1,3585 @@
+fileFormatVersion: 2
+guid: 59e7442e0d798d14691db26e26b772a4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638519356688867765
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: venao_animation_Frame_0
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 172
+      width: 43
+      height: 77
+    spriteID: c4385885ed22edf4ca7ff630e4fa0df9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 172}
+  - name: venao_animation_Frame_1
+    originalName: 
+    pivot: {x: 0.4888889, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 508
+      width: 45
+      height: 77
+    spriteID: 3dcc013e36dc3c1419c6981dea95910e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 508}
+  - name: venao_animation_Frame_2
+    originalName: 
+    pivot: {x: 0.5111111, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 593
+      width: 45
+      height: 77
+    spriteID: 7348eadc95635364e81747007fbd6469
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 593}
+  - name: venao_animation_Frame_3
+    originalName: 
+    pivot: {x: 0.5319149, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 773
+      width: 47
+      height: 77
+    spriteID: 66087fb7a2f47b645a6d2242757e9751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 773}
+  - name: venao_animation_Frame_4
+    originalName: 
+    pivot: {x: 0.5416666, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 435
+      width: 48
+      height: 77
+    spriteID: daad71352c2d46e4eb9cf28993079a04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 435}
+  - name: venao_animation_Frame_5
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 174
+      width: 47
+      height: 76
+    spriteID: 6dc3b3511693d0c498fd97872295f52f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 174}
+  - name: venao_animation_Frame_6
+    originalName: 
+    pivot: {x: 0.5625, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 605
+      width: 48
+      height: 76
+    spriteID: 3b8477d942f49da4aa26d6d55dd2e52a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 605}
+  - name: venao_animation_Frame_7
+    originalName: 
+    pivot: {x: 0.5625, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 689
+      width: 48
+      height: 76
+    spriteID: fcd526e6228468f409492c4d2a9d94c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 689}
+  - name: venao_animation_Frame_8
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 258
+      width: 47
+      height: 76
+    spriteID: bbc999294b54bec48879820faafc8f7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 258}
+  - name: venao_animation_Frame_9
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 342
+      width: 47
+      height: 76
+    spriteID: d0bd60fca33ae364cb8bb5a2054e17f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 342}
+  - name: venao_animation_Frame_10
+    originalName: 
+    pivot: {x: 0.5531915, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 426
+      width: 47
+      height: 76
+    spriteID: 8f3ea8523bcf11f4093154e5157d77eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 426}
+  - name: venao_animation_Frame_11
+    originalName: 
+    pivot: {x: 0.54347825, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 935
+      width: 46
+      height: 76
+    spriteID: 0cb6d07d6a65d554cbdf20cd9584c719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 935}
+  - name: venao_animation_Frame_12
+    originalName: 
+    pivot: {x: 0.54347825, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 4
+      width: 46
+      height: 76
+    spriteID: 3ea85405d7defaa40aff63389a6ca429
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 4}
+  - name: venao_animation_Frame_13
+    originalName: 
+    pivot: {x: 0.54347825, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 88
+      width: 46
+      height: 76
+    spriteID: 973e10761f186ff41ab3b42cd2f1f6de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 88}
+  - name: venao_animation_Frame_14
+    originalName: 
+    pivot: {x: 0.54347825, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 172
+      width: 46
+      height: 76
+    spriteID: 2f9542454481f69469247cdf74f5928b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 172}
+  - name: venao_animation_Frame_15
+    originalName: 
+    pivot: {x: 0.5217391, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 256
+      width: 46
+      height: 76
+    spriteID: ee18e1c5777dd004b8b34d31cedca9ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 256}
+  - name: venao_animation_Frame_16
+    originalName: 
+    pivot: {x: 0.5217391, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 340
+      width: 46
+      height: 76
+    spriteID: fb1cc23bc87bba3419a5b809c9abce97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 340}
+  - name: venao_animation_Frame_17
+    originalName: 
+    pivot: {x: 0.5217391, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 424
+      width: 46
+      height: 76
+    spriteID: 236476bf2c828644bb31fea5d11fe668
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 424}
+  - name: venao_animation_Frame_18
+    originalName: 
+    pivot: {x: 0.5111111, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 4
+      width: 45
+      height: 76
+    spriteID: 986464c7a2cc78147afa00494aff9181
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 4}
+  - name: venao_animation_Frame_19
+    originalName: 
+    pivot: {x: 0.5111111, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 88
+      width: 45
+      height: 76
+    spriteID: 2c96faec1f0849c4390eb66133fe6b86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 88}
+  - name: venao_animation_Frame_20
+    originalName: 
+    pivot: {x: 0.5111111, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 678
+      width: 45
+      height: 77
+    spriteID: 40ddd29760ebd7244b89a0be9f330399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 678}
+  - name: venao_animation_Frame_21
+    originalName: 
+    pivot: {x: 0.5111111, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 763
+      width: 45
+      height: 77
+    spriteID: 3be0d488664581c44bcea3f6514f4bb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 763}
+  - name: venao_animation_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 520
+      width: 44
+      height: 77
+    spriteID: 87849133d27866d4fb426aa147ec4d5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 520}
+  - name: venao_animation_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 605
+      width: 44
+      height: 77
+    spriteID: c3c1de37bae27ba4dad53d44a6867a41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 605}
+  - name: venao_animation_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 4
+      width: 44
+      height: 78
+    spriteID: 4452ca03117ec584692eb6c910491398
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 4}
+  - name: venao_animation_Frame_25
+    originalName: 
+    pivot: {x: 0.47727272, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 90
+      width: 44
+      height: 78
+    spriteID: 172035513fcbe9b4785afcf75ec6e9d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 90}
+  - name: venao_animation_Frame_26
+    originalName: 
+    pivot: {x: 0.47727272, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 176
+      width: 44
+      height: 78
+    spriteID: b634382a5c04ba44ea2abcc61ddec09a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 176}
+  - name: venao_animation_Frame_27
+    originalName: 
+    pivot: {x: 0.47727272, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 262
+      width: 44
+      height: 78
+    spriteID: 055ee8045a4183943a59698595aeb563
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 262}
+  - name: venao_animation_Frame_28
+    originalName: 
+    pivot: {x: 0.47727272, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 348
+      width: 44
+      height: 78
+    spriteID: 322491c3cb25b7949a8e494161be9275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 348}
+  - name: venao_animation_Frame_29
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 775
+      width: 43
+      height: 78
+    spriteID: 2b1cd6360f749b741a8d5ff0f5f2abcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 775}
+  - name: venao_animation_Frame_30
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 257
+      width: 43
+      height: 77
+    spriteID: 50c3304698d110049b62846ff347d9d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 257}
+  - name: venao_animation_Frame_31
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 342
+      width: 43
+      height: 77
+    spriteID: ae0f7df1f4815b54eac4b8b284ac3a29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 342}
+  - name: venao_animation_Frame_32
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 427
+      width: 43
+      height: 77
+    spriteID: e03c95afd53b8514385af3fb6ea3b010
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 427}
+  - name: venao_animation_Frame_33
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 512
+      width: 43
+      height: 77
+    spriteID: fa77a8737a0eb2646b122ff92ae57c6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 512}
+  - name: venao_animation_Frame_34
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 597
+      width: 43
+      height: 77
+    spriteID: 39f87bebc32b4f64098a201de66eb273
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 597}
+  - name: venao_animation_Frame_35
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 682
+      width: 43
+      height: 77
+    spriteID: 6b7c79d652e053e468e51f03670ea04e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 682}
+  - name: venao_animation_Frame_36
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 767
+      width: 43
+      height: 77
+    spriteID: 95ab720d151e9474bb07fe631637f7f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 767}
+  - name: venao_animation_Frame_37
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 852
+      width: 43
+      height: 77
+    spriteID: 5ed67d22bd434194c943740fc4c4f3df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 852}
+  - name: venao_animation_Frame_38
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 479
+      y: 937
+      width: 43
+      height: 77
+    spriteID: 7749f52531af019458b0dd1c46588c81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 479, y: 937}
+  - name: venao_animation_Frame_39
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 90
+      width: 42
+      height: 77
+    spriteID: 3a5d20e6741e9f3428ea09a444c8a8e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 90}
+  - name: venao_animation_Frame_40
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 175
+      width: 42
+      height: 77
+    spriteID: 36b6fc01a47303348b8759f220af2573
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 175}
+  - name: venao_animation_Frame_41
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 260
+      width: 42
+      height: 77
+    spriteID: c720a9056feb6da4ba50c76ea39c17d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 260}
+  - name: venao_animation_Frame_42
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 345
+      width: 42
+      height: 77
+    spriteID: 7a7da1585b277224293e4384ef91a769
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 345}
+  - name: venao_animation_Frame_43
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 514
+      width: 42
+      height: 78
+    spriteID: 27108972e5761db48946b376f4df64b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 514}
+  - name: venao_animation_Frame_44
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 600
+      width: 42
+      height: 78
+    spriteID: a030517d0b436b3488ea698f04b61f11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 600}
+  - name: venao_animation_Frame_45
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 770
+      width: 41
+      height: 78
+    spriteID: bcbd8f03546281a4a8a79a813cb77ac7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 770}
+  - name: venao_animation_Frame_46
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 4
+      width: 41
+      height: 77
+    spriteID: fd630544b15f2164fa973e3673c9d447
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 4}
+  - name: venao_animation_Frame_47
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 89
+      width: 41
+      height: 77
+    spriteID: 6fb5da5ef0cb9f947b97340f480cecc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 89}
+  - name: venao_animation_Frame_48
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 174
+      width: 41
+      height: 77
+    spriteID: 8e1e77882403ceb4b8d4f1920e368781
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 174}
+  - name: venao_animation_Frame_49
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 259
+      width: 41
+      height: 77
+    spriteID: 2a169db29a4f82d49bc5799b380dbff8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 259}
+  - name: venao_animation_Frame_50
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 344
+      width: 41
+      height: 77
+    spriteID: 49408f7af8181244fa972c8b3868961d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 344}
+  - name: venao_animation_Frame_51
+    originalName: 
+    pivot: {x: 0.4390244, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 429
+      width: 41
+      height: 77
+    spriteID: 0777b59bce32b4840bb73c68c0fb8c68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 429}
+  - name: venao_animation_Frame_52
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 686
+      width: 42
+      height: 78
+    spriteID: 30f133f9fcdf43747937f38cfad0854b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 686}
+  - name: venao_animation_Frame_53
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 430
+      width: 42
+      height: 77
+    spriteID: e7062dbfd66b26f47a5f0c5cb1927d5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 430}
+  - name: venao_animation_Frame_54
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 515
+      width: 42
+      height: 77
+    spriteID: e960824e29584e14395dbd9bd2ae333e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 515}
+  - name: venao_animation_Frame_55
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 600
+      width: 42
+      height: 77
+    spriteID: a1406ae5c0949cd4f8d426695ec38133
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 600}
+  - name: venao_animation_Frame_56
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 772
+      width: 42
+      height: 78
+    spriteID: 36d1dd7cabc1e0344a5ddd924295539f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 772}
+  - name: venao_animation_Frame_57
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 858
+      width: 42
+      height: 78
+    spriteID: 8690c7bb612411543a6951b13580eafc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 858}
+  - name: venao_animation_Frame_58
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 861
+      width: 43
+      height: 78
+    spriteID: 0f3a85b89bf7fbc45b9ebf8db942fafe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 861}
+  - name: venao_animation_Frame_59
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 4
+      width: 43
+      height: 77
+    spriteID: 522dd6fbb85cd2f4396c7d971a6b45f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 4}
+  - name: venao_animation_Frame_60
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 89
+      width: 43
+      height: 77
+    spriteID: 3a7d1e0ef348e55498c32c10477567e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 89}
+  - name: venao_animation_Frame_61
+    originalName: 
+    pivot: {x: 0.18918918, y: 0.24305555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 111
+      height: 144
+    spriteID: fbd1361892f7ff148b3edbba23f67e59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: venao_animation_Frame_62
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 510
+      width: 46
+      height: 77
+    spriteID: 78b4ee644a46b194bb426145c3ec4ff9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 510}
+  - name: venao_animation_Frame_63
+    originalName: 
+    pivot: {x: 0.51063836, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 858
+      width: 47
+      height: 77
+    spriteID: 4b5918cfecb2b76419713d0349648b78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 858}
+  - name: venao_animation_Frame_64
+    originalName: 
+    pivot: {x: 0.5208333, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 520
+      width: 48
+      height: 77
+    spriteID: 1f86b61256d7c0946a487d54b9b30ac4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 520}
+  - name: venao_animation_Frame_65
+    originalName: 
+    pivot: {x: 0.53061223, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 265
+      width: 49
+      height: 77
+    spriteID: 01eb311a9e10ac841a5714ead62f37d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 265}
+  - name: venao_animation_Frame_66
+    originalName: 
+    pivot: {x: 0.54, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 943
+      width: 50
+      height: 77
+    spriteID: 880b366650d50ff42bba4d9a4fd96197
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 943}
+  - name: venao_animation_Frame_67
+    originalName: 
+    pivot: {x: 0.54, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 4
+      width: 50
+      height: 77
+    spriteID: 0a68a083d74b7be4088ca580485eef24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 4}
+  - name: venao_animation_Frame_68
+    originalName: 
+    pivot: {x: 0.53061223, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 350
+      width: 49
+      height: 77
+    spriteID: ab28842218f03a14685d2cafb465d06d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 350}
+  - name: venao_animation_Frame_69
+    originalName: 
+    pivot: {x: 0.53061223, y: 0.46835443}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 4
+      width: 49
+      height: 79
+    spriteID: 637f7d1a776e3d44ba95a6dd35f62e5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: -113}
+  - name: venao_animation_Frame_70
+    originalName: 
+    pivot: {x: 0.54901963, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 772
+      width: 51
+      height: 77
+    spriteID: d917fe8b87cfdb74d99cddd74ba337e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 653}
+  - name: venao_animation_Frame_71
+    originalName: 
+    pivot: {x: 0.57407403, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 260
+      width: 54
+      height: 77
+    spriteID: ce9eb90f2247b804aa21798dff15560a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 141}
+  - name: venao_animation_Frame_72
+    originalName: 
+    pivot: {x: 0.57407403, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 345
+      width: 54
+      height: 77
+    spriteID: e81e91fce74b32347bf20e3e92aacd71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 226}
+  - name: venao_animation_Frame_73
+    originalName: 
+    pivot: {x: 0.5660378, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 517
+      width: 53
+      height: 77
+    spriteID: 260176a6c181d9b4fb8c266b3a212a6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 398}
+  - name: venao_animation_Frame_74
+    originalName: 
+    pivot: {x: 0.5660378, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 602
+      width: 53
+      height: 77
+    spriteID: dac1c7900858a7744a4a3824065c00b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 483}
+  - name: venao_animation_Frame_75
+    originalName: 
+    pivot: {x: 0.55769235, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 687
+      width: 52
+      height: 77
+    spriteID: 254392746ff772f43afefccf8b57dedb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 568}
+  - name: venao_animation_Frame_76
+    originalName: 
+    pivot: {x: 0.5818182, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 175
+      width: 55
+      height: 77
+    spriteID: db749798b02c24140822913e9552606d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 56}
+  - name: venao_animation_Frame_77
+    originalName: 
+    pivot: {x: 0.6034483, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 775
+      width: 58
+      height: 77
+    spriteID: 2cfa2c77e639b0347b81b494f6023a54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6, y: 656}
+  - name: venao_animation_Frame_78
+    originalName: 
+    pivot: {x: 0.6229508, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 433
+      width: 61
+      height: 77
+    spriteID: 564db0fe511ce384c8bdc198d910da0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9, y: 314}
+  - name: venao_animation_Frame_79
+    originalName: 
+    pivot: {x: 0.51063836, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 943
+      width: 47
+      height: 77
+    spriteID: 6695a04e1d0605642928fe47c11ee379
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 943}
+  - name: venao_animation_Frame_80
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 595
+      width: 46
+      height: 77
+    spriteID: 3cc0f5671d2370b4ab475e4972277416
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 595}
+  - name: venao_animation_Frame_81
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 680
+      width: 46
+      height: 77
+    spriteID: e4e848d3a38bbfa4184ef8448753f976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 680}
+  - name: venao_animation_Frame_82
+    originalName: 
+    pivot: {x: 0.51063836, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 89
+      width: 47
+      height: 77
+    spriteID: 91aab77e21b6b0e40a16cf39b4e66368
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 89}
+  - name: venao_animation_Frame_83
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 765
+      width: 46
+      height: 77
+    spriteID: 989b5a6b5cb211449a3bc5994c52041d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 765}
+  - name: venao_animation_Frame_84
+    originalName: 
+    pivot: {x: 0.49999997, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 850
+      width: 46
+      height: 77
+    spriteID: bb94678270587e64a951144e2544575d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 850}
+  - name: venao_animation_Frame_85
+    originalName: 
+    pivot: {x: 0.4888889, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 848
+      width: 45
+      height: 77
+    spriteID: 0a567051bc58ea548bab787bc56f2ac0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 848}
+  - name: venao_animation_Frame_86
+    originalName: 
+    pivot: {x: 0.4888889, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 933
+      width: 45
+      height: 77
+    spriteID: 3df0891034c64e840a1081669bcc7241
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 933}
+  - name: venao_animation_Frame_87
+    originalName: 
+    pivot: {x: 0.47727272, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 690
+      width: 44
+      height: 77
+    spriteID: 2667c783f5b8db245b67e3ea8c7ae38d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 690}
+  - name: venao_animation_Frame_88
+    originalName: 
+    pivot: {x: 0.328125, y: 0.3301887}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 156
+      width: 64
+      height: 106
+    spriteID: 15f27c102d788144b9870a879799c394
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 156}
+  - name: venao_animation_Frame_89
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 174
+      width: 43
+      height: 77
+    spriteID: d675d3d41f3f6dd48bcf0030896eedd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 174}
+  - name: venao_animation_Frame_90
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 259
+      width: 43
+      height: 77
+    spriteID: 1670ce06f964cbc45912b08f6a5f702c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 259}
+  - name: venao_animation_Frame_91
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 344
+      width: 43
+      height: 77
+    spriteID: c51933926f7413a4ebc6155fa7231466
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 344}
+  - name: venao_animation_Frame_92
+    originalName: 
+    pivot: {x: 0.4651163, y: 0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 429
+      width: 43
+      height: 77
+    spriteID: 07dd27f8b4189c5458f090f5e705e096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 429}
+  - name: venao_animation_Frame_93
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 944
+      width: 42
+      height: 76
+    spriteID: c39652d87c59ea54b815bf8bd75b2a1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 944}
+  - name: venao_animation_Frame_94
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 856
+      width: 42
+      height: 76
+    spriteID: 417a37f01ca61f3438808840fe6f86c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 856}
+  - name: venao_animation_Frame_95
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46753246}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 685
+      width: 42
+      height: 77
+    spriteID: b0fd822d864b5ae4d86ecbf7f4d66753
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 685}
+  - name: venao_animation_Frame_96
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.46052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 940
+      width: 42
+      height: 76
+    spriteID: 83d664b8c7f259f4eb9f6612cb6e1445
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 940}
+  - name: venao_animation_Frame_97
+    originalName: 
+    pivot: {x: 0.45238099, y: 0.47435898}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 4
+      width: 42
+      height: 78
+    spriteID: 450e08a24f747814eb16c5171e34d17f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 4}
+  - name: venao_animation_Frame_98
+    originalName: 
+    pivot: {x: 0.45454547, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 434
+      width: 44
+      height: 78
+    spriteID: fee655f89498ae241bd95b43482a6b4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 434}
+  - name: venao_animation_Frame_99
+    originalName: 
+    pivot: {x: 0.48000002, y: 0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 857
+      width: 50
+      height: 78
+    spriteID: d055cc33f932b3945ad512f50e973a41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 857}
+  - name: venao_animation_Frame_100
+    originalName: 
+    pivot: {x: 0.53571427, y: 0.44871795}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 4
+      width: 56
+      height: 78
+    spriteID: 9e630bd244e2d7d4b885e5c0105f9bce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 4}
+  - name: venao_animation_Frame_101
+    originalName: 
+    pivot: {x: 0.57377046, y: 0.44871795}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 261
+      width: 61
+      height: 78
+    spriteID: 343893bf41fc4ec4eaba67c91b523ebf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 261}
+  - name: venao_animation_Frame_102
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 270
+      width: 63
+      height: 78
+    spriteID: 058b326643c6f9044a87cd91c24e4b92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 270}
+  - name: venao_animation_Frame_103
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 356
+      width: 63
+      height: 78
+    spriteID: 151881f8dfad80f4ab7945fe5616f0cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 356}
+  - name: venao_animation_Frame_104
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 442
+      width: 63
+      height: 78
+    spriteID: 96f5ee8ebb24cc04a90542a4c947977e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 442}
+  - name: venao_animation_Frame_105
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 528
+      width: 63
+      height: 78
+    spriteID: 74197a17d130c6945920cdecce6b350c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 528}
+  - name: venao_animation_Frame_106
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 614
+      width: 63
+      height: 78
+    spriteID: fb8ce3e8f4825d540afd60a16272eeca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 614}
+  - name: venao_animation_Frame_107
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 700
+      width: 63
+      height: 78
+    spriteID: 75e8b1f70f2a4ca4fadbd09a317d32ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 700}
+  - name: venao_animation_Frame_108
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 786
+      width: 63
+      height: 78
+    spriteID: c5a0000555dd4c14289e1a12fd427aed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 786}
+  - name: venao_animation_Frame_109
+    originalName: 
+    pivot: {x: 0.6031746, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 872
+      width: 63
+      height: 78
+    spriteID: 391dae3ca4cac8c47a265309823403a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 872}
+  - name: venao_animation_Frame_110
+    originalName: 
+    pivot: {x: 0.5645161, y: 0.44155845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 176
+      width: 62
+      height: 77
+    spriteID: 88e75b1af31462345a2e64bd32f80b7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 176}
+  - name: venao_animation_Frame_111
+    originalName: 
+    pivot: {x: 0.55, y: 0.44155845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 605
+      width: 60
+      height: 77
+    spriteID: 9cfd7711bcf9d3444a0c2c82ff3af128
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 605}
+  - name: venao_animation_Frame_112
+    originalName: 
+    pivot: {x: 0.5254237, y: 0.44155845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 690
+      width: 59
+      height: 77
+    spriteID: c8da896e985eed84a8a7a410d86bf73d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 690}
+  - name: venao_animation_Frame_113
+    originalName: 
+    pivot: {x: 0.5178572, y: 0.44155845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 90
+      width: 56
+      height: 77
+    spriteID: 85402ff2faa1a964db232cdce6aae87a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 90}
+  - name: venao_animation_Frame_114
+    originalName: 
+    pivot: {x: 0.61904764, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 4
+      width: 63
+      height: 78
+    spriteID: eee3027c99397af4895cc5b7bf4338f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 4}
+  - name: venao_animation_Frame_115
+    originalName: 
+    pivot: {x: 0.58064514, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 90
+      width: 62
+      height: 78
+    spriteID: b370d72502fb9b042b2ad6c7a0a6ebd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 90}
+  - name: venao_animation_Frame_116
+    originalName: 
+    pivot: {x: 0.57377046, y: 0.43589744}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 347
+      width: 61
+      height: 78
+    spriteID: d5a650ee45e51734bb16da6ddbc2b874
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 347}
+  - name: venao_animation_Frame_117
+    originalName: 
+    pivot: {x: 0.5254237, y: 0.443038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 518
+      width: 59
+      height: 79
+    spriteID: 951045e319814aa48b5145906a73844a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 518}
+  - name: venao_animation_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.443038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 860
+      width: 56
+      height: 79
+    spriteID: 9bcf7191327808e42a5031be9f83fc41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 860}
+  - name: venao_animation_Frame_119
+    originalName: 
+    pivot: {x: 0.4615385, y: 0.443038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 430
+      width: 52
+      height: 79
+    spriteID: 0d23115ad1f9d0a49868dd019d6f9f47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 430}
+  - name: venao_animation_Frame_120
+    originalName: 
+    pivot: {x: 0.43749997, y: 0.443038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 178
+      width: 48
+      height: 79
+    spriteID: 64558d01afc7bc645a06934499ad12ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 178}
+  - name: venao_animation_Frame_121
+    originalName: 
+    pivot: {x: 0.44897962, y: 0.443038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 91
+      width: 49
+      height: 79
+    spriteID: 47804103360da2744b668dba5fe7b576
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 91}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 328409426
+    name: venao_animation
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: venao_animation_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: c4385885ed22edf4ca7ff630e4fa0df9
+    - name: venao_animation_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 18
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 3dcc013e36dc3c1419c6981dea95910e
+    - name: venao_animation_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 17
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 7348eadc95635364e81747007fbd6469
+    - name: venao_animation_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 15
+        y: 29
+        width: 47
+        height: 77
+      spriteId: 66087fb7a2f47b645a6d2242757e9751
+    - name: venao_animation_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 29
+        width: 48
+        height: 77
+      spriteId: daad71352c2d46e4eb9cf28993079a04
+    - name: venao_animation_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 29
+        width: 47
+        height: 76
+      spriteId: 6dc3b3511693d0c498fd97872295f52f
+    - name: venao_animation_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 29
+        width: 48
+        height: 76
+      spriteId: 3b8477d942f49da4aa26d6d55dd2e52a
+    - name: venao_animation_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 13
+        y: 29
+        width: 48
+        height: 76
+      spriteId: fcd526e6228468f409492c4d2a9d94c6
+    - name: venao_animation_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 14
+        y: 29
+        width: 47
+        height: 76
+      spriteId: bbc999294b54bec48879820faafc8f7c
+    - name: venao_animation_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 14
+        y: 29
+        width: 47
+        height: 76
+      spriteId: d0bd60fca33ae364cb8bb5a2054e17f0
+    - name: venao_animation_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 14
+        y: 29
+        width: 47
+        height: 76
+      spriteId: 8f3ea8523bcf11f4093154e5157d77eb
+    - name: venao_animation_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 15
+        y: 29
+        width: 46
+        height: 76
+      spriteId: 0cb6d07d6a65d554cbdf20cd9584c719
+    - name: venao_animation_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 15
+        y: 29
+        width: 46
+        height: 76
+      spriteId: 3ea85405d7defaa40aff63389a6ca429
+    - name: venao_animation_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 15
+        y: 29
+        width: 46
+        height: 76
+      spriteId: 973e10761f186ff41ab3b42cd2f1f6de
+    - name: venao_animation_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 15
+        y: 29
+        width: 46
+        height: 76
+      spriteId: 2f9542454481f69469247cdf74f5928b
+    - name: venao_animation_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 16
+        y: 29
+        width: 46
+        height: 76
+      spriteId: ee18e1c5777dd004b8b34d31cedca9ac
+    - name: venao_animation_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 16
+        y: 29
+        width: 46
+        height: 76
+      spriteId: fb1cc23bc87bba3419a5b809c9abce97
+    - name: venao_animation_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 16
+        y: 29
+        width: 46
+        height: 76
+      spriteId: 236476bf2c828644bb31fea5d11fe668
+    - name: venao_animation_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 17
+        y: 29
+        width: 45
+        height: 76
+      spriteId: 986464c7a2cc78147afa00494aff9181
+    - name: venao_animation_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 17
+        y: 29
+        width: 45
+        height: 76
+      spriteId: 2c96faec1f0849c4390eb66133fe6b86
+    - name: venao_animation_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 17
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 40ddd29760ebd7244b89a0be9f330399
+    - name: venao_animation_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 17
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 3be0d488664581c44bcea3f6514f4bb9
+    - name: venao_animation_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 18
+        y: 29
+        width: 44
+        height: 77
+      spriteId: 87849133d27866d4fb426aa147ec4d5a
+    - name: venao_animation_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 18
+        y: 29
+        width: 44
+        height: 77
+      spriteId: c3c1de37bae27ba4dad53d44a6867a41
+    - name: venao_animation_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 18
+        y: 28
+        width: 44
+        height: 78
+      spriteId: 4452ca03117ec584692eb6c910491398
+    - name: venao_animation_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 19
+        y: 28
+        width: 44
+        height: 78
+      spriteId: 172035513fcbe9b4785afcf75ec6e9d5
+    - name: venao_animation_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 19
+        y: 28
+        width: 44
+        height: 78
+      spriteId: b634382a5c04ba44ea2abcc61ddec09a
+    - name: venao_animation_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 19
+        y: 28
+        width: 44
+        height: 78
+      spriteId: 055ee8045a4183943a59698595aeb563
+    - name: venao_animation_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 19
+        y: 28
+        width: 44
+        height: 78
+      spriteId: 322491c3cb25b7949a8e494161be9275
+    - name: venao_animation_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 20
+        y: 28
+        width: 43
+        height: 78
+      spriteId: 2b1cd6360f749b741a8d5ff0f5f2abcb
+    - name: venao_animation_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 50c3304698d110049b62846ff347d9d5
+    - name: venao_animation_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: ae0f7df1f4815b54eac4b8b284ac3a29
+    - name: venao_animation_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: e03c95afd53b8514385af3fb6ea3b010
+    - name: venao_animation_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: fa77a8737a0eb2646b122ff92ae57c6c
+    - name: venao_animation_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 39f87bebc32b4f64098a201de66eb273
+    - name: venao_animation_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 6b7c79d652e053e468e51f03670ea04e
+    - name: venao_animation_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 95ab720d151e9474bb07fe631637f7f7
+    - name: venao_animation_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 5ed67d22bd434194c943740fc4c4f3df
+    - name: venao_animation_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 7749f52531af019458b0dd1c46588c81
+    - name: venao_animation_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: 3a5d20e6741e9f3428ea09a444c8a8e7
+    - name: venao_animation_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: 36b6fc01a47303348b8759f220af2573
+    - name: venao_animation_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: c720a9056feb6da4ba50c76ea39c17d7
+    - name: venao_animation_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: 7a7da1585b277224293e4384ef91a769
+    - name: venao_animation_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 78
+      spriteId: 27108972e5761db48946b376f4df64b2
+    - name: venao_animation_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 78
+      spriteId: a030517d0b436b3488ea698f04b61f11
+    - name: venao_animation_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 22
+        y: 28
+        width: 41
+        height: 78
+      spriteId: bcbd8f03546281a4a8a79a813cb77ac7
+    - name: venao_animation_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: fd630544b15f2164fa973e3673c9d447
+    - name: venao_animation_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: 6fb5da5ef0cb9f947b97340f480cecc5
+    - name: venao_animation_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: 8e1e77882403ceb4b8d4f1920e368781
+    - name: venao_animation_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: 2a169db29a4f82d49bc5799b380dbff8
+    - name: venao_animation_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: 49408f7af8181244fa972c8b3868961d
+    - name: venao_animation_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 22
+        y: 29
+        width: 41
+        height: 77
+      spriteId: 0777b59bce32b4840bb73c68c0fb8c68
+    - name: venao_animation_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 78
+      spriteId: 30f133f9fcdf43747937f38cfad0854b
+    - name: venao_animation_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: e7062dbfd66b26f47a5f0c5cb1927d5d
+    - name: venao_animation_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: e960824e29584e14395dbd9bd2ae333e
+    - name: venao_animation_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 77
+      spriteId: a1406ae5c0949cd4f8d426695ec38133
+    - name: venao_animation_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 78
+      spriteId: 36d1dd7cabc1e0344a5ddd924295539f
+    - name: venao_animation_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 78
+      spriteId: 8690c7bb612411543a6951b13580eafc
+    - name: venao_animation_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 20
+        y: 28
+        width: 43
+        height: 78
+      spriteId: 0f3a85b89bf7fbc45b9ebf8db942fafe
+    - name: venao_animation_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 522dd6fbb85cd2f4396c7d971a6b45f1
+    - name: venao_animation_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 3a7d1e0ef348e55498c32c10477567e2
+    - name: venao_animation_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 19
+        y: 29
+        width: 111
+        height: 144
+      spriteId: fbd1361892f7ff148b3edbba23f67e59
+    - name: venao_animation_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 17
+        y: 29
+        width: 46
+        height: 77
+      spriteId: 78b4ee644a46b194bb426145c3ec4ff9
+    - name: venao_animation_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 16
+        y: 29
+        width: 47
+        height: 77
+      spriteId: 4b5918cfecb2b76419713d0349648b78
+    - name: venao_animation_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 15
+        y: 29
+        width: 48
+        height: 77
+      spriteId: 1f86b61256d7c0946a487d54b9b30ac4
+    - name: venao_animation_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 14
+        y: 29
+        width: 49
+        height: 77
+      spriteId: 01eb311a9e10ac841a5714ead62f37d4
+    - name: venao_animation_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 13
+        y: 29
+        width: 50
+        height: 77
+      spriteId: 880b366650d50ff42bba4d9a4fd96197
+    - name: venao_animation_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 13
+        y: 29
+        width: 50
+        height: 77
+      spriteId: 0a68a083d74b7be4088ca580485eef24
+    - name: venao_animation_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 14
+        y: 29
+        width: 49
+        height: 77
+      spriteId: ab28842218f03a14685d2cafb465d06d
+    - name: venao_animation_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: 637f7d1a776e3d44ba95a6dd35f62e5f
+    - name: venao_animation_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: d917fe8b87cfdb74d99cddd74ba337e9
+    - name: venao_animation_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: ce9eb90f2247b804aa21798dff15560a
+    - name: venao_animation_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: e81e91fce74b32347bf20e3e92aacd71
+    - name: venao_animation_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: 260176a6c181d9b4fb8c266b3a212a6f
+    - name: venao_animation_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: dac1c7900858a7744a4a3824065c00b1
+    - name: venao_animation_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: 254392746ff772f43afefccf8b57dedb
+    - name: venao_animation_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: db749798b02c24140822913e9552606d
+    - name: venao_animation_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: 2cfa2c77e639b0347b81b494f6023a54
+    - name: venao_animation_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: -112
+        y: -90
+        width: 310
+        height: 314
+      spriteId: 564db0fe511ce384c8bdc198d910da0f
+    - name: venao_animation_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 16
+        y: 29
+        width: 47
+        height: 77
+      spriteId: 6695a04e1d0605642928fe47c11ee379
+    - name: venao_animation_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 17
+        y: 29
+        width: 46
+        height: 77
+      spriteId: 3cc0f5671d2370b4ab475e4972277416
+    - name: venao_animation_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 17
+        y: 29
+        width: 46
+        height: 77
+      spriteId: e4e848d3a38bbfa4184ef8448753f976
+    - name: venao_animation_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 16
+        y: 29
+        width: 47
+        height: 77
+      spriteId: 91aab77e21b6b0e40a16cf39b4e66368
+    - name: venao_animation_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 17
+        y: 29
+        width: 46
+        height: 77
+      spriteId: 989b5a6b5cb211449a3bc5994c52041d
+    - name: venao_animation_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 17
+        y: 29
+        width: 46
+        height: 77
+      spriteId: bb94678270587e64a951144e2544575d
+    - name: venao_animation_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 18
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 0a567051bc58ea548bab787bc56f2ac0
+    - name: venao_animation_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 18
+        y: 29
+        width: 45
+        height: 77
+      spriteId: 3df0891034c64e840a1081669bcc7241
+    - name: venao_animation_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 19
+        y: 29
+        width: 44
+        height: 77
+      spriteId: 2667c783f5b8db245b67e3ea8c7ae38d
+    - name: venao_animation_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 19
+        y: 29
+        width: 64
+        height: 106
+      spriteId: 15f27c102d788144b9870a879799c394
+    - name: venao_animation_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: d675d3d41f3f6dd48bcf0030896eedd0
+    - name: venao_animation_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 1670ce06f964cbc45912b08f6a5f702c
+    - name: venao_animation_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: c51933926f7413a4ebc6155fa7231466
+    - name: venao_animation_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 20
+        y: 29
+        width: 43
+        height: 77
+      spriteId: 07dd27f8b4189c5458f090f5e705e096
+    - name: venao_animation_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 76
+      spriteId: c39652d87c59ea54b815bf8bd75b2a1d
+    - name: venao_animation_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 76
+      spriteId: 417a37f01ca61f3438808840fe6f86c8
+    - name: venao_animation_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 21
+        y: 28
+        width: 42
+        height: 77
+      spriteId: b0fd822d864b5ae4d86ecbf7f4d66753
+    - name: venao_animation_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 21
+        y: 29
+        width: 42
+        height: 76
+      spriteId: 83d664b8c7f259f4eb9f6612cb6e1445
+    - name: venao_animation_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 21
+        y: 27
+        width: 42
+        height: 78
+      spriteId: 450e08a24f747814eb16c5171e34d17f
+    - name: venao_animation_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 20
+        y: 28
+        width: 44
+        height: 78
+      spriteId: fee655f89498ae241bd95b43482a6b4d
+    - name: venao_animation_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 16
+        y: 28
+        width: 50
+        height: 78
+      spriteId: d055cc33f932b3945ad512f50e973a41
+    - name: venao_animation_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 10
+        y: 29
+        width: 56
+        height: 78
+      spriteId: 9e630bd244e2d7d4b885e5c0105f9bce
+    - name: venao_animation_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 5
+        y: 29
+        width: 61
+        height: 78
+      spriteId: 343893bf41fc4ec4eaba67c91b523ebf
+    - name: venao_animation_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 058b326643c6f9044a87cd91c24e4b92
+    - name: venao_animation_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 151881f8dfad80f4ab7945fe5616f0cc
+    - name: venao_animation_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 96f5ee8ebb24cc04a90542a4c947977e
+    - name: venao_animation_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 74197a17d130c6945920cdecce6b350c
+    - name: venao_animation_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: fb8ce3e8f4825d540afd60a16272eeca
+    - name: venao_animation_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 75e8b1f70f2a4ca4fadbd09a317d32ca
+    - name: venao_animation_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: c5a0000555dd4c14289e1a12fd427aed
+    - name: venao_animation_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 2
+        y: 30
+        width: 63
+        height: 78
+      spriteId: 391dae3ca4cac8c47a265309823403a7
+    - name: venao_animation_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 5
+        y: 30
+        width: 62
+        height: 77
+      spriteId: 88e75b1af31462345a2e64bd32f80b7b
+    - name: venao_animation_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 7
+        y: 30
+        width: 60
+        height: 77
+      spriteId: 9cfd7711bcf9d3444a0c2c82ff3af128
+    - name: venao_animation_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 9
+        y: 30
+        width: 59
+        height: 77
+      spriteId: c8da896e985eed84a8a7a410d86bf73d
+    - name: venao_animation_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 11
+        y: 30
+        width: 56
+        height: 77
+      spriteId: 85402ff2faa1a964db232cdce6aae87a
+    - name: venao_animation_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 1
+        y: 30
+        width: 63
+        height: 78
+      spriteId: eee3027c99397af4895cc5b7bf4338f1
+    - name: venao_animation_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 4
+        y: 30
+        width: 62
+        height: 78
+      spriteId: b370d72502fb9b042b2ad6c7a0a6ebd0
+    - name: venao_animation_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 5
+        y: 30
+        width: 61
+        height: 78
+      spriteId: d5a650ee45e51734bb16da6ddbc2b874
+    - name: venao_animation_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 9
+        y: 29
+        width: 59
+        height: 79
+      spriteId: 951045e319814aa48b5145906a73844a
+    - name: venao_animation_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 12
+        y: 29
+        width: 56
+        height: 79
+      spriteId: 9bcf7191327808e42a5031be9f83fc41
+    - name: venao_animation_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 16
+        y: 29
+        width: 52
+        height: 79
+      spriteId: 0d23115ad1f9d0a49868dd019d6f9f47
+    - name: venao_animation_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 19
+        y: 29
+        width: 48
+        height: 79
+      spriteId: 64558d01afc7bc645a06934499ad12ba
+    - name: venao_animation_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 18
+        y: 29
+        width: 49
+        height: 79
+      spriteId: 47804103360da2744b668dba5fe7b576
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 128}

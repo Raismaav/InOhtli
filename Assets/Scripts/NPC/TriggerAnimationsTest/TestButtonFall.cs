@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class TestButtonFall : MonoBehaviour
 {
-    [SerializeField] BasicDevelopEnemy bdeJ;
+    [SerializeField] BasicDevelopEnemy bdeJ,bdeVENAO;
     void OnMouseDown()
     {
         bdeJ.JaguarFall();
+        bdeVENAO.JaguarFall();
     }
 }

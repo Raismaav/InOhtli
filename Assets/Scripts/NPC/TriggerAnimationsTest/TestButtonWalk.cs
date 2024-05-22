@@ -5,10 +5,11 @@ using UnityEngine;
 public class TestButtonWalk : MonoBehaviour
 {
     [SerializeField] BasicDevelopEnemy bde;
-    [SerializeField] BasicDevelopEnemy bdeJ;
+    [SerializeField] BasicDevelopEnemy bdeJ,bdeVENAO;
     void OnMouseDown()
     {
         bde.RarWalk();
         bdeJ.JaguarWalk();
+        bdeVENAO.JaguarWalk();
     }
 }

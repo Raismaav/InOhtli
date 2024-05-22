@@ -103,7 +103,6 @@ public class Archer : MonoBehaviour
 
         GameObject arrowGO = Instantiate(arrow, transform.position, Quaternion.identity);
         arrowGO.transform.GetComponent<Arrow>().arrowDirection = arrowDirection;
-        arrowGO.transform.GetComponent<Arrow>().archer = this.gameObject;
 
         arrowGO.transform.GetComponent<Rigidbody2D>().velocity = arrowDirection * launchForce;
         throwArrow = false;

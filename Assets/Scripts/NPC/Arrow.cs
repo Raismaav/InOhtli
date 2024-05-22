@@ -6,9 +6,7 @@ public class Arrow : MonoBehaviour
 {
     private Rigidbody2D rb;
     private BoxCollider2D bc;
-
     public LayerMask floorLayer;
-    public GameObject archer;
     public Vector2 arrowDirection;
     public float collisionRadius = 0.25f;
     public bool touchingFloors;
