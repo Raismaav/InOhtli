@@ -27,7 +27,8 @@ public class ArcherEnemy : ParabolArrow
     [SerializeField] private float TimeBetweenAttack;
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
-    private string str;    public float detectionRatio = 12;
+    private string str;    
+    public float detectionRatio = 12;
     private float distancex;
     private float distancey;
     [Header("Sound Settings")]
@@ -59,12 +60,30 @@ public class ArcherEnemy : ParabolArrow
             distancey = Objetive.transform.position.y - transform.position.y;
             if(distancex < detectionRatio && distancex > -1*detectionRatio && distancey < detectionRatio && distancey > -1*detectionRatio){
                 if(TimeNextAttack <=0 && inFloor){
+                    float Altura;
+                    if(distancey<=0){
+                        Altura=0.1f;
+                    }else if(distancey<=1){
+                        Altura=1;
+                    }else if(distancey<=2){
+                        Altura=2;
+                    }else if(distancey<=4){
+                        Altura=4;
+                    }else{
+                        Altura=6;
+                    }
+                    str="attack";
                     animator.SetTrigger("AttackTrigger");
-                    Invoke("shot",AttackDuration);
+                    StartCoroutine(shot(AttackDuration,Altura));
                     TimeNextAttack=TimeBetweenAttack;
                     canSound=true;
                 }
             }
+        }
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
+            canMove=false;
+            str="attack";
+            StartCoroutine(animWait());            
         }
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
@@ -93,6 +112,11 @@ public class ArcherEnemy : ParabolArrow
             Destroy(gameObject);
         }
         
+    }
+    
+    private IEnumerator animWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
+        canMove=true;
     }
 
     private void Girar()

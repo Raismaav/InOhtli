@@ -273,8 +273,8 @@ Transform:
   m_GameObject: {fileID: 697889873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.3456, y: -4.5036, z: 0}
-  m_LocalScale: {x: 18.095446, y: 2.0763388, z: 1}
+  m_LocalPosition: {x: -22.6359, y: -4.5036, z: 0}
+  m_LocalScale: {x: 7.515039, y: 2.0763388, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -509,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 1613379288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.38, y: -2.57, z: 0}
+  m_LocalPosition: {x: -12.48, y: -5.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -644,7 +644,7 @@ MonoBehaviour:
   arrow: {fileID: 7179744155165632151, guid: 2aa4017038d47c14d99280cdabc3842c, type: 3}
   ShootController: {fileID: 1353075794}
   Objetive: {fileID: 1613379292}
-  h: 3
+  h: 20
   belowLayer:
     serializedVersion: 2
     m_Bits: 64
