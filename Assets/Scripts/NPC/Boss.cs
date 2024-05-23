@@ -35,6 +35,9 @@ public class Boss : hpSystem
     void Update()
     {
         if(ActiveIA){
+            if(invincibleTime>0){
+                invincibleTime -= Time.deltaTime;
+            }
             //Move(HorizontalMovement,false);
             frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
             belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
@@ -70,6 +73,7 @@ public class Boss : hpSystem
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
+                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

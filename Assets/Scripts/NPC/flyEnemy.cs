@@ -59,6 +59,9 @@ public class flyEnemy : HP
     // Update is called once per frame
     void Update()
     {
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
         if(!player.IsDestroyed()){
             distancex = player.transform.position.x - transform.position.x;
@@ -128,6 +131,7 @@ public class flyEnemy : HP
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
+                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

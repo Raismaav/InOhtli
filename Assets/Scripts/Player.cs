@@ -36,6 +36,14 @@ public class Player : hpSystem
     [SerializeField]private ParticleSystem inchargeParticles;
     [SerializeField]private ParticleSystem chargedParticles;
     
+    [Header("Sound Settings")]
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip AttackAudioClip;
+    [SerializeField] private AudioClip walkCaveAudioClip;
+    [SerializeField] private AudioClip walkGroundAudioClip;
+    [SerializeField] private AudioClip HurtAudioClip;
+    [SerializeField] private AudioClip JumpAudioClip;
+    private bool DashUnlocked;
 
     void Start()
     {
@@ -43,6 +51,7 @@ public class Player : hpSystem
         animator = GetComponent<Animator>();
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
         setstartingValue(getCurrentHP());
+        audioSource=GetComponent<AudioSource>();
     }
    void Update()
     {
@@ -51,9 +60,16 @@ public class Player : hpSystem
         }
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
-            if (Input.GetButton("Jump"))
+            if(HorizontalMovement!=0 && inFloor){
+                audioSource.mute=false;
+            }else{
+                audioSource.mute=true;
+            }
+            if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
+                if(inFloor)
+                SoundController.Instance.SoundPlay(JumpAudioClip);
             }
             if (Input.GetButtonUp("Jump"))
             {
@@ -63,6 +79,7 @@ public class Player : hpSystem
             if(Input.GetButtonDown("Fire1") && TimeNextAttack <=0){
                 Invoke("CharacterHit",AttackDuration);
                 animator.SetTrigger("AttackTrigger");
+                SoundController.Instance.SoundPlay(AttackAudioClip);
                 TimeNextAttack=TimeBetweenAttack;
             }
         }
@@ -168,6 +185,7 @@ public class Player : hpSystem
     public void unlockdash(){
         canDash=true;
         HabBarGO.SetActive(true);
+        DashUnlocked=true;
     }
     public void deathMenu(){
         DeathMenu.SetActive(true);
@@ -178,5 +196,8 @@ public class Player : hpSystem
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);
         Gizmos.DrawWireCube(OperadorSuelo.position, dimensionesCaja);
+    }
+    public bool DashCheck(){
+        return DashUnlocked;
     }
 }

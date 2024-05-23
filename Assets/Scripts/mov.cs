@@ -24,7 +24,7 @@ public class mov : MonoBehaviour
     [SerializeField] protected bool inFloor;
     protected bool jump=false;
     
-    protected bool canMove=true;
+    public bool canMove=true;
 
     
 

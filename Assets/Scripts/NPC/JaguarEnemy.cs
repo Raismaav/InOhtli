@@ -30,6 +30,11 @@ public class JaguarEnemy : HP
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float AttackDuration;
     [SerializeField] private float KBHitForece;
+    private string str;
+    [Header("Sound Settings")]
+    [SerializeField] private AudioClip AttackAudioClip;
+    [SerializeField] private AudioSource audioSource;
+    private bool canSound;
 
     void Start()
     {
@@ -39,6 +44,9 @@ public class JaguarEnemy : HP
     }
     void Update()
     {
+        if(invincibleTime>0){
+            invincibleTime -= Time.deltaTime;
+        }
         //Move(HorizontalMovement,false);
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         attackinfo = Physics2D.Raycast(AttackController.position, transform.right, frontAttackDistance, attackLayer);
@@ -56,9 +64,15 @@ public class JaguarEnemy : HP
             animator.SetTrigger("AttackTrigger");
             Invoke("CharacterHit",AttackDuration);
             TimeNextAttack=TimeBetweenAttack;
+            canSound=true;
         }
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
             canMove=false;
+            str="attack";
+            StartCoroutine(animWait());
+            if(canSound){
+                StartCoroutine(soundWait());
+            }
             float FixedSpeed;
             if(LD){
                 FixedSpeed= runspeed*1*.035f;
@@ -66,8 +80,7 @@ public class JaguarEnemy : HP
                 FixedSpeed= runspeed*-1*.035f;
             }
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
-        }else{
-            canMove=true;
+            
         }
 
         if(frontInfo || !belowInfo)
@@ -107,7 +120,19 @@ public class JaguarEnemy : HP
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
+                SoundController.Instance.SoundHurtPlay();                
             }
+        }
+    }
+    private IEnumerator animWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
+        canMove=true;
+    }
+    private IEnumerator soundWait(){
+        yield return new WaitForSeconds(1);
+        if(!audioSource.isPlaying&&canSound){
+            canSound=false;
+            audioSource.PlayOneShot(AttackAudioClip);
         }
     }
     private void OnDrawGizmos()
