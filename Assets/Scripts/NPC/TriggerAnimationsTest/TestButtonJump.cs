@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class TestButtonJump : MonoBehaviour
 {
-    [SerializeField] BasicDevelopEnemy bdeJ,bdeVENAO;
+    [SerializeField] BasicDevelopEnemy bdeJ,bdeVENAO,Lizzard,FinalBoss;
     void OnMouseDown()
     {
         bdeJ.JaguarJump();
         bdeVENAO.JaguarJump();
+        Lizzard.JaguarJump();
+        FinalBoss.JaguarJump();
     }
 }
