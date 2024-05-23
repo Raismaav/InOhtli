@@ -35,6 +35,7 @@ public class Player : hpSystem
     [SerializeField]private Slider BarritaParaVerLaCarga;
     [SerializeField]private ParticleSystem inchargeParticles;
     [SerializeField]private ParticleSystem chargedParticles;
+    
     [Header("Sound Settings")]
     private AudioSource audioSource;
     [SerializeField] private AudioClip AttackAudioClip;
@@ -42,6 +43,7 @@ public class Player : hpSystem
     [SerializeField] private AudioClip walkGroundAudioClip;
     [SerializeField] private AudioClip HurtAudioClip;
     [SerializeField] private AudioClip JumpAudioClip;
+    private bool DashUnlocked;
 
     void Start()
     {
@@ -183,6 +185,7 @@ public class Player : hpSystem
     public void unlockdash(){
         canDash=true;
         HabBarGO.SetActive(true);
+        DashUnlocked=true;
     }
     public void deathMenu(){
         DeathMenu.SetActive(true);
@@ -193,5 +196,8 @@ public class Player : hpSystem
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);
         Gizmos.DrawWireCube(OperadorSuelo.position, dimensionesCaja);
+    }
+    public bool DashCheck(){
+        return DashUnlocked;
     }
 }

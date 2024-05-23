@@ -9,8 +9,10 @@ public class DataController : MonoBehaviour
     public GameObject Player;
     private String Archive;
     public ClassGameData gameData = new ClassGameData();
+    public DoorController dc;
+    public GameObject semiBoss;
     private string keyWord = "Password";
-    private void Awake(){
+    private void Start(){
         Archive = Application.dataPath+"/game_data.json";
         Player = GameObject.FindGameObjectWithTag("Player");
         DataLoad();
@@ -34,6 +36,11 @@ public class DataController : MonoBehaviour
             Player.transform.position = gameData.position;
             Player.GetComponent<Player>().setCurrentHP(gameData.HP);
             Player.GetComponent<Player>().setMaxHP(gameData.MaxHP);
+            if(gameData.Door1){
+                Player.GetComponent<Player>().unlockdash();
+                dc.OpenDoor();
+                Destroy(semiBoss);
+            }
         }else{
             Debug.Log("El archivo no existe");
         }
@@ -44,7 +51,7 @@ public class DataController : MonoBehaviour
             position = Player.transform.position,
             HP = Player.GetComponent<HP>().getCurrentHP(),
             MaxHP = Player.GetComponent<HP>().getMaxHP(),
-            Door1=false
+            Door1=Player.GetComponent<Player>().DashCheck()
         };
         string StringJson = JsonUtility.ToJson(newData);
         File.WriteAllText(Archive,EncryptDecrypt(StringJson));
