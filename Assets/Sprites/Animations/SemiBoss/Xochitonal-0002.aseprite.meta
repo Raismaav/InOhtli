@@ -1,0 +1,2549 @@
+fileFormatVersion: 2
+guid: c15fa99c9785cc34e87ced74f79aba08
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638520024859281557
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Xochitonal-0002_Frame_0
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 8713b213c6ca8544cac5a298488dfb95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 266}
+  - name: Xochitonal-0002_Frame_1
+    originalName: 
+    pivot: {x: 0.85507244, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 393
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 52633b5cfbb30fd44adbc303be08c706
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 393, y: 266}
+  - name: Xochitonal-0002_Frame_2
+    originalName: 
+    pivot: {x: 0.85507244, y: 0.53333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 484
+      y: 405
+      width: 69
+      height: 60
+    spriteID: 0944db47e4b03bc40904ba9e8916c4ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 484, y: 405}
+  - name: Xochitonal-0002_Frame_3
+    originalName: 
+    pivot: {x: 0.8529413, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 405
+      width: 68
+      height: 61
+    spriteID: 2beb72a879d4c7a468046ea5845f5025
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 405}
+  - name: Xochitonal-0002_Frame_4
+    originalName: 
+    pivot: {x: 0.8529413, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 405
+      width: 68
+      height: 61
+    spriteID: 87c65094f82457a4ba2ec59a684ba063
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 408, y: 405}
+  - name: Xochitonal-0002_Frame_5
+    originalName: 
+    pivot: {x: 0.83098584, y: 0.55172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 736
+      y: 405
+      width: 71
+      height: 58
+    spriteID: 13476d28e0e7acf4db6a900975b9213f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 736, y: 405}
+  - name: Xochitonal-0002_Frame_6
+    originalName: 
+    pivot: {x: 0.8428572, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 266
+      width: 70
+      height: 61
+    spriteID: 7a7593530054ad142b9bc3523df920b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 266}
+  - name: Xochitonal-0002_Frame_7
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 470
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 9460fe5eadb05ed4e8d53a0977a8e8d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 470, y: 266}
+  - name: Xochitonal-0002_Frame_8
+    originalName: 
+    pivot: {x: 0.85714287, y: 0.516129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 946
+      y: 194
+      width: 70
+      height: 62
+    spriteID: e23ccf553dd55de4fafbc58c60229005
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 946, y: 194}
+  - name: Xochitonal-0002_Frame_9
+    originalName: 
+    pivot: {x: 0.7058824, y: 0.55172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 503
+      y: 194
+      width: 85
+      height: 58
+    spriteID: 72dd6bd3d012ccc46826006e9aaaba7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 503, y: 194}
+  - name: Xochitonal-0002_Frame_10
+    originalName: 
+    pivot: {x: 0.66265064, y: 0.6037736}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 126
+      width: 83
+      height: 53
+    spriteID: 9e616741708fdfc4fa993633e6f9576f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 126}
+  - name: Xochitonal-0002_Frame_11
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 636
+      y: 67
+      width: 90
+      height: 47
+    spriteID: 1181b725529f97b4289fa4a9d2184783
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 636, y: 67}
+  - name: Xochitonal-0002_Frame_12
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 0481d7071a5bbc542acee19c63abeb40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 474}
+  - name: Xochitonal-0002_Frame_13
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 335
+      y: 474
+      width: 90
+      height: 43
+    spriteID: a5d59d29352f1ef4c9a32984f0861063
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 335, y: 474}
+  - name: Xochitonal-0002_Frame_14
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 433
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 5aab2d0daafb71a4ca123a97f471c1a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 433, y: 474}
+  - name: Xochitonal-0002_Frame_15
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 531
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 850524f8a8aaff9478e27fb5d3258c75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 531, y: 474}
+  - name: Xochitonal-0002_Frame_16
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 629
+      y: 474
+      width: 90
+      height: 43
+    spriteID: bcd05fc171bd03c4891beda262f47132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 629, y: 474}
+  - name: Xochitonal-0002_Frame_17
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 727
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 86733de7b5731d44c98ac3fc1594cabc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 727, y: 474}
+  - name: Xochitonal-0002_Frame_18
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 825
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 64892a80cb0471f47947784dea8a2aca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 825, y: 474}
+  - name: Xochitonal-0002_Frame_19
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 923
+      y: 474
+      width: 90
+      height: 43
+    spriteID: 462f6dd2a349a0346af62b803f2099d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 923, y: 474}
+  - name: Xochitonal-0002_Frame_20
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 539
+      width: 90
+      height: 43
+    spriteID: 5fcbd635d23e9bc419c764952b8f4ec4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 539}
+  - name: Xochitonal-0002_Frame_21
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 539
+      width: 90
+      height: 43
+    spriteID: 4124ea8fbd06ff1499586285d2957c0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 539}
+  - name: Xochitonal-0002_Frame_22
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 539
+      width: 90
+      height: 43
+    spriteID: b26b758d04e859a4e8df0a77c3d7e70f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 539}
+  - name: Xochitonal-0002_Frame_23
+    originalName: 
+    pivot: {x: 0.5555555, y: 0.74418604}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 298
+      y: 539
+      width: 90
+      height: 43
+    spriteID: 4646e5063d8dc8b438f76cdb91f0a66c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 298, y: 539}
+  - name: Xochitonal-0002_Frame_24
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 386
+      y: 126
+      width: 90
+      height: 47
+    spriteID: ab11af1b2062e0e4597417740a64662a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 386, y: 126}
+  - name: Xochitonal-0002_Frame_25
+    originalName: 
+    pivot: {x: 0.66265064, y: 0.6037736}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 126
+      width: 83
+      height: 53
+    spriteID: 7fcb418d6bc3cea488b8d9c50efeb6cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 126}
+  - name: Xochitonal-0002_Frame_26
+    originalName: 
+    pivot: {x: 0.7058824, y: 0.55172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 596
+      y: 194
+      width: 85
+      height: 58
+    spriteID: dfa9d5bb12398cb43b6b8c552949c576
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 596, y: 194}
+  - name: Xochitonal-0002_Frame_27
+    originalName: 
+    pivot: {x: 0.85714287, y: 0.516129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 266
+      width: 70
+      height: 62
+    spriteID: a155a20c8e0e6a44cb25d1c5d135d780
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 266}
+  - name: Xochitonal-0002_Frame_28
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 547
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 57d90fb8924ef9c40ae08617a5709981
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 547, y: 266}
+  - name: Xochitonal-0002_Frame_29
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 624
+      y: 266
+      width: 69
+      height: 61
+    spriteID: b8304473231c0994088006aaf9de97de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 624, y: 266}
+  - name: Xochitonal-0002_Frame_30
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 701
+      y: 266
+      width: 69
+      height: 61
+    spriteID: b38123bed7fbd7d4d8778af0aa10e881
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 701, y: 266}
+  - name: Xochitonal-0002_Frame_31
+    originalName: 
+    pivot: {x: 0.7972973, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 782
+      y: 194
+      width: 74
+      height: 64
+    spriteID: 20d9cb9d0301e2341bbc3e698d80eab3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 782, y: 194}
+  - name: Xochitonal-0002_Frame_32
+    originalName: 
+    pivot: {x: 0.45801523, y: 0.58181816}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 636
+      y: 4
+      width: 131
+      height: 55
+    spriteID: c635cc24cd646874086796889ff4b7a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 636, y: 4}
+  - name: Xochitonal-0002_Frame_33
+    originalName: 
+    pivot: {x: 0.7972973, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 864
+      y: 194
+      width: 74
+      height: 64
+    spriteID: e7ea496811ac8694dbf8a29ac47133f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 864, y: 194}
+  - name: Xochitonal-0002_Frame_34
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 778
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 4a749df7745add24e8df79413e0c7f1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 778, y: 266}
+  - name: Xochitonal-0002_Frame_35
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 855
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 0839b54ee92be6344a25f6e5ca6027fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 855, y: 266}
+  - name: Xochitonal-0002_Frame_36
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 932
+      y: 266
+      width: 69
+      height: 61
+    spriteID: 60e9f332bab5a474d86105971f1c47ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 932, y: 266}
+  - name: Xochitonal-0002_Frame_37
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 58bdf70198c33124a8d0de136aea590e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 336}
+  - name: Xochitonal-0002_Frame_38
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 5646f511e2215a741b6334c857035e9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 336}
+  - name: Xochitonal-0002_Frame_39
+    originalName: 
+    pivot: {x: 0.8591549, y: 0.5614035}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 815
+      y: 405
+      width: 71
+      height: 57
+    spriteID: 297203a7194c637488f842fcac74a664
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 815, y: 405}
+  - name: Xochitonal-0002_Frame_40
+    originalName: 
+    pivot: {x: 0.8591549, y: 0.5614035}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 894
+      y: 405
+      width: 71
+      height: 57
+    spriteID: 81cc25b27ad72344490265241bc279dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 894, y: 405}
+  - name: Xochitonal-0002_Frame_41
+    originalName: 
+    pivot: {x: 0.85714287, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 266
+      width: 70
+      height: 61
+    spriteID: bfe80c83d2f78ec45869308f491d2fad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 238, y: 266}
+  - name: Xochitonal-0002_Frame_42
+    originalName: 
+    pivot: {x: 0.625, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 194
+      width: 96
+      height: 61
+    spriteID: 1b3cdf66558f2d6408fec508da46d4fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 194}
+  - name: Xochitonal-0002_Frame_43
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 2cad8c5f6acdaf24da7acdde47c93d07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 336}
+  - name: Xochitonal-0002_Frame_44
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 235
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 12e06423522b84d46bc291e1c94de8ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 235, y: 336}
+  - name: Xochitonal-0002_Frame_45
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 38f836e53fd2bea4f89168fcf261dfde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 336}
+  - name: Xochitonal-0002_Frame_46
+    originalName: 
+    pivot: {x: 0.8591549, y: 0.5614035}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 474
+      width: 71
+      height: 57
+    spriteID: 5b8f4ab63bb0811498eba35a7e58e27d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 474}
+  - name: Xochitonal-0002_Frame_47
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 389
+      y: 336
+      width: 69
+      height: 61
+    spriteID: bc4de954e2dccdc47911109535ffdee1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 389, y: 336}
+  - name: Xochitonal-0002_Frame_48
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.49180326}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 466
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 8e3ad70eac0720b448cef32765797aff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 466, y: 336}
+  - name: Xochitonal-0002_Frame_49
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.49180326}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 543
+      y: 336
+      width: 69
+      height: 61
+    spriteID: ec442b2558d19234ba3da93f9b80ad5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 543, y: 336}
+  - name: Xochitonal-0002_Frame_50
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.48333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 561
+      y: 405
+      width: 69
+      height: 60
+    spriteID: 9c90a95d1abfcb84badccae3142e9ade
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 561, y: 405}
+  - name: Xochitonal-0002_Frame_51
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.45614034}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 474
+      width: 69
+      height: 57
+    spriteID: 04b026c4f45623a43990d321c2cd446c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 474}
+  - name: Xochitonal-0002_Frame_52
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.45614034}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 474
+      width: 69
+      height: 57
+    spriteID: ce12e37403fcb294eb872b1dfd2a9c16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 474}
+  - name: Xochitonal-0002_Frame_53
+    originalName: 
+    pivot: {x: 0.84057975, y: 0.49180326}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 620
+      y: 336
+      width: 69
+      height: 61
+    spriteID: e2cc02092bcc1ae4bba832bfc49e3298
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 620, y: 336}
+  - name: Xochitonal-0002_Frame_54
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 697
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 112736549218f93428cb7047aa12694d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 697, y: 336}
+  - name: Xochitonal-0002_Frame_55
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 774
+      y: 336
+      width: 69
+      height: 61
+    spriteID: e5d56c5bd6ea62b46a2c24bebca3fec5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 774, y: 336}
+  - name: Xochitonal-0002_Frame_56
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 851
+      y: 336
+      width: 69
+      height: 61
+    spriteID: c7e0cf3a04c22c547aa1ab9905dabf35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 851, y: 336}
+  - name: Xochitonal-0002_Frame_57
+    originalName: 
+    pivot: {x: 0.85714287, y: 0.516129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 266
+      width: 70
+      height: 62
+    spriteID: 75501a33b07c1d0409cbe3f9e72b443b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 266}
+  - name: Xochitonal-0002_Frame_58
+    originalName: 
+    pivot: {x: 0.7058824, y: 0.55172414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 689
+      y: 194
+      width: 85
+      height: 58
+    spriteID: a25ec3430be81b7408eccc6890af2228
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 689, y: 194}
+  - name: Xochitonal-0002_Frame_59
+    originalName: 
+    pivot: {x: 0.66265064, y: 0.6037736}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 126
+      width: 83
+      height: 53
+    spriteID: f0d322acbe5110846a3827784e77b26d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 126}
+  - name: Xochitonal-0002_Frame_60
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 484
+      y: 126
+      width: 90
+      height: 47
+    spriteID: 0a072e4cc1e8c6e4f8b1b7e82d8ff734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 484, y: 126}
+  - name: Xochitonal-0002_Frame_61
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.484375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 194
+      width: 90
+      height: 64
+    spriteID: 8b8ddc1428d3990438bda2fd92eeb060
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 194}
+  - name: Xochitonal-0002_Frame_62
+    originalName: 
+    pivot: {x: 0.57303375, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 126
+      width: 89
+      height: 47
+    spriteID: 72a31b9269c386e40a30ad22e53c69cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 126}
+  - name: Xochitonal-0002_Frame_63
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.484375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 194
+      width: 90
+      height: 64
+    spriteID: 2d4c0ee5b15e6db49aecbdbad30645f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 194}
+  - name: Xochitonal-0002_Frame_64
+    originalName: 
+    pivot: {x: 0.57303375, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 679
+      y: 126
+      width: 89
+      height: 47
+    spriteID: be8afeae98f374042ab4e8f567adf99f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 679, y: 126}
+  - name: Xochitonal-0002_Frame_65
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.484375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 405
+      y: 194
+      width: 90
+      height: 64
+    spriteID: 600dcb92f36c26b4bbfdb639cf348e25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 405, y: 194}
+  - name: Xochitonal-0002_Frame_66
+    originalName: 
+    pivot: {x: 0.57303375, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 776
+      y: 126
+      width: 89
+      height: 47
+    spriteID: 2d5f82d52590cae40adbf5f734833024
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 776, y: 126}
+  - name: Xochitonal-0002_Frame_67
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.67391306}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 871
+      y: 72
+      width: 90
+      height: 46
+    spriteID: fc1f5b52bb0a2f74495e6b4528b8f6e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 871, y: 72}
+  - name: Xochitonal-0002_Frame_68
+    originalName: 
+    pivot: {x: 0.57303375, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 873
+      y: 126
+      width: 89
+      height: 47
+    spriteID: b82aeab46240e0146b03903565e2ffa3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 873, y: 126}
+  - name: Xochitonal-0002_Frame_69
+    originalName: 
+    pivot: {x: 0.5777778, y: 0.67391306}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 638
+      y: 405
+      width: 90
+      height: 46
+    spriteID: 2bc41cdd72377ea46a4ef99957a1e30d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 638, y: 405}
+  - name: Xochitonal-0002_Frame_70
+    originalName: 
+    pivot: {x: 0.57303375, y: 0.68085104}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 235
+      y: 405
+      width: 89
+      height: 47
+    spriteID: 00076677747a2994ca9f53d3ca352ccc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 235, y: 405}
+  - name: Xochitonal-0002_Frame_71
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 928
+      y: 336
+      width: 69
+      height: 61
+    spriteID: 525399ace95b58f4586ed48c949bab03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 928, y: 336}
+  - name: Xochitonal-0002_Frame_72
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 405
+      width: 69
+      height: 61
+    spriteID: c6f2e3b8e287e9d4eabc80d9494df9ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 405}
+  - name: Xochitonal-0002_Frame_73
+    originalName: 
+    pivot: {x: 0.8474576, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 590
+      width: 59
+      height: 61
+    spriteID: ac988be812c28934c9e0f55711d5cef0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 590}
+  - name: Xochitonal-0002_Frame_74
+    originalName: 
+    pivot: {x: 0.6236559, y: 0.53125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 194
+      width: 93
+      height: 64
+    spriteID: 0ec5ac90408102945861f37b2bd034dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 194}
+  - name: Xochitonal-0002_Frame_75
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 405
+      width: 69
+      height: 61
+    spriteID: 187d0ff825fcf3740b148fc0efdbc3c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 405}
+  - name: Xochitonal-0002_Frame_76
+    originalName: 
+    pivot: {x: 0.8695652, y: 0.52459013}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 405
+      width: 69
+      height: 61
+    spriteID: e655937929d0daa45ad324c58e033159
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 405}
+  - name: Xochitonal-0002_Frame_77
+    originalName: 
+    pivot: {x: 0.7840909, y: 0.44155845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 775
+      y: 4
+      width: 88
+      height: 77
+    spriteID: 16777e061bfdcd7488225d887baecfc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 775, y: 4}
+  - name: Xochitonal-0002_Frame_78
+    originalName: 
+    pivot: {x: 0.6388889, y: 0.3063063}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 4
+      width: 108
+      height: 111
+    spriteID: 23fb23a1f822f484e8247957f6928e2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 4}
+  - name: Xochitonal-0002_Frame_79
+    originalName: 
+    pivot: {x: 0.6388889, y: 0.3063063}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 4
+      width: 108
+      height: 111
+    spriteID: 447215af1b09e5e47b21aa48151f2a9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 384, y: 4}
+  - name: Xochitonal-0002_Frame_80
+    originalName: 
+    pivot: {x: 0.6333334, y: 0.2982456}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 120
+      height: 114
+    spriteID: 697b512a490f23e49898e5c8409e710d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Xochitonal-0002_Frame_81
+    originalName: 
+    pivot: {x: 0.65625, y: 0.23076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 4
+      width: 128
+      height: 104
+    spriteID: 2b302518d0a40a14cac3050b57ab8839
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 4}
+  - name: Xochitonal-0002_Frame_82
+    originalName: 
+    pivot: {x: 0.65625, y: 0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 128
+      height: 88
+    spriteID: 13f9e5a3c3d216e498a52bc944e3ea0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: Xochitonal-0002_Frame_83
+    originalName: 
+    pivot: {x: 0.6138614, y: -0.28333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 871
+      y: 4
+      width: 101
+      height: 60
+    spriteID: ced09520e01570048951339e1489122d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 871, y: 4}
+  - name: Xochitonal-0002_Frame_84
+    originalName: 
+    pivot: {x: 0.6138614, y: -0.28333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 126
+      width: 101
+      height: 60
+    spriteID: dc5cf098a492a614dbc075bdd31b51f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 126}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 176199570
+    name: Xochitonal-0002
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Xochitonal-0002_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 8713b213c6ca8544cac5a298488dfb95
+    - name: Xochitonal-0002_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 52633b5cfbb30fd44adbc303be08c706
+    - name: Xochitonal-0002_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 0
+        width: 69
+        height: 60
+      spriteId: 0944db47e4b03bc40904ba9e8916c4ae
+    - name: Xochitonal-0002_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 0
+        width: 68
+        height: 61
+      spriteId: 2beb72a879d4c7a468046ea5845f5025
+    - name: Xochitonal-0002_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 0
+        width: 68
+        height: 61
+      spriteId: 87c65094f82457a4ba2ec59a684ba063
+    - name: Xochitonal-0002_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 13
+        y: 0
+        width: 71
+        height: 58
+      spriteId: 13476d28e0e7acf4db6a900975b9213f
+    - name: Xochitonal-0002_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 0
+        width: 70
+        height: 61
+      spriteId: 7a7593530054ad142b9bc3523df920b3
+    - name: Xochitonal-0002_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 9460fe5eadb05ed4e8d53a0977a8e8d9
+    - name: Xochitonal-0002_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 12
+        y: 0
+        width: 70
+        height: 62
+      spriteId: e23ccf553dd55de4fafbc58c60229005
+    - name: Xochitonal-0002_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 12
+        y: 0
+        width: 85
+        height: 58
+      spriteId: 72dd6bd3d012ccc46826006e9aaaba7a
+    - name: Xochitonal-0002_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 17
+        y: 0
+        width: 83
+        height: 53
+      spriteId: 9e616741708fdfc4fa993633e6f9576f
+    - name: Xochitonal-0002_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 20
+        y: 0
+        width: 90
+        height: 47
+      spriteId: 1181b725529f97b4289fa4a9d2184783
+    - name: Xochitonal-0002_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 0481d7071a5bbc542acee19c63abeb40
+    - name: Xochitonal-0002_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: a5d59d29352f1ef4c9a32984f0861063
+    - name: Xochitonal-0002_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 5aab2d0daafb71a4ca123a97f471c1a8
+    - name: Xochitonal-0002_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 850524f8a8aaff9478e27fb5d3258c75
+    - name: Xochitonal-0002_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: bcd05fc171bd03c4891beda262f47132
+    - name: Xochitonal-0002_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 86733de7b5731d44c98ac3fc1594cabc
+    - name: Xochitonal-0002_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 64892a80cb0471f47947784dea8a2aca
+    - name: Xochitonal-0002_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 462f6dd2a349a0346af62b803f2099d0
+    - name: Xochitonal-0002_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 5fcbd635d23e9bc419c764952b8f4ec4
+    - name: Xochitonal-0002_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 4124ea8fbd06ff1499586285d2957c0e
+    - name: Xochitonal-0002_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: b26b758d04e859a4e8df0a77c3d7e70f
+    - name: Xochitonal-0002_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 22
+        y: 0
+        width: 90
+        height: 43
+      spriteId: 4646e5063d8dc8b438f76cdb91f0a66c
+    - name: Xochitonal-0002_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 20
+        y: 0
+        width: 90
+        height: 47
+      spriteId: ab11af1b2062e0e4597417740a64662a
+    - name: Xochitonal-0002_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 17
+        y: 0
+        width: 83
+        height: 53
+      spriteId: 7fcb418d6bc3cea488b8d9c50efeb6cc
+    - name: Xochitonal-0002_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 12
+        y: 0
+        width: 85
+        height: 58
+      spriteId: dfa9d5bb12398cb43b6b8c552949c576
+    - name: Xochitonal-0002_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 12
+        y: 0
+        width: 70
+        height: 62
+      spriteId: a155a20c8e0e6a44cb25d1c5d135d780
+    - name: Xochitonal-0002_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 57d90fb8924ef9c40ae08617a5709981
+    - name: Xochitonal-0002_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: b8304473231c0994088006aaf9de97de
+    - name: Xochitonal-0002_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: b38123bed7fbd7d4d8778af0aa10e881
+    - name: Xochitonal-0002_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 13
+        y: 0
+        width: 74
+        height: 64
+      spriteId: 20d9cb9d0301e2341bbc3e698d80eab3
+    - name: Xochitonal-0002_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 12
+        y: 0
+        width: 131
+        height: 55
+      spriteId: c635cc24cd646874086796889ff4b7a1
+    - name: Xochitonal-0002_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 13
+        y: 0
+        width: 74
+        height: 64
+      spriteId: e7ea496811ac8694dbf8a29ac47133f3
+    - name: Xochitonal-0002_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 4a749df7745add24e8df79413e0c7f1c
+    - name: Xochitonal-0002_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 0839b54ee92be6344a25f6e5ca6027fa
+    - name: Xochitonal-0002_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 60e9f332bab5a474d86105971f1c47ef
+    - name: Xochitonal-0002_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 58bdf70198c33124a8d0de136aea590e
+    - name: Xochitonal-0002_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 5646f511e2215a741b6334c857035e9c
+    - name: Xochitonal-0002_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 11
+        y: 0
+        width: 71
+        height: 57
+      spriteId: 297203a7194c637488f842fcac74a664
+    - name: Xochitonal-0002_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 11
+        y: 0
+        width: 71
+        height: 57
+      spriteId: 81cc25b27ad72344490265241bc279dd
+    - name: Xochitonal-0002_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 12
+        y: 0
+        width: 70
+        height: 61
+      spriteId: bfe80c83d2f78ec45869308f491d2fad
+    - name: Xochitonal-0002_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 12
+        y: 0
+        width: 96
+        height: 61
+      spriteId: 1b3cdf66558f2d6408fec508da46d4fc
+    - name: Xochitonal-0002_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 2cad8c5f6acdaf24da7acdde47c93d07
+    - name: Xochitonal-0002_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 12e06423522b84d46bc291e1c94de8ab
+    - name: Xochitonal-0002_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 38f836e53fd2bea4f89168fcf261dfde
+    - name: Xochitonal-0002_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 11
+        y: 0
+        width: 71
+        height: 57
+      spriteId: 5b8f4ab63bb0811498eba35a7e58e27d
+    - name: Xochitonal-0002_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: bc4de954e2dccdc47911109535ffdee1
+    - name: Xochitonal-0002_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 14
+        y: 2
+        width: 69
+        height: 61
+      spriteId: 8e3ad70eac0720b448cef32765797aff
+    - name: Xochitonal-0002_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 14
+        y: 2
+        width: 69
+        height: 61
+      spriteId: ec442b2558d19234ba3da93f9b80ad5e
+    - name: Xochitonal-0002_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 14
+        y: 3
+        width: 69
+        height: 60
+      spriteId: 9c90a95d1abfcb84badccae3142e9ade
+    - name: Xochitonal-0002_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 14
+        y: 6
+        width: 69
+        height: 57
+      spriteId: 04b026c4f45623a43990d321c2cd446c
+    - name: Xochitonal-0002_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 14
+        y: 6
+        width: 69
+        height: 57
+      spriteId: ce12e37403fcb294eb872b1dfd2a9c16
+    - name: Xochitonal-0002_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 14
+        y: 2
+        width: 69
+        height: 61
+      spriteId: e2cc02092bcc1ae4bba832bfc49e3298
+    - name: Xochitonal-0002_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 112736549218f93428cb7047aa12694d
+    - name: Xochitonal-0002_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: e5d56c5bd6ea62b46a2c24bebca3fec5
+    - name: Xochitonal-0002_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: c7e0cf3a04c22c547aa1ab9905dabf35
+    - name: Xochitonal-0002_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 12
+        y: 0
+        width: 70
+        height: 62
+      spriteId: 75501a33b07c1d0409cbe3f9e72b443b
+    - name: Xochitonal-0002_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 12
+        y: 0
+        width: 85
+        height: 58
+      spriteId: a25ec3430be81b7408eccc6890af2228
+    - name: Xochitonal-0002_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 17
+        y: 0
+        width: 83
+        height: 53
+      spriteId: f0d322acbe5110846a3827784e77b26d
+    - name: Xochitonal-0002_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 20
+        y: 0
+        width: 90
+        height: 47
+      spriteId: 0a072e4cc1e8c6e4f8b1b7e82d8ff734
+    - name: Xochitonal-0002_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 20
+        y: 1
+        width: 90
+        height: 64
+      spriteId: 8b8ddc1428d3990438bda2fd92eeb060
+    - name: Xochitonal-0002_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 21
+        y: 0
+        width: 89
+        height: 47
+      spriteId: 72a31b9269c386e40a30ad22e53c69cc
+    - name: Xochitonal-0002_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 20
+        y: 1
+        width: 90
+        height: 64
+      spriteId: 2d4c0ee5b15e6db49aecbdbad30645f4
+    - name: Xochitonal-0002_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 21
+        y: 0
+        width: 89
+        height: 47
+      spriteId: be8afeae98f374042ab4e8f567adf99f
+    - name: Xochitonal-0002_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 20
+        y: 1
+        width: 90
+        height: 64
+      spriteId: 600dcb92f36c26b4bbfdb639cf348e25
+    - name: Xochitonal-0002_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 21
+        y: 0
+        width: 89
+        height: 47
+      spriteId: 2d5f82d52590cae40adbf5f734833024
+    - name: Xochitonal-0002_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 20
+        y: 1
+        width: 90
+        height: 46
+      spriteId: fc1f5b52bb0a2f74495e6b4528b8f6e4
+    - name: Xochitonal-0002_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 21
+        y: 0
+        width: 89
+        height: 47
+      spriteId: b82aeab46240e0146b03903565e2ffa3
+    - name: Xochitonal-0002_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 20
+        y: 1
+        width: 90
+        height: 46
+      spriteId: 2bc41cdd72377ea46a4ef99957a1e30d
+    - name: Xochitonal-0002_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 21
+        y: 0
+        width: 89
+        height: 47
+      spriteId: 00076677747a2994ca9f53d3ca352ccc
+    - name: Xochitonal-0002_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 525399ace95b58f4586ed48c949bab03
+    - name: Xochitonal-0002_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: c6f2e3b8e287e9d4eabc80d9494df9ed
+    - name: Xochitonal-0002_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 22
+        y: 0
+        width: 59
+        height: 61
+      spriteId: ac988be812c28934c9e0f55711d5cef0
+    - name: Xochitonal-0002_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 14
+        y: -2
+        width: 93
+        height: 64
+      spriteId: 0ec5ac90408102945861f37b2bd034dd
+    - name: Xochitonal-0002_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: 187d0ff825fcf3740b148fc0efdbc3c6
+    - name: Xochitonal-0002_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 12
+        y: 0
+        width: 69
+        height: 61
+      spriteId: e655937929d0daa45ad324c58e033159
+    - name: Xochitonal-0002_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 3
+        y: -2
+        width: 88
+        height: 77
+      spriteId: 16777e061bfdcd7488225d887baecfc9
+    - name: Xochitonal-0002_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 3
+        y: -2
+        width: 108
+        height: 111
+      spriteId: 23fb23a1f822f484e8247957f6928e2e
+    - name: Xochitonal-0002_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 3
+        y: -2
+        width: 108
+        height: 111
+      spriteId: 447215af1b09e5e47b21aa48151f2a9c
+    - name: Xochitonal-0002_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: -4
+        y: -2
+        width: 120
+        height: 114
+      spriteId: 697b512a490f23e49898e5c8409e710d
+    - name: Xochitonal-0002_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: -12
+        y: 8
+        width: 128
+        height: 104
+      spriteId: 2b302518d0a40a14cac3050b57ab8839
+    - name: Xochitonal-0002_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: -12
+        y: 24
+        width: 128
+        height: 88
+      spriteId: 13f9e5a3c3d216e498a52bc944e3ea0e
+    - name: Xochitonal-0002_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 10
+        y: 49
+        width: 101
+        height: 60
+      spriteId: ced09520e01570048951339e1489122d
+    - name: Xochitonal-0002_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 10
+        y: 49
+        width: 101
+        height: 60
+      spriteId: dc5cf098a492a614dbc075bdd31b51f3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 144, y: 64}
