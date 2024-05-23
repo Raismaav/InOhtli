@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class mov : MonoBehaviour
 {
     [Header("Movement Settings")]
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb;
     protected Animator animator;
     [SerializeField]protected float HorizontalMovement;
     protected float VerticalMovement = 0f;
