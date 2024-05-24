@@ -90,7 +90,6 @@ public class basicEnemy : HP
         }
         
     }
-
     private void Girar()
     {
         LookToRight = !LookToRight;
