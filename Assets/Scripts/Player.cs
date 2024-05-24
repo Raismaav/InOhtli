@@ -60,6 +60,7 @@ public class Player : hpSystem
         }
         if(canMove){
             HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
+            animator.SetInteger("Walk",(int)HorizontalMovement);
             if(HorizontalMovement!=0 && inFloor){
                 audioSource.mute=false;
             }else{
@@ -67,6 +68,7 @@ public class Player : hpSystem
             }
             if (Input.GetButtonDown("Jump"))
             {
+                animator.SetBool("Jump",true);
                 jump = true;
                 if(inFloor)
                 SoundController.Instance.SoundPlay(JumpAudioClip);
@@ -131,7 +133,21 @@ public class Player : hpSystem
             TimeCharge=0;
             BarritaParaVerLaCarga.value= TimeCharge;
         }
+        if(!inFloor){
+            if(rb.velocityY>0){
+                animator.SetBool("Jump",true);
+                animator.SetBool("Fall",false);
+            }else{
+                animator.SetBool("Jump",false);
+                animator.SetBool("Fall",true);
+            }
+
+        }else{
+                animator.SetBool("Fall",false);  
+                animator.SetBool("Jump",false);
+        }
         if(!Live){
+            animator.SetTrigger("DIE");
             canMove=false;
             deathMenu();
             gameObject.SetActive(false);
@@ -156,10 +172,10 @@ public class Player : hpSystem
         }
         rb.gravityScale=0;
         rb.velocity=new Vector2(FixedSpeed,Vertical);
-        //anim
+        animator.SetBool("Dash",true);
 
         yield return new WaitForSeconds(DashTime);
-
+        animator.SetBool("Dash",false);
         canMove=true;
         canDash=true;
         rb.gravityScale=1;
