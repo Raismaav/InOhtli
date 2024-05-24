@@ -22,13 +22,15 @@ public class HP : mov
             int fixedXDirection;
             CurrentHealth -= DamageValue;
             //Vector2 KnockbackDirection=transform.position-tr.position;
-            StartCoroutine(KBTime());
-            if(transform.position.x-tr.transform.position.x>0){
-                fixedXDirection=1;
-            }else{
-                fixedXDirection=-1;
+            if(!gameObject.CompareTag("Boss")){
+                StartCoroutine(KBTime());
+                if(transform.position.x-tr.transform.position.x>0){
+                    fixedXDirection=1;
+                }else{
+                    fixedXDirection=-1;
+                }
+                rb.velocity=new Vector2(fixedXDirection*HitForce,rb.velocityY+0.5f);
             }
-            rb.velocity=new Vector2(fixedXDirection*HitForce,rb.velocityY+0.5f);
             invincibleTime=invincibleDuration;
         }
         if (CurrentHealth <= 0 )
@@ -36,7 +38,6 @@ public class HP : mov
             Live=false;
         }
     }
-
     public void Cure(float CureValue)
     {
         if ((CurrentHealth + CureValue) > CurrentHealth)
@@ -63,7 +64,7 @@ public class HP : mov
     }
     private IEnumerator KBTime(){
         canMove=false;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.75f);
         canMove=true;
     }
 

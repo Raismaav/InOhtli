@@ -140,7 +140,7 @@ public class Player : hpSystem
     private void CharacterHit(){
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
-            if(colition.CompareTag("Enemigo")){
+            if(colition.CompareTag("Enemigo")||colition.CompareTag("Boss")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
             }
         }
