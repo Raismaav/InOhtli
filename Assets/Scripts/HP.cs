@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+// using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class HP : mov
 {
     // Start is called before the first frame update
     [Header("Health Settings")]
-    [SerializeField] private float CurrentHealth;
-    [SerializeField] private float MaxHealth;
+    [SerializeField]
+    protected float CurrentHealth;
+    [SerializeField] protected float MaxHealth;
     protected bool Live=true;
     public float invincibleTime;
     
@@ -17,8 +18,13 @@ public class HP : mov
 
     public void Damage(float DamageValue,Transform tr,float HitForce)
     {
+        
         if(invincibleTime <= 0)
         {
+            if (TrainingMode)
+            {
+                AddReward(-0.1f);
+            }
             int fixedXDirection;
             CurrentHealth -= DamageValue;
             //Vector2 KnockbackDirection=transform.position-tr.position;
@@ -35,7 +41,15 @@ public class HP : mov
         }
         if (CurrentHealth <= 0 )
         {
-            Live=false;
+            if (TrainingMode)
+            {
+                AddReward(-0.5f);
+                CurrentHealth = MaxHealth;
+            }
+            else
+            {
+                Live=false;
+            }
         }
     }
     public void Cure(float CureValue)
