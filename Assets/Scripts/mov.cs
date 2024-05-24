@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Unity.MLAgents;
+using Unity.MLAgents.Sensors;
 
-public class mov : MonoBehaviour
+public class mov : Agent
 {
     [Header("Movement Settings")]
     protected Rigidbody2D rb;
@@ -26,7 +28,9 @@ public class mov : MonoBehaviour
     
     public bool canMove=true;
 
-    
+    [Header("AI Setings")]
+    [SerializeField]
+    protected bool TrainingMode = false;
 
     
     private void FixedUpdate()
