@@ -7,7 +7,6 @@ TagManager:
   - Enemigo
   - Floor
   - Triggers
-  - Boss
   layers:
   - Default
   - TransparentFX
@@ -23,7 +22,7 @@ TagManager:
   - Rats
   - Jaguar
   - Owl
-  - Boss
+  - 
   - 
   - 
   - 
