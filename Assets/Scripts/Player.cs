@@ -165,7 +165,6 @@ public class Player : hpSystem
         rb.gravityScale=1;
     }
     private void PlayParticles(){
-
         chargedParticles.Play();
     }
     private void Pause()

@@ -388,7 +388,7 @@ Transform:
   m_GameObject: {fileID: 55889920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.61, y: 2.5679, z: 0}
+  m_LocalPosition: {x: -12.29, y: 2.5679, z: 0}
   m_LocalScale: {x: 2.9604611, y: 21.198849, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -732,7 +732,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.611265
+  orthographic size: 6.424753
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -757,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 216585915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -2.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3333,7 +3333,7 @@ Transform:
   m_GameObject: {fileID: 1566196053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.44, y: 1.21, z: 0}
+  m_LocalPosition: {x: 11.87, y: 1.21, z: 0}
   m_LocalScale: {x: 2.9604611, y: 21.198849, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4742,7 +4742,7 @@ Transform:
   m_GameObject: {fileID: 2021865610}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.41, y: -6.85, z: 0}
+  m_LocalPosition: {x: -7.02, y: -6.31, z: 0}
   m_LocalScale: {x: 0.8, y: 1.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5368,6 +5368,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &79875989861482830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4405316434305052366, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 2021865612}
+    - target: {fileID: 4405316434305052366, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: HB
+      value: 
+      objectReference: {fileID: 1654885731}
+    - target: {fileID: 4405316434305052366, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: Dummy
+      value: 
+      objectReference: {fileID: 2021865610}
+    - target: {fileID: 4405316434305052366, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 2021865617}
+    - target: {fileID: 4405316434305052366, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: DoorsTiles
+      value: 
+      objectReference: {fileID: 55889925}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813048688905354586, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617723561367241421, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
+      propertyPath: m_Name
+      value: DevSemiBoss
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f596f7c872e3ce94ab83f53d6ed22aa7, type: 3}
 --- !u!1001 &5151522386512781107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5376,6 +5453,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 953213189474878562, guid: af06274728dc3b8458bad0ed52f272e0, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 953213189474878562, guid: af06274728dc3b8458bad0ed52f272e0, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.16
+      objectReference: {fileID: 0}
     - target: {fileID: 3887848708398159365, guid: af06274728dc3b8458bad0ed52f272e0, type: 3}
       propertyPath: Player
       value: 
@@ -5432,6 +5517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinalBoss (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7887630897534577375, guid: af06274728dc3b8458bad0ed52f272e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5450,3 +5539,4 @@ SceneRoots:
   - {fileID: 2072868852}
   - {fileID: 2021865617}
   - {fileID: 5151522386512781107}
+  - {fileID: 79875989861482830}

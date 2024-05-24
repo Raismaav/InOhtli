@@ -24,6 +24,7 @@ public class basicEnemy : HP
     private float runspeed;
 
     private bool LookToRight = false;
+    [SerializeField] private GameObject Heal;
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
@@ -152,6 +153,7 @@ public class basicEnemy : HP
             Girar();
         }
         if(!Live){
+            Instantiate(Heal, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
         

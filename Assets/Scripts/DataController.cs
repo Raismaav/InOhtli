@@ -18,16 +18,6 @@ public class DataController : MonoBehaviour
         DataLoad();
     }
 
-    private void Update(){
-        if(Input.GetKeyDown(KeyCode.C)){
-            DataSave();
-        }
-        if(Input.GetKeyDown(KeyCode.G)){
-            DataLoad();
-            
-        }
-    }
-
     public void DataLoad(){
         if(File.Exists(Archive)){
             string RawData = File.ReadAllText(Archive);
