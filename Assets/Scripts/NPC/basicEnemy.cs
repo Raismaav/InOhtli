@@ -174,7 +174,6 @@ public class basicEnemy : HP
                 }
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

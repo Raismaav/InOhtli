@@ -184,8 +184,7 @@ public class JaguarEnemy : HP
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
-                colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();                
+                colition.transform.GetComponent<hpSystem>().hpBarChange();                
             }
         }
     }

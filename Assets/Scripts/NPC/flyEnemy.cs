@@ -131,7 +131,6 @@ public class flyEnemy : HP
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

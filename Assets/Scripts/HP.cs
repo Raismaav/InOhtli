@@ -36,6 +36,8 @@ public class HP : mov
                     fixedXDirection=-1;
                 }
                 rb.velocity=new Vector2(fixedXDirection*HitForce,rb.velocityY+0.5f);
+
+                if(gameObject.CompareTag("Player"))SoundController.Instance.SoundHurtPlay();
             }
             invincibleTime=invincibleDuration;
         }

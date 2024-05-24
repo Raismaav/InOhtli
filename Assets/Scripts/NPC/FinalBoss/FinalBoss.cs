@@ -17,6 +17,7 @@ public class FinalBoss : hpSystem
     [SerializeField] public Transform Player;
     [SerializeField] public Animator HandAnimator;
     [SerializeField] private GameObject HB;
+    [SerializeField] private AudioClip DedAudioClip;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class FinalBoss : hpSystem
             if(!Live){
                 trigger();
                 HB.SetActive(false);
+                SoundController.Instance.SoundPlay(DedAudioClip);
                 Destroy(gameObject);
             }
         }

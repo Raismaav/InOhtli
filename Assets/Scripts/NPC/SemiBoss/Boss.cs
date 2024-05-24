@@ -95,14 +95,12 @@ public class Boss : hpSystem
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<HP>().Damage(1,transform,10);
             other.transform.GetComponent<hpSystem>().hpBarChange();
-            SoundController.Instance.SoundHurtPlay();
         }
     }
     private void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<HP>().Damage(1,transform,10);
             other.transform.GetComponent<hpSystem>().hpBarChange();
-            SoundController.Instance.SoundHurtPlay();
         }
     }
     public void SetBox(bool Active){
