@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TestButtonAttack : MonoBehaviour
 {
-   [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO,bdeJ,bdeVENAO;
+   [SerializeField] BasicDevelopEnemy bdeRAT,bdeBUHO,bdeJ,bdeVENAO,Lizzard,FinalBoss;
     private OnMouseEnter Eveaf;
 
     void OnMouseDown()
@@ -14,5 +14,7 @@ public class TestButtonAttack : MonoBehaviour
         bdeBUHO.BuhoAttack();
         bdeJ.JaguarAttack();
         bdeVENAO.JaguarAttack();
+        Lizzard.JaguarAttack();
+        FinalBoss.JaguarAttack();
     }
 }

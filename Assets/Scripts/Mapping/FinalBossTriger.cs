@@ -7,10 +7,14 @@ public class FinalbossTriger : MonoBehaviour
 {
     [SerializeField] private DoorController DoorsTiles;
     [SerializeField] private FinalBoss FinalBoss;
+    private bool Activated;
     void OnTriggerEnter2D(Collider2D collider){
-       if(collider.CompareTag("Player")){
-            DoorsTiles.FinalBossEnter();
-            FinalBoss.activate();
+        if(!Activated){
+            if(collider.CompareTag("Player")){
+                DoorsTiles.FinalBossEnter();
+                FinalBoss.activate();
+                Activated=true;
+            }
         }
     }
 }
