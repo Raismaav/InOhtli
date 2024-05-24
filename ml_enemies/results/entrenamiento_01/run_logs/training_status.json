@@ -1,0 +1,73 @@
+{
+    "My Behavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results/entrenamiento_01/My Behavior/My Behavior-0.onnx",
+                "reward": null,
+                "creation_time": 1716541330.749027,
+                "auxillary_file_paths": [
+                    "results/entrenamiento_01/My Behavior/My Behavior-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results/entrenamiento_01/My Behavior.onnx",
+            "reward": null,
+            "creation_time": 1716541330.749027,
+            "auxillary_file_paths": [
+                "results/entrenamiento_01/My Behavior/My Behavior-0.pt"
+            ]
+        }
+    },
+    "MLJaguar": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results/entrenamiento_01/MLJaguar/MLJaguar-0.onnx",
+                "reward": null,
+                "creation_time": 1716541330.780632,
+                "auxillary_file_paths": [
+                    "results/entrenamiento_01/MLJaguar/MLJaguar-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results/entrenamiento_01/MLJaguar.onnx",
+            "reward": null,
+            "creation_time": 1716541330.780632,
+            "auxillary_file_paths": [
+                "results/entrenamiento_01/MLJaguar/MLJaguar-0.pt"
+            ]
+        }
+    },
+    "MLDeer": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results/entrenamiento_01/MLDeer/MLDeer-0.onnx",
+                "reward": null,
+                "creation_time": 1716541330.812914,
+                "auxillary_file_paths": [
+                    "results/entrenamiento_01/MLDeer/MLDeer-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results/entrenamiento_01/MLDeer.onnx",
+            "reward": null,
+            "creation_time": 1716541330.812914,
+            "auxillary_file_paths": [
+                "results/entrenamiento_01/MLDeer/MLDeer-0.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}
