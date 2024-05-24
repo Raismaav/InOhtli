@@ -25,4 +25,7 @@ public class HealthBar : MonoBehaviour
     public void SetStarterValue(float SetStarter){
         startingValue=SetStarter;
     }
+    public void setMaxValue(float Setmax){
+        slider.maxValue=Setmax;
+    }
 }

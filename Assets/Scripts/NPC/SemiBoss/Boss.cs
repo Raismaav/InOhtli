@@ -50,7 +50,7 @@ public class Boss : hpSystem
             }
             float DistancePlayer=UnityEngine.Vector2.Distance(transform.position, p.transform.position);
             animator.SetFloat("DistancePlayer",DistancePlayer);
-            //hpBarChange();
+            hpBarChange();
             frontInfo = Physics2D.Raycast(WallController.position, transform.right, front2, frontLayer);
             AttackRange = Physics2D.Raycast(frontController.position, transform.right, frontDistance, PlayerLayer);
             animator.SetBool("AttackRange",AttackRange);
@@ -107,7 +107,6 @@ public class Boss : hpSystem
     }
     public void SetBox(bool Active){
         BoxC.enabled=Active;
-        CapsC.enabled=!Active;
     }
     public void SetTrigger1(bool Active){
         HitTriggerTongue.SetActive(Active);
@@ -132,5 +131,6 @@ public class Boss : hpSystem
         animator.SetBool("ActiveIA",true);
         HB.SetActive(true);
         setstartingValue(getCurrentHP());
+        setMaxHPValue();
     }
 }
