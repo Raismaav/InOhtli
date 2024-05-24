@@ -14,7 +14,9 @@ public class FinalBoss : hpSystem
     [SerializeField] private float TimeNextAttack;
     [SerializeField] private float KBHitForece;
     private bool ActiveIA=false;
-    [SerializeField] private Transform Player;
+    [SerializeField] public Transform Player;
+    [SerializeField] public Animator HandAnimator;
+    [SerializeField] private GameObject HB;
 
     void Start()
     {
@@ -24,26 +26,17 @@ public class FinalBoss : hpSystem
     }
     void Update()
     {
-        float DistancePlayer=UnityEngine.Vector2.Distance(transform.position, Player.transform.position);
-        animator.SetFloat("DistancePlayer",DistancePlayer);
         if(ActiveIA){
-            
-        }
-        if(!Live){
-            //trigger();
-            Destroy(gameObject);
-        }
-    }
-    /*private void CharacterHit(){
-        Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
-        foreach (Collider2D colition in Objects){
-            if(colition.CompareTag("Player")){
-                colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
-                colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();
+            float DistancePlayer=UnityEngine.Vector2.Distance(transform.position, Player.transform.position);
+            animator.SetFloat("DistancePlayer",DistancePlayer);
+            hpBarChange();
+            if(!Live){
+                trigger();
+                HB.SetActive(false);
+                Destroy(gameObject);
             }
         }
-    }*/
+    }
     public void LockPlayer(){
         if((Player.position.x>transform.position.x&&!LD)||(Player.position.x<transform.position.x&&LD)){
             Turn();
@@ -59,6 +52,11 @@ public class FinalBoss : hpSystem
     }
     public void activate(){
         ActiveIA=true;
-        canMove=true;
+        animator.SetBool("ActiveIA",true);
+        HB.SetActive(true);
+        setstartingValue(getCurrentHP());
+    }
+    public void TriggerHitbox(){
+        HandAnimator.SetTrigger("AttackTrigger");
     }
 }
