@@ -8,6 +8,7 @@ public class FinalBossHits : MonoBehaviour
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<HP>().Damage(1,transform,10);
             other.transform.GetComponent<hpSystem>().hpBarChange();
+            SoundController.Instance.SoundHurtPlay();
         }
     }
 }
