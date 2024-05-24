@@ -8,7 +8,7 @@ using Unity.MLAgents.Sensors;
 public class mov : Agent
 {
     [Header("Movement Settings")]
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb;
     protected Animator animator;
     [SerializeField]protected float HorizontalMovement;
     protected float VerticalMovement = 0f;
