@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Unity.Collections;
+using Unity.MLAgents.Actuators;
+using Unity.MLAgents.Sensors;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class basicEnemy : HP
 {
@@ -36,15 +37,80 @@ public class basicEnemy : HP
     [SerializeField] Animator PivotAnim;
     string str="";
 
-
-    
-
-    void Start()
+    public override void Initialize()
     {
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
         runspeed=HorizontalMovement;
+        
+        if(!TrainingMode) MaxStep = 0;
     }
+
+    public override void OnEpisodeBegin()
+    {
+        runspeed = HorizontalMovement;
+        CurrentHealth = MaxHealth;
+    }
+    
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
+        belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        sensor.AddObservation(frontInfo);
+        sensor.AddObservation(attackinfo);
+        sensor.AddObservation(belowInfo);
+        sensor.AddObservation(inFloor);
+        sensor.AddObservation(invincibleTime);
+        sensor.AddObservation(CurrentHealth);
+        
+    }
+    public override void OnActionReceived(ActionBuffers actions)
+    {
+        base.OnActionReceived(actions);
+
+        // Supongamos que las acciones contienen tres valores: el movimiento horizontal, un indicador de ataque y un indicador de salto
+        runspeed = actions.ContinuousActions[0];
+        bool attack = actions.DiscreteActions[0] == 1;
+        bool turn = actions.DiscreteActions[1] == 1;
+        jump = actions.DiscreteActions[2] == 1;
+        animator.SetInteger("Walk",(int)HorizontalMovement);
+
+        if(attack && TimeNextAttack <=0){
+            if(PivotAnim!=null){
+                animator.SetTrigger("AttackTrigger");
+                PivotAnim.SetTrigger("Attack");
+            }
+            else{
+                Invoke("CharacterHit",AttackDuration);
+            }
+            TimeNextAttack=TimeBetweenAttack;
+        }
+
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("run")){
+            canMove=false;
+            float FixedSpeed;
+            str="run";
+            StartCoroutine(animWait());
+            if(LD){
+                FixedSpeed= runspeed*1*.1f;
+            }else{
+                FixedSpeed= runspeed*-1*.1f;
+            }
+            rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
+        }
+
+        if(turn)
+        {
+            //Girar
+            Girar();
+        }
+        if(!Live)
+        {
+            Destroy(gameObject);
+        }
+    }
+   
     void Update()
     {
         if(invincibleTime>0){
@@ -102,6 +168,10 @@ public class basicEnemy : HP
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
+                if (TrainingMode)
+                {
+                    AddReward(0.5f);
+                }
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
                 SoundController.Instance.SoundHurtPlay();
