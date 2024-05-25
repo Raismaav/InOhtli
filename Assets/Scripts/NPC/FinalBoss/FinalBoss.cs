@@ -21,6 +21,7 @@ public class FinalBoss : hpSystem
 
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         canMove=false;
         animator=GetComponent<Animator>();  
@@ -57,6 +58,7 @@ public class FinalBoss : hpSystem
         animator.SetBool("ActiveIA",true);
         HB.SetActive(true);
         setstartingValue(getCurrentHP());
+        setMaxHPValue();
     }
     public void TriggerHitbox(){
         HandAnimator.SetTrigger("AttackTrigger");

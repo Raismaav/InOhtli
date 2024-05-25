@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6380112516511769035}
   - component: {fileID: 6997727746508156671}
   - component: {fileID: 6390841269365448162}
+  - component: {fileID: 8682896665060665465}
   m_Layer: 0
   m_Name: Buho
   m_TagString: Enemigo
@@ -220,6 +221,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7af607b52b424eb8dde5c7a5df6c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  rb: {fileID: 0}
   HorizontalMovement: 0
   MoveSpeed: 100
   Smooth: 0.2
@@ -232,6 +238,7 @@ MonoBehaviour:
   dimensionesCaja: {x: 0, y: 0, z: 0}
   inFloor: 0
   canMove: 1
+  TrainingMode: 0
   CurrentHealth: 3
   MaxHealth: 3
   invincibleTime: 0
@@ -244,6 +251,7 @@ MonoBehaviour:
   frontController: {fileID: 2434676557155109099}
   frontDistance: 2
   attackinfo: 0
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
   AttackOperator: {fileID: 5910663209870347961}
   AttackRadio: 1
   AttackDamage: 1
@@ -252,6 +260,36 @@ MonoBehaviour:
   AttackDuration: 0
   KBHitForece: 0
   PivotAnim: {fileID: 0}
+--- !u!114 &8682896665060665465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527041661407031342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 1
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1 &7724423485361707823
 GameObject:
   m_ObjectHideFlags: 0

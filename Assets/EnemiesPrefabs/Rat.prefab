@@ -65,7 +65,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072368655197414052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: belowController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,8 @@ GameObject:
   - component: {fileID: 1223509356594723429}
   - component: {fileID: 8886011209778307456}
   - component: {fileID: 4251276720622122575}
-  m_Layer: 0
+  - component: {fileID: 4438792889391579253}
+  m_Layer: 11
   m_Name: Rat
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
@@ -281,6 +282,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba254b0752f4a77b481c5d9a421003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  rb: {fileID: 0}
   HorizontalMovement: 100
   MoveSpeed: 0
   Smooth: 0
@@ -293,6 +299,7 @@ MonoBehaviour:
   dimensionesCaja: {x: 1, y: 1, z: 0}
   inFloor: 0
   canMove: 1
+  TrainingMode: 0
   CurrentHealth: 3
   MaxHealth: 3
   invincibleTime: 0
@@ -313,6 +320,7 @@ MonoBehaviour:
   belowInfo: 0
   frontInfo: 0
   attackinfo: 0
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
   AttackOperator: {fileID: 3181433716546569337}
   AttackRadio: 1
   AttackDamage: 1
@@ -321,9 +329,36 @@ MonoBehaviour:
   AttackDuration: 1.2
   KBHitForece: 15
   PivotAnim: {fileID: 5386441255838826518}
-  ViewRaycast: {fileID: 0}
-  EarRaycast: {fileID: 0}
-  HeuristicMode: 0
+--- !u!114 &4438792889391579253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974846782930510528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 1
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1 &2798835790749503401
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1238510012258458785}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: FloorOperator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +402,7 @@ GameObject:
   - component: {fileID: 109515723560177838}
   - component: {fileID: 8207901404969633503}
   - component: {fileID: 258616819673919708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AttackOperator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3557918588561571766}
   - component: {fileID: 5386441255838826518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5443184000688620998}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: frontController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737631665612537078}
   - component: {fileID: 7544115013114684114}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 3dAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

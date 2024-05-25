@@ -49,6 +49,7 @@ public class Player : hpSystem
 
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
