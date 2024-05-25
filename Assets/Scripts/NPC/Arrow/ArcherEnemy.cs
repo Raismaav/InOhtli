@@ -75,6 +75,7 @@ public class ArcherEnemy : ParabolArrow
                     str="attack";
                     animator.SetTrigger("AttackTrigger");
                     StartCoroutine(shot(AttackDuration,Altura));
+                    
                     TimeNextAttack=TimeBetweenAttack;
                     canSound=true;
                 }
@@ -83,6 +84,9 @@ public class ArcherEnemy : ParabolArrow
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
             canMove=false;
             str="attack";
+            if((Objetive.position.x>transform.position.x&&!LD)||(Objetive.position.x<transform.position.x&&LD)){
+                Turn();
+            }
             StartCoroutine(animWait());            
         }
         if(TimeNextAttack>0){
@@ -91,8 +95,9 @@ public class ArcherEnemy : ParabolArrow
         
         if(frontInfo || !belowInfo)
         {
-            //Girar
+
             Girar();
+
         }
         if(!inFloor){
             if(rb.velocityY>0){
@@ -121,9 +126,12 @@ public class ArcherEnemy : ParabolArrow
 
     private void Girar()
     {
-        LookToRight = !LookToRight;
-        //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-        HorizontalMovement *= -1;
+        if(canMove){
+            LookToRight = !LookToRight;
+            //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+            HorizontalMovement *= -1;
+        }
+
     }
     private IEnumerator soundWait(){
         yield return new WaitForSeconds(1);
