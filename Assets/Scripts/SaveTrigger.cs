@@ -7,7 +7,8 @@ public class SaveTrigger : MonoBehaviour
 {
     [SerializeField] private DataController DC;
     private bool InRange;
-    [SerializeField] private TMP_Text Text;
+    [SerializeField] private TMP_Text LogText;
+    [SerializeField] private GameObject Container;
 
 
     // Update is called once per frame
@@ -21,14 +22,16 @@ public class SaveTrigger : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             InRange=true;
-            Text.text="Haz Click Izquierdo Para Guardar";
+            Container.SetActive(true);
+            LogText.text="Haz Click Izquierdo Para Guardar";
         }
     }
     private void OnTriggerExit2D(Collider2D col){
         if (col.gameObject.CompareTag("Player"))
         {
             InRange=false;
-            Text.text="";
+            LogText.text="";
+            Container.SetActive(false);
         }
     }
 }

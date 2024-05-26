@@ -9,4 +9,5 @@ public class ClassGameData {
     public float HP;
     public float MaxHP;
     public bool Door1;
+    public bool firstPlay;
 }
