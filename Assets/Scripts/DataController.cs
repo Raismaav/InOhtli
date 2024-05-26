@@ -11,6 +11,7 @@ public class DataController : MonoBehaviour
     public ClassGameData gameData = new ClassGameData();
     public DoorController dc;
     public GameObject semiBoss;
+    public StartDialog StartDialog;
     private string keyWord = "Password";
     private void Start(){
         Archive = Application.dataPath+"/game_data.json";
@@ -31,8 +32,10 @@ public class DataController : MonoBehaviour
                 dc.OpenDoor();
                 Destroy(semiBoss);
             }
+            StartDialog.CheckFirst(gameData.firstPlay);
         }else{
             Debug.Log("El archivo no existe");
+            StartDialog.CheckFirst(true);
         }
     }
 
@@ -41,7 +44,8 @@ public class DataController : MonoBehaviour
             position = Player.transform.position,
             HP = Player.GetComponent<HP>().getCurrentHP(),
             MaxHP = Player.GetComponent<HP>().getMaxHP(),
-            Door1=Player.GetComponent<Player>().DashCheck()
+            Door1=Player.GetComponent<Player>().DashCheck(),
+            firstPlay=false
         };
         string StringJson = JsonUtility.ToJson(newData);
         File.WriteAllText(Archive,EncryptDecrypt(StringJson));
