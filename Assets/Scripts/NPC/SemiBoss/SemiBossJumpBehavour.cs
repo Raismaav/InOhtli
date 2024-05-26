@@ -18,8 +18,8 @@ public class SemiBossJumpBehavour : StateMachineBehaviour
     }
     private UnityEngine.Vector3 speedCalculate(UnityEngine.Vector3 Speed){
         float speedx,speedy;
-        speedy=Mathf.Sqrt(-2*gravity*8);
-        speedx=Speed.x/((-speedy/gravity)+Mathf.Sqrt(2*(Speed.y-8)/gravity));
+        speedy=Mathf.Sqrt(-2*gravity*6);
+        speedx=Speed.x/((-speedy/gravity)+Mathf.Sqrt(2*(Speed.y-6)/gravity));
         return new UnityEngine.Vector3(speedx,speedy,0);
     }
 

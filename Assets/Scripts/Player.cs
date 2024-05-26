@@ -43,10 +43,13 @@ public class Player : hpSystem
     [SerializeField] private AudioClip walkGroundAudioClip;
     [SerializeField] private AudioClip HurtAudioClip;
     [SerializeField] private AudioClip JumpAudioClip;
+    
+    [SerializeField] private AudioClip DashAudioClip;
     private bool DashUnlocked;
 
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
@@ -123,6 +126,7 @@ public class Player : hpSystem
                 if(Input.GetButton("Vertical")){
                     StartCoroutine(Dash(DashVerticalSpeed,0.5f));
                 }else
+                SoundController.Instance.SoundPlay(DashAudioClip);
                 StartCoroutine(Dash(0,1));
                 HabBar.UseHabiliti();
                 Debug.Log("Dasheo");
@@ -149,8 +153,7 @@ public class Player : hpSystem
         if(!Live){
             animator.SetTrigger("DIE");
             canMove=false;
-            deathMenu();
-            gameObject.SetActive(false);
+            StartCoroutine(DeadTime());
         }
     }
     private void CharacterHit(){
@@ -179,6 +182,11 @@ public class Player : hpSystem
         canMove=true;
         canDash=true;
         rb.gravityScale=1;
+    }
+    private IEnumerator DeadTime(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("DED"));
+        deathMenu();
+        gameObject.SetActive(false);
     }
     private void PlayParticles(){
         chargedParticles.Play();

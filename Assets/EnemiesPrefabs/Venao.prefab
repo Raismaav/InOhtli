@@ -343,8 +343,9 @@ MonoBehaviour:
   TimeNextAttack: 0
   AttackDuration: 0.8
   detectionRatio: 15
-  AttackAudioClip: {fileID: 0}
+  AttackAudioClip: {fileID: 8300000, guid: 8cd55198bf713a140a99745645ce4655, type: 3}
   audioSource: {fileID: 7715027313118730263}
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
 --- !u!50 &4966709949815886634
 Rigidbody2D:
   serializedVersion: 4

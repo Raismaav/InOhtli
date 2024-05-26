@@ -4436,6 +4436,7 @@ GameObject:
   - component: {fileID: 2021865613}
   - component: {fileID: 2021865612}
   - component: {fileID: 2021865611}
+  - component: {fileID: 2021865618}
   m_Layer: 3
   m_Name: Dummy
   m_TagString: Player
@@ -4551,6 +4552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8d1b2973934261bf30e8357ecaa5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
   rb: {fileID: 0}
   HorizontalMovement: 0
   MoveSpeed: 250
@@ -4564,6 +4569,7 @@ MonoBehaviour:
   dimensionesCaja: {x: 0.7, y: 0.5, z: 0}
   inFloor: 0
   canMove: 1
+  TrainingMode: 0
   CurrentHealth: 5
   MaxHealth: 5
   invincibleTime: 2
@@ -4754,6 +4760,36 @@ Transform:
   - {fileID: 1771148181}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2021865618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021865610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 1
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1 &2067862317
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,7 +5555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7887630897534577375, guid: af06274728dc3b8458bad0ed52f272e0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

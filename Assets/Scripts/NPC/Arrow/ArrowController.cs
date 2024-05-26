@@ -19,6 +19,7 @@ public class ArrowController : MonoBehaviour
         if(collision.gameObject.CompareTag("Player")){
             collision.transform.GetComponent<HP>().Damage(1,transform,0);
             collision.transform.GetComponent<hpSystem>().hpBarChange();
+            SoundController.Instance.SoundArrowHitPlay();
         }
         Destroy(gameObject);
     }

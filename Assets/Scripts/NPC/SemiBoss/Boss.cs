@@ -33,9 +33,12 @@ public class Boss : hpSystem
     [SerializeField] private Player p;
     [SerializeField] public GameObject Dummy;
     [SerializeField] private GameObject HB;
+    [SerializeField] private AudioClip AttackAudioClip;
+    private bool Tongue=false;
 
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         canMove=false;
         animator=GetComponent<Animator>();
@@ -62,20 +65,32 @@ public class Boss : hpSystem
                 HitTriggerTail.SetActive(false);
             }
             if(animator.GetCurrentAnimatorStateInfo(0).IsName("lenguetazo")){
-                HitTriggerTongue.SetActive(true);
+                if(Tongue==false){
+                    Tongue=true;
+                    StartCoroutine(TimerTongue());
+                }
             }else{
                 HitTriggerTongue.SetActive(false);
+                Tongue=false;
             }
             if(animator.GetCurrentAnimatorStateInfo(0).IsName("Garra")){
                 CharacterHit();
             }
-            
+            if(HealthBar.isActiveAndEnabled){
+                setMaxHPValue();
+            }
         }
         if(!Live){
-            trigger();
+            canMove=false;
+            rb.velocity=new Vector2(0,0);
+            animator.SetTrigger("DIE");
             HB.SetActive(false);
-            Destroy(gameObject);
         }
+    }
+    public void DEATH(){
+        trigger();
+        SoundController.Instance.SoundPlay(AttackAudioClip);
+        Destroy(gameObject);
     }
     private void CharacterHit(){
         Collider2D[] Objects = Physics2D.OverlapCircleAll(AttackOperator.position, AttackRadio);
@@ -95,15 +110,17 @@ public class Boss : hpSystem
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<HP>().Damage(1,transform,10);
             other.transform.GetComponent<hpSystem>().hpBarChange();
-            SoundController.Instance.SoundHurtPlay();
         }
     }
     private void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<HP>().Damage(1,transform,10);
             other.transform.GetComponent<hpSystem>().hpBarChange();
-            SoundController.Instance.SoundHurtPlay();
         }
+    }
+    private IEnumerator TimerTongue(){
+        yield return new WaitForSeconds(0.4f);
+        HitTriggerTongue.SetActive(true);
     }
     public void SetBox(bool Active){
         BoxC.enabled=Active;
@@ -131,6 +148,5 @@ public class Boss : hpSystem
         animator.SetBool("ActiveIA",true);
         HB.SetActive(true);
         setstartingValue(getCurrentHP());
-        setMaxHPValue();
     }
 }

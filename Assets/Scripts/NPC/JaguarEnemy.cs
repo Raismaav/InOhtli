@@ -23,6 +23,7 @@ public class JaguarEnemy : HP
     private float runspeed;
 
     private bool LookToRight = false;
+    [SerializeField] public GameObject Heal;
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
@@ -102,10 +103,7 @@ public class JaguarEnemy : HP
             //Girar
             Girar();
         }
-        if(!Live)
-        {
-            Destroy(gameObject);
-        }
+        
     }
     void Update()
     {
@@ -147,7 +145,7 @@ public class JaguarEnemy : HP
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
             
         }
-
+        
         if(frontInfo || !belowInfo)
         {
             //Girar
@@ -167,8 +165,9 @@ public class JaguarEnemy : HP
                 animator.SetBool("Jump",false);
         }
         if(!Live){
+            canMove=false;
+            rb.velocity=new Vector2(0,0);
             animator.SetTrigger("DIE");
-            Destroy(gameObject);
         }
         
     }
@@ -184,14 +183,17 @@ public class JaguarEnemy : HP
         foreach (Collider2D colition in Objects){
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
-                colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();                
+                colition.transform.GetComponent<hpSystem>().hpBarChange();                
             }
         }
     }
     private IEnumerator animWait(){
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
         canMove=true;
+    }
+    private IEnumerator DeathAnimWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("DED"));
+        
     }
     private IEnumerator soundWait(){
         yield return new WaitForSeconds(1);

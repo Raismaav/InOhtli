@@ -230,6 +230,7 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  rb: {fileID: 0}
   HorizontalMovement: 200
   MoveSpeed: 0
   Smooth: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   belowInfo: 0
   frontInfo: 0
   attackinfo: 0
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
   AttackOperator: {fileID: 6506388276326825892}
   AttackRadio: 0.7
   AttackDamage: 2

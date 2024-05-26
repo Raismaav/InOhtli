@@ -24,7 +24,7 @@ public class basicEnemy : HP
     private float runspeed;
 
     private bool LookToRight = false;
-    [SerializeField] private GameObject Heal;
+    [SerializeField] public GameObject Heal;
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
@@ -42,7 +42,7 @@ public class basicEnemy : HP
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
         runspeed=HorizontalMovement;
-        
+        sp = GetComponent<SpriteRenderer>();
         if(!TrainingMode) MaxStep = 0;
     }
 
@@ -105,10 +105,6 @@ public class basicEnemy : HP
             //Girar
             Girar();
         }
-        if(!Live)
-        {
-            Destroy(gameObject);
-        }
     }
    
     void Update()
@@ -153,8 +149,9 @@ public class basicEnemy : HP
             Girar();
         }
         if(!Live){
-            Instantiate(Heal, gameObject.transform.position, gameObject.transform.rotation);
-            Destroy(gameObject);
+            canMove=false;
+            rb.velocity=new Vector2(0,0);
+            animator.SetTrigger("DIE");
         }
         
     }
@@ -174,7 +171,6 @@ public class basicEnemy : HP
                 }
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

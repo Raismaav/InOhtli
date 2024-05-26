@@ -7,6 +7,7 @@ public class SoundController : MonoBehaviour
     public static SoundController Instance;
     private AudioSource audioSource;
     [SerializeField] AudioClip GeneralHurt;
+    [SerializeField] AudioClip ArrowHit;
     private void Awake(){
         if(Instance==null){
             Instance=this;
@@ -21,5 +22,8 @@ public class SoundController : MonoBehaviour
     }
     public void SoundHurtPlay(){
         audioSource.PlayOneShot(GeneralHurt);
+    }
+    public void SoundArrowHitPlay(){
+        audioSource.PlayOneShot(ArrowHit);
     }
 }

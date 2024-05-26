@@ -14,6 +14,7 @@ public class HP : mov
     public float invincibleTime;
     
     [SerializeField] protected float invincibleDuration;
+    protected SpriteRenderer sp;
     
 
     public void Damage(float DamageValue,Transform tr,float HitForce)
@@ -36,6 +37,11 @@ public class HP : mov
                     fixedXDirection=-1;
                 }
                 rb.velocity=new Vector2(fixedXDirection*HitForce,rb.velocityY+0.5f);
+
+                if(gameObject.CompareTag("Player"))SoundController.Instance.SoundHurtPlay();
+            }
+            if(sp!=null){
+                StartCoroutine(DamageEffect());
             }
             invincibleTime=invincibleDuration;
         }
@@ -54,7 +60,7 @@ public class HP : mov
     }
     public void Cure(float CureValue)
     {
-        if ((CurrentHealth + CureValue) > CurrentHealth)
+        if ((CurrentHealth + CureValue) > MaxHealth)
         {
             CurrentHealth = MaxHealth;
         }
@@ -62,8 +68,22 @@ public class HP : mov
         {
             CurrentHealth += CureValue;
         }
+        if(sp!=null){
+            StartCoroutine(CureEffect());
+        }
     }
-    
+    private IEnumerator DamageEffect()
+    {
+        sp.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        sp.color = Color.white;
+    }
+    private IEnumerator CureEffect()
+    {
+        sp.color = Color.green;
+        yield return new WaitForSeconds(0.2f);
+        sp.color = Color.white;
+    }
     public float getCurrentHP(){
         return CurrentHealth;    
     }

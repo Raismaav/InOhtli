@@ -8,7 +8,6 @@ using UnityEngine;
 public class flyEnemy : HP
 {
     private CinemachineVirtualCamera cm;
-    private SpriteRenderer sp;
     private Transform player;
     [SerializeField] private Transform retreat;
     public float detectionRatio = 15;
@@ -20,6 +19,7 @@ public class flyEnemy : HP
     public Transform frontController;
     public float frontDistance;
     public bool attackinfo;
+    [SerializeField] public GameObject Heal;
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;
@@ -46,6 +46,7 @@ public class flyEnemy : HP
     { 
         rb = GetComponent<Rigidbody2D>();
         canFly=true;
+        sp=GetComponent<SpriteRenderer>();
     }
 
     private void OnDrawGizmos()
@@ -95,7 +96,9 @@ public class flyEnemy : HP
         //HorizontalMovement = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         //VerticalMovement = Input.GetAxisRaw("Vertical") * MoveSpeed;
         if(!Live){
-            Destroy(gameObject);
+            canMove=false;
+            rb.velocity=new Vector2(0,0);
+            animator.SetTrigger("DIE");
         }
     }
 
@@ -107,12 +110,7 @@ public class flyEnemy : HP
         cinemachinebasicmultichannelperlin.m_AmplitudeGain = 0;
     }
 
-    private IEnumerator DamageEffect()
-    {
-        sp.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        sp.color = Color.white;
-    }
+    
     private void route(float distancex2,float distancey2){
         if(distancex2>0){
             HorizontalMovement = MoveSpeed;
@@ -131,7 +129,6 @@ public class flyEnemy : HP
             if(colition.CompareTag("Player")){
                 colition.transform.GetComponent<HP>().Damage(AttackDamage,transform,KBHitForece);
                 colition.transform.GetComponent<hpSystem>().hpBarChange();
-                SoundController.Instance.SoundHurtPlay();
             }
         }
     }

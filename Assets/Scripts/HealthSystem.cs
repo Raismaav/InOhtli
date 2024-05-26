@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class hpSystem : HP
 {
-    [SerializeField] private HealthBar HealthBar;
+    [SerializeField] protected HealthBar HealthBar;
     
 
     public void hpBarChange(){
@@ -15,7 +15,6 @@ public class hpSystem : HP
         HealthBar.SetStarterValue(getCurrentHP());
     }
     public void setMaxHPValue(){
-        HealthBar.SetStarterValue(getMaxHP());
+        HealthBar.setMaxValue(getMaxHP());
     }
-
 }

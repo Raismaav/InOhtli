@@ -35,9 +35,11 @@ public class ArcherEnemy : ParabolArrow
     [SerializeField] private AudioClip AttackAudioClip;
     [SerializeField] private AudioSource audioSource;
     private bool canSound;
+    [SerializeField] public GameObject Heal;
 
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
     }
@@ -50,11 +52,6 @@ public class ArcherEnemy : ParabolArrow
         frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         animator.SetInteger("Walk",(int)HorizontalMovement);
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            jump = true;
-            animator.SetBool("Jump",true);
-        }
         if(!Objetive.IsDestroyed()){
             distancex = Objetive.transform.position.x - transform.position.x;
             distancey = Objetive.transform.position.y - transform.position.y;
@@ -75,6 +72,7 @@ public class ArcherEnemy : ParabolArrow
                     str="attack";
                     animator.SetTrigger("AttackTrigger");
                     StartCoroutine(shot(AttackDuration,Altura));
+                    audioSource.PlayOneShot(AttackAudioClip);
                     TimeNextAttack=TimeBetweenAttack;
                     canSound=true;
                 }
@@ -83,6 +81,9 @@ public class ArcherEnemy : ParabolArrow
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack")){
             canMove=false;
             str="attack";
+            if((Objetive.position.x>transform.position.x&&!LD)||(Objetive.position.x<transform.position.x&&LD)){
+                Turn();
+            }
             StartCoroutine(animWait());            
         }
         if(TimeNextAttack>0){
@@ -91,8 +92,9 @@ public class ArcherEnemy : ParabolArrow
         
         if(frontInfo || !belowInfo)
         {
-            //Girar
+
             Girar();
+
         }
         if(!inFloor){
             if(rb.velocityY>0){
@@ -109,6 +111,7 @@ public class ArcherEnemy : ParabolArrow
         }
         if(!Live){
             //animator.SetTrigger("DIE");
+            Instantiate(Heal, animator.gameObject.transform.position, animator.gameObject.transform.rotation);
             Destroy(gameObject);
         }
         
@@ -118,12 +121,19 @@ public class ArcherEnemy : ParabolArrow
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(str));
         canMove=true;
     }
+    private IEnumerator DeathAnimWait(){
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("DED"));
+        Destroy(gameObject);
+    }
 
     private void Girar()
     {
-        LookToRight = !LookToRight;
-        //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-        HorizontalMovement *= -1;
+        if(canMove){
+            LookToRight = !LookToRight;
+            //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+            HorizontalMovement *= -1;
+        }
+
     }
     private IEnumerator soundWait(){
         yield return new WaitForSeconds(1);
