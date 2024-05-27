@@ -1,0 +1,1373 @@
+fileFormatVersion: 2
+guid: 2e76d6c92c79c4b42bb28b3aa0d63b35
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 64
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 9
+    customPivotPosition: {x: 0.35, y: 0.45}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 9
+    customPivotPosition: {x: 0.35, y: 0.45}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638524045753119619
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: quetzalcoatl_all (1)_Frame_0
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 825
+      width: 70
+      height: 66
+    spriteID: 9e7f7c73437b9c34d8f89eede6c65b19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 825}
+  - name: quetzalcoatl_all (1)_Frame_1
+    originalName: 
+    pivot: {x: 0.32285714, y: 0.61587304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 805
+      width: 70
+      height: 63
+    spriteID: 31db62fbf354daa43b680cf33429c527
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 805}
+  - name: quetzalcoatl_all (1)_Frame_2
+    originalName: 
+    pivot: {x: 0.30857143, y: 0.61587304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 876
+      width: 70
+      height: 63
+    spriteID: 3f666f813400b8e48aafa9aaa49a62cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 876}
+  - name: quetzalcoatl_all (1)_Frame_3
+    originalName: 
+    pivot: {x: 0.30857143, y: 0.60625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 516
+      width: 70
+      height: 64
+    spriteID: d615d55aa9d639041a6aae6e1021e4d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 516}
+  - name: quetzalcoatl_all (1)_Frame_4
+    originalName: 
+    pivot: {x: 0.32285714, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 4
+      width: 70
+      height: 65
+    spriteID: fa7dd1b346578024c9761349ca0a2b84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 4}
+  - name: quetzalcoatl_all (1)_Frame_5
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 899
+      width: 70
+      height: 66
+    spriteID: 5853368a6e7836c4696a1314f98d2c03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 899}
+  - name: quetzalcoatl_all (1)_Frame_6
+    originalName: 
+    pivot: {x: 0.35652173, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 224
+      width: 69
+      height: 65
+    spriteID: 9e895c7a33f4a154fa19b1f0de22217c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 224}
+  - name: quetzalcoatl_all (1)_Frame_7
+    originalName: 
+    pivot: {x: 0.36571428, y: 0.60625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 588
+      width: 70
+      height: 64
+    spriteID: ad13b99eb6b798347870e4034eada1d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 588}
+  - name: quetzalcoatl_all (1)_Frame_8
+    originalName: 
+    pivot: {x: 0.36571428, y: 0.60625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 660
+      width: 70
+      height: 64
+    spriteID: 532fc0201bf004e45ad87390b67ed497
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 660}
+  - name: quetzalcoatl_all (1)_Frame_9
+    originalName: 
+    pivot: {x: 0.35652173, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 297
+      width: 69
+      height: 65
+    spriteID: 04880770f1146d9469b9fe984ebc09c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 297}
+  - name: quetzalcoatl_all (1)_Frame_10
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 4
+      width: 70
+      height: 66
+    spriteID: b4f93888794a86546a6d989f9d064e13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 4}
+  - name: quetzalcoatl_all (1)_Frame_11
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 78
+      width: 70
+      height: 66
+    spriteID: c7472b3a7ac20e949a2b7a3130f5bb67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 78}
+  - name: quetzalcoatl_all (1)_Frame_12
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 152
+      width: 70
+      height: 66
+    spriteID: 34b9b524f9f68b94ca2a0ea2f99798e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 152}
+  - name: quetzalcoatl_all (1)_Frame_13
+    originalName: 
+    pivot: {x: 0.342029, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 370
+      width: 69
+      height: 65
+    spriteID: 1ea5f4d1b9aa203478c573941a1e50ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 370}
+  - name: quetzalcoatl_all (1)_Frame_14
+    originalName: 
+    pivot: {x: 0.342029, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 443
+      width: 69
+      height: 65
+    spriteID: c00fd055e1d6aa84dbd4022c8f8b3f85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 443}
+  - name: quetzalcoatl_all (1)_Frame_15
+    originalName: 
+    pivot: {x: 0.342029, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 820
+      width: 69
+      height: 66
+    spriteID: ebe6b64448daeb74d8605288eb172288
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 820}
+  - name: quetzalcoatl_all (1)_Frame_16
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 226
+      width: 70
+      height: 66
+    spriteID: d320fff090d7c0e4abe49902969b6937
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 226}
+  - name: quetzalcoatl_all (1)_Frame_17
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 300
+      width: 70
+      height: 66
+    spriteID: 5b421ccea4ca531458cb59aaa315d9c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 300}
+  - name: quetzalcoatl_all (1)_Frame_18
+    originalName: 
+    pivot: {x: 0.342029, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 894
+      width: 69
+      height: 66
+    spriteID: c2a567615a8b1f445819fa05088a3ff7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 894}
+  - name: quetzalcoatl_all (1)_Frame_19
+    originalName: 
+    pivot: {x: 0.342029, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 4
+      width: 69
+      height: 66
+    spriteID: ff8805362efa291428db37d8941aee87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 4}
+  - name: quetzalcoatl_all (1)_Frame_20
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 374
+      width: 70
+      height: 66
+    spriteID: 61aa8bb95ffd5b84db4232fb3565931c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 374}
+  - name: quetzalcoatl_all (1)_Frame_21
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 448
+      width: 70
+      height: 66
+    spriteID: 6568a5f9d7b615a43bdfbe4b2eb75223
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 448}
+  - name: quetzalcoatl_all (1)_Frame_22
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.73207545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 947
+      width: 70
+      height: 53
+    spriteID: 00fe629a3668b24488f3f4b6c1fc2f49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 947}
+  - name: quetzalcoatl_all (1)_Frame_23
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.59692305}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 77
+      width: 70
+      height: 65
+    spriteID: d72244f022971cf40bdfed75771f0c99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 77}
+  - name: quetzalcoatl_all (1)_Frame_24
+    originalName: 
+    pivot: {x: 0.34647885, y: 0.5388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 517
+      width: 71
+      height: 72
+    spriteID: 8cf53c6e1893208448b5dbd1b35842dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 517}
+  - name: quetzalcoatl_all (1)_Frame_25
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.54647887}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 671
+      width: 70
+      height: 71
+    spriteID: 255b41f4d8c45bb419bb83397c2f4665
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 671}
+  - name: quetzalcoatl_all (1)_Frame_26
+    originalName: 
+    pivot: {x: 0.36438358, y: 0.64666665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 330
+      y: 4
+      width: 73
+      height: 60
+    spriteID: 6417b55ba3945bd4fa9a5e6897a7247e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 330, y: 4}
+  - name: quetzalcoatl_all (1)_Frame_27
+    originalName: 
+    pivot: {x: 0.36438358, y: 0.46279067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 189
+      width: 73
+      height: 86
+    spriteID: 2ac0e8a4ac2566744b5fc808479ecdd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 189}
+  - name: quetzalcoatl_all (1)_Frame_28
+    originalName: 
+    pivot: {x: 0.36438358, y: 0.46896547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 94
+      width: 73
+      height: 87
+    spriteID: f9c40f2edca7f204b94f72e58da4fa91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 94}
+  - name: quetzalcoatl_all (1)_Frame_29
+    originalName: 
+    pivot: {x: 0.33235294, y: 0.56417906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 670
+      width: 68
+      height: 67
+    spriteID: 6dbf3b7f757ff4b45b4b3c295be6313a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 670}
+  - name: quetzalcoatl_all (1)_Frame_30
+    originalName: 
+    pivot: {x: 0.33235294, y: 0.52727276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 150
+      width: 68
+      height: 66
+    spriteID: 3058339aade4a0649bd448b75375aa64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 150}
+  - name: quetzalcoatl_all (1)_Frame_31
+    originalName: 
+    pivot: {x: 0.33235294, y: 0.52}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 732
+      width: 68
+      height: 65
+    spriteID: f234f1ff2c06bfb4faa50d4002b2e33d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 732}
+  - name: quetzalcoatl_all (1)_Frame_32
+    originalName: 
+    pivot: {x: 0.342029, y: 0.53432834}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 750
+      width: 69
+      height: 67
+    spriteID: 04bde76fd9df38f4c92bb8062680ea0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 750}
+  - name: quetzalcoatl_all (1)_Frame_33
+    originalName: 
+    pivot: {x: 0.33235294, y: 0.53432834}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 745
+      width: 68
+      height: 67
+    spriteID: ddc5cfee1a5e5944d8a849a33d2c4851
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 745}
+  - name: quetzalcoatl_all (1)_Frame_34
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.52727276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 522
+      width: 70
+      height: 66
+    spriteID: 6982f2ec5664e804eba38ab0f1e33068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 522}
+  - name: quetzalcoatl_all (1)_Frame_35
+    originalName: 
+    pivot: {x: 0.38947368, y: 0.5623188}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 440
+      width: 76
+      height: 69
+    spriteID: d76bbd09c7a1c814ea4041e0ada138d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 440}
+  - name: quetzalcoatl_all (1)_Frame_36
+    originalName: 
+    pivot: {x: 0.38947368, y: 0.5173333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 283
+      width: 76
+      height: 75
+    spriteID: df1a81a7d202f57448cd5d6f1dbb961c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 283}
+  - name: quetzalcoatl_all (1)_Frame_37
+    originalName: 
+    pivot: {x: 0.33714288, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 596
+      width: 70
+      height: 66
+    spriteID: b94ecf3972db16b42a3420508979ec4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 596}
+  - name: quetzalcoatl_all (1)_Frame_38
+    originalName: 
+    pivot: {x: 0.48163268, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 154
+      width: 49
+      height: 66
+    spriteID: 29919805e4d7ae04da4ae727f51c0c7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 154}
+  - name: quetzalcoatl_all (1)_Frame_39
+    originalName: 
+    pivot: {x: 0.43703705, y: 0.57058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 78
+      width: 54
+      height: 68
+    spriteID: 3baab4e8334360f48819ee753595287c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 78}
+  - name: quetzalcoatl_all (1)_Frame_40
+    originalName: 
+    pivot: {x: 0.3105263, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 597
+      width: 76
+      height: 66
+    spriteID: ec868fa4664eb444282311f5237d7c50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 597}
+  - name: quetzalcoatl_all (1)_Frame_41
+    originalName: 
+    pivot: {x: 0.27764708, y: 0.5878788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 366
+      width: 85
+      height: 66
+    spriteID: de5d616bd28344f42bdb543cb0b8e704
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 366}
+  - name: quetzalcoatl_all (1)_Frame_42
+    originalName: 
+    pivot: {x: 0.27764708, y: 0.66829264}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 85
+      height: 82
+    spriteID: 8f75d9150e0ffd04dadbae9387fdb2b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1466269037
+    name: quetzalcoatl_all (1)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: quetzalcoatl_all (1)_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 9e7f7c73437b9c34d8f89eede6c65b19
+    - name: quetzalcoatl_all (1)_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 11
+        y: 8
+        width: 70
+        height: 63
+      spriteId: 31db62fbf354daa43b680cf33429c527
+    - name: quetzalcoatl_all (1)_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 12
+        y: 8
+        width: 70
+        height: 63
+      spriteId: 3f666f813400b8e48aafa9aaa49a62cf
+    - name: quetzalcoatl_all (1)_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 8
+        width: 70
+        height: 64
+      spriteId: d615d55aa9d639041a6aae6e1021e4d1
+    - name: quetzalcoatl_all (1)_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 11
+        y: 8
+        width: 70
+        height: 65
+      spriteId: fa7dd1b346578024c9761349ca0a2b84
+    - name: quetzalcoatl_all (1)_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 5853368a6e7836c4696a1314f98d2c03
+    - name: quetzalcoatl_all (1)_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 8
+        width: 69
+        height: 65
+      spriteId: 9e895c7a33f4a154fa19b1f0de22217c
+    - name: quetzalcoatl_all (1)_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 8
+        width: 70
+        height: 64
+      spriteId: ad13b99eb6b798347870e4034eada1d1
+    - name: quetzalcoatl_all (1)_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 8
+        width: 70
+        height: 64
+      spriteId: 532fc0201bf004e45ad87390b67ed497
+    - name: quetzalcoatl_all (1)_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 8
+        width: 69
+        height: 65
+      spriteId: 04880770f1146d9469b9fe984ebc09c5
+    - name: quetzalcoatl_all (1)_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: b4f93888794a86546a6d989f9d064e13
+    - name: quetzalcoatl_all (1)_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: c7472b3a7ac20e949a2b7a3130f5bb67
+    - name: quetzalcoatl_all (1)_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 34b9b524f9f68b94ca2a0ea2f99798e3
+    - name: quetzalcoatl_all (1)_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 10
+        y: 8
+        width: 69
+        height: 65
+      spriteId: 1ea5f4d1b9aa203478c573941a1e50ea
+    - name: quetzalcoatl_all (1)_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 10
+        y: 8
+        width: 69
+        height: 65
+      spriteId: c00fd055e1d6aa84dbd4022c8f8b3f85
+    - name: quetzalcoatl_all (1)_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 10
+        y: 8
+        width: 69
+        height: 66
+      spriteId: ebe6b64448daeb74d8605288eb172288
+    - name: quetzalcoatl_all (1)_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: d320fff090d7c0e4abe49902969b6937
+    - name: quetzalcoatl_all (1)_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 5b421ccea4ca531458cb59aaa315d9c4
+    - name: quetzalcoatl_all (1)_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 10
+        y: 8
+        width: 69
+        height: 66
+      spriteId: c2a567615a8b1f445819fa05088a3ff7
+    - name: quetzalcoatl_all (1)_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 10
+        y: 8
+        width: 69
+        height: 66
+      spriteId: ff8805362efa291428db37d8941aee87
+    - name: quetzalcoatl_all (1)_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 61aa8bb95ffd5b84db4232fb3565931c
+    - name: quetzalcoatl_all (1)_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: 6568a5f9d7b615a43bdfbe4b2eb75223
+    - name: quetzalcoatl_all (1)_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 53
+      spriteId: 00fe629a3668b24488f3f4b6c1fc2f49
+    - name: quetzalcoatl_all (1)_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 65
+      spriteId: d72244f022971cf40bdfed75771f0c99
+    - name: quetzalcoatl_all (1)_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 8
+        width: 71
+        height: 72
+      spriteId: 8cf53c6e1893208448b5dbd1b35842dd
+    - name: quetzalcoatl_all (1)_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 71
+      spriteId: 255b41f4d8c45bb419bb83397c2f4665
+    - name: quetzalcoatl_all (1)_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 7
+        y: 8
+        width: 73
+        height: 60
+      spriteId: 6417b55ba3945bd4fa9a5e6897a7247e
+    - name: quetzalcoatl_all (1)_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 7
+        y: 7
+        width: 73
+        height: 86
+      spriteId: 2ac0e8a4ac2566744b5fc808479ecdd5
+    - name: quetzalcoatl_all (1)_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 7
+        y: 6
+        width: 73
+        height: 87
+      spriteId: f9c40f2edca7f204b94f72e58da4fa91
+    - name: quetzalcoatl_all (1)_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 11
+        y: 9
+        width: 68
+        height: 67
+      spriteId: 6dbf3b7f757ff4b45b4b3c295be6313a
+    - name: quetzalcoatl_all (1)_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 11
+        y: 12
+        width: 68
+        height: 66
+      spriteId: 3058339aade4a0649bd448b75375aa64
+    - name: quetzalcoatl_all (1)_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 11
+        y: 13
+        width: 68
+        height: 65
+      spriteId: f234f1ff2c06bfb4faa50d4002b2e33d
+    - name: quetzalcoatl_all (1)_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 10
+        y: 11
+        width: 69
+        height: 67
+      spriteId: 04bde76fd9df38f4c92bb8062680ea0a
+    - name: quetzalcoatl_all (1)_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 11
+        y: 11
+        width: 68
+        height: 67
+      spriteId: ddc5cfee1a5e5944d8a849a33d2c4851
+    - name: quetzalcoatl_all (1)_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 10
+        y: 12
+        width: 70
+        height: 66
+      spriteId: 6982f2ec5664e804eba38ab0f1e33068
+    - name: quetzalcoatl_all (1)_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 4
+        y: 8
+        width: 76
+        height: 69
+      spriteId: d76bbd09c7a1c814ea4041e0ada138d8
+    - name: quetzalcoatl_all (1)_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 4
+        y: 8
+        width: 76
+        height: 75
+      spriteId: df1a81a7d202f57448cd5d6f1dbb961c
+    - name: quetzalcoatl_all (1)_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 10
+        y: 8
+        width: 70
+        height: 66
+      spriteId: b94ecf3972db16b42a3420508979ec4b
+    - name: quetzalcoatl_all (1)_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 10
+        y: 8
+        width: 49
+        height: 66
+      spriteId: 29919805e4d7ae04da4ae727f51c0c7c
+    - name: quetzalcoatl_all (1)_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 10
+        y: 8
+        width: 54
+        height: 68
+      spriteId: 3baab4e8334360f48819ee753595287c
+    - name: quetzalcoatl_all (1)_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 10
+        y: 8
+        width: 76
+        height: 66
+      spriteId: ec868fa4664eb444282311f5237d7c50
+    - name: quetzalcoatl_all (1)_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 10
+        y: 8
+        width: 85
+        height: 66
+      spriteId: de5d616bd28344f42bdb543cb0b8e704
+    - name: quetzalcoatl_all (1)_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 10
+        y: -8
+        width: 85
+        height: 82
+      spriteId: 8f75d9150e0ffd04dadbae9387fdb2b4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 104}

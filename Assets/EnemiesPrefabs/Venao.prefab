@@ -317,6 +317,8 @@ MonoBehaviour:
   MaxHealth: 3
   invincibleTime: 0
   invincibleDuration: 1
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
+  DSprite: {fileID: 9125336635530696359, guid: 915bcc384be0c52468d0aa209dbf50aa, type: 3}
   arrow: {fileID: 7179744155165632151, guid: 2aa4017038d47c14d99280cdabc3842c, type: 3}
   ShootController: {fileID: 7646399709438350255}
   Objetive: {fileID: 0}
@@ -345,7 +347,6 @@ MonoBehaviour:
   detectionRatio: 15
   AttackAudioClip: {fileID: 8300000, guid: 8cd55198bf713a140a99745645ce4655, type: 3}
   audioSource: {fileID: 7715027313118730263}
-  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
 --- !u!50 &4966709949815886634
 Rigidbody2D:
   serializedVersion: 4

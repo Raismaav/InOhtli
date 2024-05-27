@@ -248,6 +248,8 @@ MonoBehaviour:
   MaxHealth: 10
   invincibleTime: 0
   invincibleDuration: 0.5
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
+  DSprite: {fileID: 9125336635530696359, guid: 915bcc384be0c52468d0aa209dbf50aa, type: 3}
   belowLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -266,7 +268,6 @@ MonoBehaviour:
   belowInfo: 0
   frontInfo: 0
   attackinfo: 0
-  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
   AttackOperator: {fileID: 6506388276326825892}
   AttackRadio: 0.7
   AttackDamage: 2

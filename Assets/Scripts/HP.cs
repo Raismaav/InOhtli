@@ -15,6 +15,8 @@ public class HP : mov
     
     [SerializeField] protected float invincibleDuration;
     protected SpriteRenderer sp;
+    [SerializeField] public GameObject Heal;
+    [SerializeField] public GameObject DSprite;
     
 
     public void Damage(float DamageValue,Transform tr,float HitForce)

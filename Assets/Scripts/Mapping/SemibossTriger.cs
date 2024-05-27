@@ -11,8 +11,10 @@ public class SemibossTriger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
         if(!Activated){
             if(collider.CompareTag("Player")){
-                DoorsTiles.semiBossEnter();
-                SemiBoss.activate();
+                if(!SemiBoss.IsDestroyed()){
+                    DoorsTiles.semiBossEnter();
+                    SemiBoss.activate();
+                }
             }
         }
     }
