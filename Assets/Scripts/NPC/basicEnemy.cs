@@ -7,6 +7,7 @@ using Unity.MLAgents.Sensors;
 using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class basicEnemy : HP
 {
@@ -18,9 +19,9 @@ public class basicEnemy : HP
     public float frontDistance;
     public Transform belowController;
     public Transform frontController;
-    public bool belowInfo;
-    public bool frontInfo;
-    public bool attackinfo;
+    public bool belowInfoRat;
+    public bool frontInfoRat;
+    public bool attackinfoRat;
     private float runspeed;
 
     private bool LookToRight = false;
@@ -53,16 +54,18 @@ public class basicEnemy : HP
     
     public override void CollectObservations(VectorSensor sensor)
     {
-        frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
-        attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
-        belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
-        sensor.AddObservation(frontInfo);
-        sensor.AddObservation(attackinfo);
-        sensor.AddObservation(belowInfo);
-        sensor.AddObservation(inFloor);
-        sensor.AddObservation(invincibleTime);
-        sensor.AddObservation(CurrentHealth);
-        
+        frontInfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
+        belowInfoRat = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        bool inFloorRat = inFloor;
+        float invincibleTimeRat = invincibleTime;
+        float CurrentHealthRat = CurrentHealth;
+        sensor.AddObservation(frontInfoRat);
+        sensor.AddObservation(attackinfoRat);
+        sensor.AddObservation(belowInfoRat);
+        sensor.AddObservation(inFloorRat);
+        sensor.AddObservation(invincibleTimeRat);
+        sensor.AddObservation(CurrentHealthRat);
     }
     public override void OnActionReceived(ActionBuffers actions)
     {
@@ -105,21 +108,21 @@ public class basicEnemy : HP
             Girar();
         }
     }
-   
-    void Update()
+
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
         if(invincibleTime>0){
             invincibleTime -= Time.deltaTime;
         }
         //Move(HorizontalMovement,false);
-        frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
-        attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
-        belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        frontInfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
+        belowInfoRat = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         animator.SetInteger("Walk",(int)HorizontalMovement);
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
         }
-        if(attackinfo && TimeNextAttack <=0){
+        if(attackinfoRat && TimeNextAttack <=0){
             if(PivotAnim!=null){
                 animator.SetTrigger("AttackTrigger");
                 PivotAnim.SetTrigger("Attack");
@@ -142,7 +145,7 @@ public class basicEnemy : HP
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
             
         }
-        if(frontInfo || !belowInfo)
+        if(frontInfoRat || !belowInfoRat)
         {
             //Girar
             Girar();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class JaguarEnemy : HP
 {
@@ -17,9 +18,9 @@ public class JaguarEnemy : HP
     public Transform belowController;
     public Transform frontController;
     public Transform AttackController;
-    public bool belowInfo;
-    public bool frontInfo;
-    public bool attackinfo;
+    public bool belowInfoJaguar;
+    public bool frontInfoJaguar;
+    public bool attackinfoJaguar;
     private float runspeed;
 
     private bool LookToRight = false;
@@ -56,15 +57,18 @@ public class JaguarEnemy : HP
     
     public override void CollectObservations(VectorSensor sensor)
     {
-        frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
-        attackinfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
-        belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
-        sensor.AddObservation(frontInfo);
-        sensor.AddObservation(attackinfo);
-        sensor.AddObservation(belowInfo);
-        sensor.AddObservation(inFloor);
-        sensor.AddObservation(invincibleTime);
-        sensor.AddObservation(CurrentHealth);
+        frontInfoJaguar = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfoJaguar = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
+        belowInfoJaguar = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        bool inFloorJaguar = inFloor;
+        float invincibleTimeJaguar = invincibleTime;
+        float CurrentHealthJaguar = CurrentHealth;
+        sensor.AddObservation(frontInfoJaguar);
+        sensor.AddObservation(attackinfoJaguar);
+        sensor.AddObservation(belowInfoJaguar);
+        sensor.AddObservation(inFloorJaguar);
+        sensor.AddObservation(invincibleTimeJaguar);
+        sensor.AddObservation(CurrentHealthJaguar);
         
     }
     public override void OnActionReceived(ActionBuffers actions)
@@ -105,15 +109,15 @@ public class JaguarEnemy : HP
         }
         
     }
-    void Update()
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
         if(invincibleTime>0){
             invincibleTime -= Time.deltaTime;
         }
         //Move(HorizontalMovement,false);
-        frontInfo = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
-        attackinfo = Physics2D.Raycast(AttackController.position, transform.right, frontAttackDistance, attackLayer);
-        belowInfo = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        frontInfoJaguar = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        attackinfoJaguar = Physics2D.Raycast(AttackController.position, transform.right, frontAttackDistance, attackLayer);
+        belowInfoJaguar = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         animator.SetInteger("Walk",(int)HorizontalMovement);
         if (Input.GetKeyDown(KeyCode.I))
             {
@@ -123,7 +127,7 @@ public class JaguarEnemy : HP
         if(TimeNextAttack>0){
             TimeNextAttack -= Time.deltaTime;
         }
-        if(attackinfo && TimeNextAttack <=0 && inFloor){
+        if(attackinfoJaguar && TimeNextAttack <=0 && inFloor){
             animator.SetTrigger("AttackTrigger");
             Invoke("CharacterHit",AttackDuration);
             TimeNextAttack=TimeBetweenAttack;
@@ -146,7 +150,7 @@ public class JaguarEnemy : HP
             
         }
         
-        if(frontInfo || !belowInfo)
+        if(frontInfoJaguar || !belowInfoJaguar)
         {
             //Girar
             Girar();

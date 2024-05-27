@@ -319,9 +319,9 @@ MonoBehaviour:
   frontDistance: 1.8
   belowController: {fileID: 2072368655197414052}
   frontController: {fileID: 5443184000688620998}
-  belowInfo: 0
-  frontInfo: 0
-  attackinfo: 0
+  belowInfoRat: 0
+  frontInfoRat: 0
+  attackinfoRat: 0
   AttackOperator: {fileID: 3181433716546569337}
   AttackRadio: 1
   AttackDamage: 1
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 6
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
@@ -354,8 +354,8 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorType: 1
+  m_BehaviorName: MLRat
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
