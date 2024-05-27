@@ -13,6 +13,7 @@ public class DataController : MonoBehaviour
     public GameObject semiBoss;
     public StartDialog StartDialog;
     private string keyWord = "Password";
+    public GameObject bosstrigger1;
     private void Start(){
         Archive = Application.dataPath+"/game_data.json";
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -31,6 +32,7 @@ public class DataController : MonoBehaviour
                 Player.GetComponent<Player>().unlockdash();
                 dc.OpenDoor();
                 Destroy(semiBoss);
+                Destroy(bosstrigger1);
             }
             StartDialog.CheckFirst(gameData.firstPlay);
         }else{
