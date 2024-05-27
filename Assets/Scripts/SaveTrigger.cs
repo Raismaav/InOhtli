@@ -16,6 +16,7 @@ public class SaveTrigger : MonoBehaviour
     {
         if(InRange && Input.GetButtonDown("Fire1")){
             DC.DataSave();
+            LogText.text="Partida Guardada";
         }
     }
     private void OnTriggerEnter2D(Collider2D col){

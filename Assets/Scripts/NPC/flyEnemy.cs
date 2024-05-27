@@ -19,7 +19,6 @@ public class flyEnemy : HP
     public Transform frontController;
     public float frontDistance;
     public bool attackinfo;
-    [SerializeField] public GameObject Heal;
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;

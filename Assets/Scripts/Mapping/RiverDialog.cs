@@ -13,7 +13,7 @@ public class RiverDialog : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             Container.SetActive(true);
-            LogText.text="Este es el rio del que vine, ya no tengo nada que hacer ahi";
+            LogText.text="Este es Apanohuacalhuia el rio del que vine, ya no tengo nada que hacer ahi";
         }
     }
     private void OnTriggerExit2D(Collider2D col){

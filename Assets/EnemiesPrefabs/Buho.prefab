@@ -243,6 +243,8 @@ MonoBehaviour:
   MaxHealth: 3
   invincibleTime: 0
   invincibleDuration: 0
+  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
+  DSprite: {fileID: 9125336635530696359, guid: 915bcc384be0c52468d0aa209dbf50aa, type: 3}
   retreat: {fileID: 0}
   detectionRatio: 8
   attackLayer:
@@ -251,7 +253,6 @@ MonoBehaviour:
   frontController: {fileID: 2434676557155109099}
   frontDistance: 2
   attackinfo: 0
-  Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
   AttackOperator: {fileID: 5910663209870347961}
   AttackRadio: 1
   AttackDamage: 1

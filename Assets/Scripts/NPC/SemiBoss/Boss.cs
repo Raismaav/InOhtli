@@ -6,6 +6,7 @@ using UnityEngine;
 public class Boss : hpSystem
 {
     [Header("Enemy Settings")]
+    [SerializeField] private DataController DataC;
     public LayerMask frontLayer;
     public LayerMask PlayerLayer;
     public float frontDistance;
@@ -124,6 +125,7 @@ public class Boss : hpSystem
     }
     public void SetBox(bool Active){
         BoxC.enabled=Active;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled=!Active;
     }
     public void SetTrigger1(bool Active){
         HitTriggerTongue.SetActive(Active);
@@ -142,6 +144,7 @@ public class Boss : hpSystem
     private void trigger(){
         DoorsTiles.OpenDoor();
         p.unlockdash();
+        DataC.DataSave();
     }
     public void activate(){
         ActiveIA=true;

@@ -23,7 +23,7 @@ public class JaguarEnemy : HP
     private float runspeed;
 
     private bool LookToRight = false;
-    [SerializeField] public GameObject Heal;
+    
 
     [Header("attack Setings")]
     [SerializeField] private Transform AttackOperator;

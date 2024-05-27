@@ -35,7 +35,6 @@ public class ArcherEnemy : ParabolArrow
     [SerializeField] private AudioClip AttackAudioClip;
     [SerializeField] private AudioSource audioSource;
     private bool canSound;
-    [SerializeField] public GameObject Heal;
 
     void Start()
     {

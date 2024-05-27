@@ -13,6 +13,7 @@ public class StartDialog : MonoBehaviour
     private bool firstPlay;
     void Update(){
         if(Input.GetButtonDown("Fire1")){
+
             if(LogText.text==LogLines[LineIndex]){
                 NextLogLine();
             }
@@ -31,6 +32,7 @@ public class StartDialog : MonoBehaviour
             Container.SetActive(true);
             LogText.text="Esta es la montaña";
             }else{
+                LineIndex=0;
                 Destroy(gameObject);
             }
         }
@@ -50,6 +52,7 @@ public class StartDialog : MonoBehaviour
         }else{
             Container.SetActive(false);
             Time.timeScale=1;
+            Destroy(gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D col){

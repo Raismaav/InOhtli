@@ -153,7 +153,7 @@ public class Player : hpSystem
         if(!Live){
             animator.SetTrigger("DIE");
             canMove=false;
-            StartCoroutine(DeadTime());
+            rb.velocity=new Vector2(0,0);
         }
     }
     private void CharacterHit(){
@@ -182,11 +182,6 @@ public class Player : hpSystem
         canMove=true;
         canDash=true;
         rb.gravityScale=1;
-    }
-    private IEnumerator DeadTime(){
-        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("DED"));
-        deathMenu();
-        gameObject.SetActive(false);
     }
     private void PlayParticles(){
         chargedParticles.Play();
