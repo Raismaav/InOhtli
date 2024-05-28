@@ -13,7 +13,7 @@ public class RiverDialog : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             Container.SetActive(true);
-            LogText.text="Este es Chicnahuapan, el río del que vengo. Gracias a un leal Xoloitzcuintle, guiado por Xolotl, pude cruzar sus aguas. Ya no hay nada más para mí ahí.";
+            LogText.text="Este es el Chicnahuapan, el río del que vengo. Gracias a un leal Xoloitzcuintle, guiado por Xolotl, pude cruzar sus aguas. Ya no hay nada más para mí ahí.";
         }
     }
     private void OnTriggerExit2D(Collider2D col){
