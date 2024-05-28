@@ -28,9 +28,9 @@ public class StartDialog : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             if(firstPlay){
-            Time.timeScale=0;
-            Container.SetActive(true);
-            LogText.text="Esta es la montaña";
+                Time.timeScale=0;
+                Container.SetActive(true);
+                LogText.text="Finalmente he llegado al Tepectli Monamictlán, gracias a la ayuda de mi leal Xoloitzcuintle. El, me permitió cruzar el temido Chicnahuapan, río de los nueve cielos.";
             }else{
                 LineIndex=0;
                 Destroy(gameObject);

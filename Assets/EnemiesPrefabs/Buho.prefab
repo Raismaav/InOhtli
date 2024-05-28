@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6997727746508156671}
   - component: {fileID: 6390841269365448162}
   - component: {fileID: 8682896665060665465}
+  - component: {fileID: 7323918979996295400}
   m_Layer: 0
   m_Name: Buho
   m_TagString: Enemigo
@@ -291,6 +292,20 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!114 &7323918979996295400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527041661407031342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &7724423485361707823
 GameObject:
   m_ObjectHideFlags: 0

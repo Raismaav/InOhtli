@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 4055261822778490500}
   - component: {fileID: 4966709949815886634}
   - component: {fileID: 7216120407021218266}
+  - component: {fileID: 4562363410782229736}
   m_Layer: 11
   m_Name: Venao
   m_TagString: Enemigo
@@ -404,6 +405,20 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!114 &4562363410782229736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088576102041865727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &1308004255598616138
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class SaveTrigger : MonoBehaviour
         {
             InRange=true;
             Container.SetActive(true);
-            LogText.text="Haz Click Izquierdo Para Guardar";
+            LogText.text="Haz click para guardar";
         }
     }
     private void OnTriggerExit2D(Collider2D col){

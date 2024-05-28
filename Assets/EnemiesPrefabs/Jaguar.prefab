@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6408802413404566966}
   - component: {fileID: 7038562530342878307}
   - component: {fileID: 7129413983137104917}
+  - component: {fileID: 8763716687745081074}
   m_Layer: 0
   m_Name: Jaguar
   m_TagString: Enemigo
@@ -307,6 +308,20 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
+--- !u!114 &8763716687745081074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245679432108042739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &1766094814307129868
 GameObject:
   m_ObjectHideFlags: 0
