@@ -36,6 +36,9 @@ public class Player : hpSystem
     [SerializeField]private ParticleSystem inchargeParticles;
     [SerializeField]private ParticleSystem chargedParticles;
     
+    private bool DashUnlocked;
+    [SerializeField]private GameObject ControlsMenu;
+    
     [Header("Sound Settings")]
     private AudioSource audioSource;
     [SerializeField] private AudioClip AttackAudioClip;
@@ -45,7 +48,6 @@ public class Player : hpSystem
     [SerializeField] private AudioClip JumpAudioClip;
     
     [SerializeField] private AudioClip DashAudioClip;
-    private bool DashUnlocked;
 
     void Start()
     {
@@ -197,6 +199,7 @@ public class Player : hpSystem
     {
         Time.timeScale = 1f;
         PauseMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
         InterfacePaused.SetActive(!InterfacePaused.activeSelf);
         InPause = false;
     }
