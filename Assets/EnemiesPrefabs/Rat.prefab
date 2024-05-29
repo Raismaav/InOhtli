@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8886011209778307456}
   - component: {fileID: 4251276720622122575}
   - component: {fileID: 4438792889391579253}
-  - component: {fileID: 8213143671451069088}
+  - component: {fileID: 415328154276452116}
   m_Layer: 11
   m_Name: Rat
   m_TagString: Enemigo
@@ -126,6 +126,7 @@ Transform:
   - {fileID: 3557918588561571766}
   - {fileID: 1238510012258458785}
   - {fileID: 5443184000688620998}
+  - {fileID: 2804075542077308180}
   - {fileID: 2072368655197414052}
   - {fileID: 737631665612537078}
   - {fileID: 6593776875291767721}
@@ -315,12 +316,18 @@ MonoBehaviour:
   attackLayer:
     serializedVersion: 2
     m_Bits: 8
+  detectionEar:
+    serializedVersion: 2
+    m_Bits: 8
   belowDistance: 3
-  frontDistance: 1.8
+  frontDistance: 1
+  backDistance: 6
   belowController: {fileID: 2072368655197414052}
   frontController: {fileID: 5443184000688620998}
+  backController: {fileID: 2804075542077308180}
   belowInfoRat: 0
   frontInfoRat: 0
+  backInfoRat: 0
   attackinfoRat: 0
   AttackOperator: {fileID: 3181433716546569337}
   AttackRadio: 1
@@ -360,7 +367,7 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
---- !u!114 &8213143671451069088
+--- !u!114 &415328154276452116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -605,7 +612,38 @@ Transform:
   m_GameObject: {fileID: 5626849130744242260}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14360033, y: 0.33280152, z: 0}
+  m_LocalPosition: {x: 0.012, y: 0.323, z: 0}
+  m_LocalScale: {x: 0.32, y: 0.71999997, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2617190021207420733}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6189253292851797053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2804075542077308180}
+  m_Layer: 11
+  m_Name: backController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2804075542077308180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189253292851797053}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.022, y: 0.314, z: 0}
   m_LocalScale: {x: 0.32, y: 0.71999997, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
