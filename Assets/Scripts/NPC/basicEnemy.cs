@@ -15,12 +15,16 @@ public class basicEnemy : HP
     public LayerMask belowLayer;
     public LayerMask frontLayer;
     public LayerMask attackLayer;
+    public LayerMask detectionEar;
     public float belowDistance;
     public float frontDistance;
+    public float backDistance;
     public Transform belowController;
     public Transform frontController;
+    public Transform backController;
     public bool belowInfoRat;
     public bool frontInfoRat;
+    public bool backInfoRat;
     public bool attackinfoRat;
     private float runspeed;
 
@@ -36,7 +40,7 @@ public class basicEnemy : HP
     [SerializeField] private float KBHitForece;
     [SerializeField] Animator PivotAnim;
     string str="";
-
+    
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,6 +59,7 @@ public class basicEnemy : HP
     public override void CollectObservations(VectorSensor sensor)
     {
         frontInfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        backInfoRat = Physics2D.Raycast(backController.position, transform.right, backDistance, detectionEar);
         attackinfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
         belowInfoRat = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         bool inFloorRat = inFloor;
@@ -116,6 +121,7 @@ public class basicEnemy : HP
         }
         //Move(HorizontalMovement,false);
         frontInfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
+        backInfoRat = Physics2D.Raycast(backController.position, transform.right, backDistance, detectionEar);
         attackinfoRat = Physics2D.Raycast(frontController.position, transform.right, frontDistance, attackLayer);
         belowInfoRat = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
         animator.SetInteger("Walk",(int)HorizontalMovement);
@@ -145,7 +151,7 @@ public class basicEnemy : HP
             rb.velocity=new Vector2(FixedSpeed,rb.velocityY);
             
         }
-        if(frontInfoRat || !belowInfoRat)
+        if(frontInfoRat || !belowInfoRat || backInfoRat)
         {
             //Girar
             Girar();
@@ -187,5 +193,8 @@ public class basicEnemy : HP
         Gizmos.DrawLine(frontController.transform.position, frontController.transform.position + transform.right * frontDistance);
         Gizmos.DrawWireCube(OperadorSuelo.position, dimensionesCaja);
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);
+        
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(backController.transform.position, backController.transform.position + transform.right * backDistance);
     }
 }
