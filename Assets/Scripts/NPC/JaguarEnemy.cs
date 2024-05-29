@@ -11,15 +11,18 @@ public class JaguarEnemy : HP
     public LayerMask belowLayer;
     public LayerMask frontLayer;
     public LayerMask attackLayer;
+    public LayerMask detectionEar;
     public float belowDistance;
     public float frontDistance;
-    
+    public float backDistance;
     public float frontAttackDistance;
     public Transform belowController;
     public Transform frontController;
+    public Transform backController;
     public Transform AttackController;
     public bool belowInfoJaguar;
     public bool frontInfoJaguar;
+    public bool backInfoJaguar;
     public bool attackinfoJaguar;
     private float runspeed;
 
@@ -118,6 +121,7 @@ public class JaguarEnemy : HP
         frontInfoJaguar = Physics2D.Raycast(frontController.position, transform.right, frontDistance, frontLayer);
         attackinfoJaguar = Physics2D.Raycast(AttackController.position, transform.right, frontAttackDistance, attackLayer);
         belowInfoJaguar = Physics2D.Raycast(belowController.position, transform.up * -1, belowDistance, belowLayer);
+        backInfoJaguar = Physics2D.Raycast(backController.position, transform.right, backDistance, detectionEar);
         animator.SetInteger("Walk",(int)HorizontalMovement);
         if (Input.GetKeyDown(KeyCode.I))
             {
@@ -150,7 +154,7 @@ public class JaguarEnemy : HP
             
         }
         
-        if(frontInfoJaguar || !belowInfoJaguar)
+        if(frontInfoJaguar || !belowInfoJaguar || backInfoJaguar)
         {
             //Girar
             Girar();
@@ -214,5 +218,8 @@ public class JaguarEnemy : HP
         Gizmos.DrawLine(AttackController.transform.position, AttackController.transform.position + transform.right * frontAttackDistance);
         Gizmos.DrawWireCube(OperadorSuelo.position, dimensionesCaja);
         Gizmos.DrawWireSphere(AttackOperator.position, AttackRadio);
+        
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(backController.transform.position, backController.transform.position + transform.right * backDistance);
     }
 }
