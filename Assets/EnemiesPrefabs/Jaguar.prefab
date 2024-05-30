@@ -246,8 +246,8 @@ MonoBehaviour:
   inFloor: 0
   canMove: 1
   TrainingMode: 0
-  CurrentHealth: 10
-  MaxHealth: 10
+  CurrentHealth: 5
+  MaxHealth: 5
   invincibleTime: 0
   invincibleDuration: 0.5
   Heal: {fileID: 1269291950249667337, guid: 0f459df1fdaf1e14b9fe71daacfc0d65, type: 3}
