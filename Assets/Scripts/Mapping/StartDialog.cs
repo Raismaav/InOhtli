@@ -11,8 +11,9 @@ public class StartDialog : MonoBehaviour
     private int LineIndex=0;
     [SerializeField] private GameObject Container;
     private bool firstPlay;
+    private bool inRange;
     void Update(){
-        if(Input.GetButtonDown("Fire1")){
+        if(Input.GetButtonDown("Fire1")&&inRange){
 
             if(LogText.text==LogLines[LineIndex]){
                 NextLogLine();
@@ -27,12 +28,15 @@ public class StartDialog : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col){
         if (col.gameObject.CompareTag("Player"))
         {
+            inRange=true;
             if(firstPlay){
                 Time.timeScale=0;
                 Container.SetActive(true);
                 LogText.text="Finalmente he llegado al Tepectli Monamictlán, gracias a la ayuda de mi leal Xoloitzcuintle. El, me permitió cruzar el temido Chicnahuapan, río de los nueve cielos.";
             }else{
                 LineIndex=0;
+                inRange=false;
+                Time.timeScale=1;
                 Destroy(gameObject);
             }
         }
@@ -52,6 +56,7 @@ public class StartDialog : MonoBehaviour
         }else{
             Container.SetActive(false);
             Time.timeScale=1;
+            inRange=false;
             Destroy(gameObject);
         }
     }
@@ -59,6 +64,7 @@ public class StartDialog : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             LogText.text="";
+            inRange=false;
             Destroy(gameObject);
         }
     }

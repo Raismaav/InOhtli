@@ -14,7 +14,7 @@ public class DataController : MonoBehaviour
     public StartDialog StartDialog;
     private string keyWord = "Password";
     public GameObject bosstrigger1;
-    private void Start(){
+    private void Awake(){
         Archive = Application.dataPath+"/game_data.json";
         Player = GameObject.FindGameObjectWithTag("Player");
         DataLoad();
