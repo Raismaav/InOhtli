@@ -210,6 +210,12 @@ public class JaguarEnemy : HP
             audioSource.PlayOneShot(AttackAudioClip);
         }
     }
+    private void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.CompareTag("Player")){
+            other.gameObject.GetComponent<HP>().Damage(1,transform,5);
+            other.transform.GetComponent<hpSystem>().hpBarChange();
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
