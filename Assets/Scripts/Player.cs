@@ -57,6 +57,7 @@ public class Player : hpSystem
         HabBar=HabBarGO.GetComponent<HablityBarControllerSlider>();
         setstartingValue(getCurrentHP());
         audioSource=GetComponent<AudioSource>();
+        Application.targetFrameRate=60;
     }
    void Update()
     {
