@@ -176,7 +176,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MovKeys-removebg-preview_0: -1158037241969612778
+      MovKeys-removebg-preview_1: 4516354228500817507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
