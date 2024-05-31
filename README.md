@@ -2,4 +2,4 @@
 Repositorio principal del videojuego In Ohtli 
 Proyecto de titulación 2024
 
-Ya casi queda 😭
+Presentado el 30 de mayo de 2024
