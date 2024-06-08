@@ -25,7 +25,7 @@ In Ohtli es un videojuego de acción y aventura basado en la mitología mexica, 
    ```
    cd InOhtli
    ```
-3. Abre el proyecto con Unity (versión recomendada: Unity 2021.3.0f1 o superior).
+3. Abre el proyecto con Unity (versión recomendada: Unity 2023.1.17f1 o superior).
 4. Compila el proyecto para tu plataforma preferida.
 
 ## Contribución
